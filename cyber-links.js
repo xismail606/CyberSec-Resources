@@ -310,6 +310,11 @@ const categories = [
         url: "https://0xrick.github.io/lists/stego/#web-tools",
         desc: "Stego tools list",
       },
+      {
+        name: "StegSeek",
+        url: "https://github.com/RickdeJager/StegSeek",
+        desc: "Fast steghide cracker for extracting hidden data",
+      },
     ],
   },
   {
