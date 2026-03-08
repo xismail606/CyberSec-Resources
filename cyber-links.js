@@ -25,6 +25,11 @@ const categories = [
         url: "https://0xqenawy.github.io/password-checker/generator.html",
         desc: "Generate & check password strength",
       },
+      {
+        name: "SECURE-PASSWORD-GENERATOR",
+        url: "https://github.com/xismail606/SECURE-PASSWORD-GENERATOR",
+        desc: "Secure modular Bash password generator using /dev/urandom",
+      },
     ],
   },
   {
