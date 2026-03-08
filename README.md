@@ -1,91 +1,176 @@
-# 🛡️ CyberSec Resources
+<!-- ===================== HEADER ===================== -->
+<div align="center">
+  <img
+    src="https://capsule-render.vercel.app/api?type=waving&color=gradient&text=CyberSec%20Resources&height=140&section=header"
+    alt="CyberSec Resources Header"
+    width="100%"
+  />
+</div>
 
-A curated collection of **55+ cybersecurity tools** and resources — organized, searchable, and ready to use.
+<h1 align="center">🛡️ CyberSec Resources</h1>
 
-> Built for penetration testers, bug bounty hunters, and security enthusiasts.
+<p align="center">
+A curated collection of <strong>55+ cybersecurity tools</strong> and resources — organized, searchable, and ready to use.
+</p>
 
-## 🌐 Live Preview
+<p align="center">
+<em>Built for penetration testers, bug bounty hunters, and security enthusiasts.</em>
+</p>
 
-🔗 **[Visit the site →](https://xismail606.github.io/CyberSec-Resources/)**
+<hr>
 
-![Dark Theme](https://img.shields.io/badge/Theme-Dark_Mode-0a0e1a?style=for-the-badge)
-![Tools](https://img.shields.io/badge/Tools-55+-38bdf8?style=for-the-badge)
-![Categories](https://img.shields.io/badge/Categories-10-a78bfa?style=for-the-badge)
+<!-- ================= LIVE PREVIEW ================= -->
+<div align="center">
+<h2>🌐 Live Preview</h2>
 
-## 📂 Categories
+<p>
+🔗 <strong>
+<a href="https://xismail606.github.io/CyberSec-Resources/" target="_blank">
+Live Demo →
+</a>
+</strong>
+</p>
 
-| #   | Category                            | Tools                                      |
-| --- | ----------------------------------- | ------------------------------------------ |
-| 🔓  | **Data Breach & Password Security** | Have I Been Pwned, CrackStation, DeHashed  |
-| 🔐  | **Encoding, Decoding & Crypto**     | CyberChef, Base64, JWT.io, Dogbolt         |
-| 🧬  | **Hash Analysis & Cracking**        | Hash Analyzer, Hashcat, SHA256, Hashes.com |
-| 🕵️  | **OSINT & Reconnaissance**          | OSINT Framework, Sherlock, Who.is, crt.sh  |
-| 🌐  | **Network, DNS & Infrastructure**   | Shodan, Censys, Netlas, WiGLE, FOFA        |
-| ⚠️  | **Vulnerability Databases**         | CVE, NVD (NIST), Zone-H                    |
-| 🦠  | **Malware Analysis**                | ANY.RUN, Spectrum Analyzer                 |
-| 🖼️  | **Steganography & Image Analysis**  | Aperi'Solve, 0xRick Stego Tools            |
-| 📧  | **Email Intelligence**              | Hunter.io, Snov.io, Prospeo                |
-| 📚  | **Security Resources & Wordlists**  | SecLists                                   |
+<p>
+<img src="https://img.shields.io/badge/Theme-Dark_Mode-0a0e1a?style=for-the-badge">
+<img src="https://img.shields.io/badge/Tools-55+-38bdf8?style=for-the-badge">
+<img src="https://img.shields.io/badge/Categories-10-a78bfa?style=for-the-badge">
+<img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
+<img src="https://img.shields.io/badge/License-MIT-orange?style=for-the-badge">
+</p>
 
-## ✨ Features
+</div>
 
-- 🔍 **Real-time search** — Filter tools instantly by name, description, or category
-- 🎨 **Modern dark theme** — Glassmorphism UI with smooth animations
-- 📱 **Fully responsive** — Works on desktop, tablet, and mobile
-- ⚡ **No dependencies** — Pure HTML, CSS, and JavaScript
-- 🖼️ **Auto favicons** — Loads icons for each tool automatically
+<hr>
 
-## 🚀 Quick Start
+<!-- ================= CATEGORIES ================= -->
+<h2>📂 Categories</h2>
 
-```bash
-# Clone the repo
-git clone https://github.com/xismail606/CyberSec-Resources.git
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Category</th>
+<th>Tools</th>
+</tr>
+</thead>
 
-# Open in browser
-open index.html
-```
+<tbody>
 
-Or simply download and double-click `index.html`.
+<tr>
+<td>🔓</td>
+<td><strong>Data Breach & Password Security</strong></td>
+<td>Have I Been Pwned, CrackStation, DeHashed</td>
+</tr>
 
-## 📁 Project Structure
+<tr>
+<td>🔐</td>
+<td><strong>Encoding, Decoding & Crypto</strong></td>
+<td>CyberChef, Base64, JWT.io, Dogbolt</td>
+</tr>
 
-```
+<tr>
+<td>🧬</td>
+<td><strong>Hash Analysis & Cracking</strong></td>
+<td>Hash Analyzer, Hashcat, SHA256, Hashes.com</td>
+</tr>
+
+<tr>
+<td>🕵️</td>
+<td><strong>OSINT & Reconnaissance</strong></td>
+<td>OSINT Framework, Sherlock, Who.is, crt.sh</td>
+</tr>
+
+<tr>
+<td>🌐</td>
+<td><strong>Network, DNS & Infrastructure</strong></td>
+<td>Shodan, Censys, Netlas, WiGLE, FOFA</td>
+</tr>
+
+<tr>
+<td>⚠️</td>
+<td><strong>Vulnerability Databases</strong></td>
+<td>CVE, NVD (NIST), Zone-H</td>
+</tr>
+
+<tr>
+<td>🦠</td>
+<td><strong>Malware Analysis</strong></td>
+<td>ANY.RUN, Spectrum Analyzer</td>
+</tr>
+
+<tr>
+<td>🖼️</td>
+<td><strong>Steganography & Image Analysis</strong></td>
+<td>Aperi'Solve, 0xRick Stego Tools</td>
+</tr>
+
+<tr>
+<td>📧</td>
+<td><strong>Email Intelligence</strong></td>
+<td>Hunter.io, Snov.io, Prospeo</td>
+</tr>
+
+<tr>
+<td>📚</td>
+<td><strong>Security Resources & Wordlists</strong></td>
+<td>SecLists</td>
+</tr>
+
+</tbody>
+</table>
+
+<hr>
+
+<!-- ================= FEATURES ================= -->
+<h2>✨ Features</h2>
+
+<ul>
+<li>🔍 <strong>Real-time search</strong> — Filter tools instantly by name, description, or category</li>
+<li>🎨 <strong>Modern dark theme</strong> — Glassmorphism UI with smooth animations</li>
+<li>📱 <strong>Fully responsive</strong> — Works on desktop, tablet, and mobile</li>
+<li>⚡ <strong>No dependencies</strong> — Pure HTML, CSS, and JavaScript</li>
+<li>🖼️ <strong>Auto favicons</strong> — Loads icons for each tool automatically</li>
+</ul>
+
+<hr>
+
+<!-- ================= STRUCTURE ================= -->
+<h2>📁 Project Structure</h2>
+
+<pre>
 CyberSec-Resources/
-├── index.html          # Main page structure
-├── cyber-links.css     # Styles & animations
-├── cyber-links.js      # Tools data & search logic
-└── README.md           # This file
-```
+├── index.html
+├── cyber-links.css
+├── cyber-links.js
+└── README.md
+</pre>
 
-## ➕ Adding New Tools
+<hr>
 
-Edit `cyber-links.js` and add a new entry to the appropriate category:
+<!-- ================= AUTHOR ================= -->
+<h2 align="center"> 👤 Author </h2>
 
-```javascript
-{
-  name: "Tool Name",
-  url: "https://example.com/",
-  desc: "Short description of what it does",
-},
-```
+<p align="center">
+<strong>x606</strong><br>
+Penetration Testing Enthusiast<br>
+ • Offensive Security • Red Team Fundamentals •
+</p>
+<p align="center">
+🔗 <a href="https://www.linkedin.com/in/ismailabdelhameed">LinkedIn</a> · 🐙 <a href="https://github.com/xismail606">GitHub</a>
+</p>
 
-## 🤝 Contributing
+<hr>
 
-1. Fork the repo
-2. Add your tools to `cyber-links.js`
-3. Submit a Pull Request
+<p align="center">
+🔒 <em>Stay safe, stay curious — Built for security professionals</em>
+</p>
 
-## 📜 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 👤 Author
-
-**x606** — Penetration Testing Enthusiast
-
-- 🔗 [LinkedIn](https://www.linkedin.com/in/ismailabdelhameed)
-- 🐙 [GitHub](https://github.com/xismail606)
-
----
-
-> 🔒 _Stay safe, stay curious — Built for security professionals_
+<!-- ===================== FOOTER ===================== -->
+<div align="center">
+  <img 
+    src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=110&section=footer"
+    alt="GitHub Footer"
+    width="100%"
+  />
+</div>
