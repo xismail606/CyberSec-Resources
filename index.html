@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyberSec Toolkit — Essential Security Resources</title>
+    <meta
+      name="description"
+      content="A curated collection of essential cybersecurity tools and resources for penetration testing, OSINT, vulnerability analysis, and more."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="cyber-links.css" />
+     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+  </head>
+  <body>
+    <!-- Background Effects -->
+    <div class="bg-grid"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="container">
+      <!-- Hero -->
+      <header class="hero">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          CYBERSECURITY TOOLKIT
+        </div>
+        <h1>🛡️ CyberSec Resources</h1>
+        <p>
+          A curated collection of essential cybersecurity tools, OSINT
+          resources, and security utilities — all in one place.
+        </p>
+
+        <!-- Search -->
+        <div class="search-wrapper">
+          <input
+            type="text"
+            class="search-input"
+            id="searchInput"
+            placeholder="Search tools..."
+            autocomplete="off"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+            />
+          </svg>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-bar">
+          <div class="stat-item">
+            <div class="stat-number" id="totalTools">0</div>
+            <div class="stat-label">Tools</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" id="totalCategories">0</div>
+            <div class="stat-label">Categories</div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Categories Container -->
+      <main id="categoriesContainer"></main>
+
+      <!-- No Results -->
+      <div class="no-results" id="noResults">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+          />
+        </svg>
+        <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 6px">
+          No tools found
+        </p>
+        <p>Try a different search term</p>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <p class="footer-author">Made by <a href="" target="_blank">x606</a></p>
+          <p class="footer-role">Penetration Testing Enthusiast</p>
+          <p class="footer-role">• Offensive Security | Red Team Fundamentals •</p>
+          <p>🔒 Stay safe, stay curious · Built for security professionals</p>
+          <div class="footer-links"> 
+            <a href="" target="_blank">⭐ Star on GitHub</a>
+            <a href="https://www.linkedin.com/in/ismailabdelhameed" target="_blank">🔗 LinkedIn</a>
+          </div>
+        </div>
+      </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" title="Scroll to top">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="22"
+        height="22"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M4.5 15.75l7.5-7.5 7.5 7.5"
+        />
+      </svg>
+    </button>
+
+    <script src="cyber-links.js"></script>
+  </body>
+</html>
