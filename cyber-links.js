@@ -6,16 +6,6 @@ const categories = [
     theme: "cat-breach",
     links: [
       {
-        name: "Have I Been Pwned",
-        url: "https://haveibeenpwned.com/",
-        desc: "Check if your email was in a data breach",
-      },
-      {
-        name: "CrackStation",
-        url: "https://crackstation.net/",
-        desc: "Hash cracker & password security",
-      },
-      {
         name: "DeHashed",
         url: "https://dehashed.com/",
         desc: "Leaked database search engine",
@@ -75,6 +65,11 @@ const categories = [
     theme: "cat-hash",
     links: [
       {
+        name: "CrackStation",
+        url: "https://crackstation.net/",
+        desc: "Hash cracker & password security",
+      },
+      {
         name: "Hash Analyzer",
         url: "https://www.tunnelsup.com/hash-analyzer/",
         desc: "Identify hash types",
@@ -106,6 +101,11 @@ const categories = [
     icon: "🕵️",
     theme: "cat-osint",
     links: [
+      {
+        name: "Have I Been Pwned",
+        url: "https://haveibeenpwned.com/",
+        desc: "Check if your email was in a data breach",
+      },
       {
         name: "OSINT Framework",
         url: "https://osintframework.com/",
