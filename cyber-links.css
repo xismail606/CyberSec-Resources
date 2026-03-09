@@ -30,6 +30,14 @@
   --radius: 16px;
   --radius-sm: 10px;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ===== Mouse Glow — tweak these to customize ===== */
+  --glow-color: rgba(56, 189, 248, 0.05);
+  --glow-color-inner: rgba(56, 189, 248, 0.09);
+  --glow-size: 200px;
+  --glow-opacity: 0;
+  --x: 50%;
+  --y: 50%;
 }
 
 html {
@@ -47,6 +55,42 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   line-height: 1.6;
+}
+
+/* ===== Mouse-Follow Glow ===== */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: var(--glow-opacity);
+  background: radial-gradient(
+    circle var(--glow-size) at var(--x) var(--y),
+    var(--glow-color-inner),
+    var(--glow-color) 40%,
+    transparent 70%
+  );
+  will-change: opacity;
+  transition: opacity 0.4s ease;
+}
+
+/* Hover-amplify: glow brightens near interactive elements */
+body.glow-hover::before {
+  --glow-color: rgba(56, 189, 248, 0.10);
+  --glow-color-inner: rgba(56, 189, 248, 0.18);
+}
+
+/* Disable glow on specific pages */
+body.no-glow::before {
+  display: none;
+}
+
+/* Disable glow on touch-only devices */
+@media (hover: none) {
+  body::before {
+    display: none;
+  }
 }
 
 /* ===== Navbar ===== */

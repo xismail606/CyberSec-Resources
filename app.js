@@ -5,6 +5,9 @@
 const container = document.getElementById("categoriesContainer");
 let totalTools = 0;
 
+// Slugify helper — turns "Reverse Engineering" → "reverse-engineering"
+const slugify = (s) => s.toLowerCase().replace(/[^\w]+/g, "-").replace(/-+$/,"");
+
 function getFavicon(url) {
   try {
     const domain = new URL(url).hostname;
@@ -36,7 +39,7 @@ function renderCategories(filter = "") {
 
     const section = document.createElement("section");
     section.className = `category ${cat.theme}`;
-    section.id = `cat-${cat.theme}`;
+    section.id = `cat-${slugify(cat.name)}`;
     section.innerHTML = `
       <div class="category-header">
         <div class="category-icon">${cat.icon}</div>
@@ -95,12 +98,12 @@ const navLinksContainer = document.getElementById("navLinks");
 if (navLinksContainer) {
   categories.forEach((cat) => {
     const a = document.createElement("a");
-    a.href = `#cat-${cat.theme}`;
+    a.href = `#cat-${slugify(cat.name)}`;
     a.className = "nav-link";
     a.textContent = `${cat.icon} ${cat.name}`;
     a.addEventListener("click", (e) => {
       e.preventDefault();
-      const target = document.getElementById(`cat-${cat.theme}`);
+      const target = document.getElementById(`cat-${slugify(cat.name)}`);
       if (target) {
         target.scrollIntoView({ behavior: "smooth", block: "start" });
       }
@@ -130,6 +133,7 @@ function updateActiveNav() {
     const rect = section.getBoundingClientRect();
     if (rect.top <= 120) {
       currentId = section.id;
+
     }
   });
 
@@ -264,3 +268,70 @@ document.addEventListener("keydown", (e) => {
     closeToolModal();
   }
 });
+
+// ===== MOUSE-FOLLOW GLOW =====
+// Professional spotlight: rAF loop with lerp for silky-smooth movement.
+// Single mousemove listener — no heavy loops or recalculations.
+
+(() => {
+  const root = document.documentElement;
+  const body = document.body;
+
+  let mouseX = 0, mouseY = 0;   // raw cursor position
+  let glowX  = 0, glowY  = 0;   // interpolated (smooth) position
+  let isOnPage = false;
+  let rafId = null;
+
+  // Lerp factor: 0.08 = smooth trailing, 0.2 = snappy, 1 = instant
+  const LERP = 0.12;  // ← adjust smoothness here
+
+  // --- Single mousemove listener ---
+  document.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+
+    if (!isOnPage) {
+      isOnPage = true;
+      glowX = mouseX;
+      glowY = mouseY;
+      root.style.setProperty("--glow-opacity", "1");
+      startLoop();
+    }
+  });
+
+  // --- Fade out when cursor leaves ---
+  document.addEventListener("mouseleave", () => {
+    isOnPage = false;
+    root.style.setProperty("--glow-opacity", "0");
+    cancelAnimationFrame(rafId);
+    rafId = null;
+  });
+
+  // --- Hover-amplify on interactive elements ---
+  body.addEventListener("mouseover", (e) => {
+    if (e.target.closest(".link-card, .page-nav-btn, .modal-btn, button")) {
+      body.classList.add("glow-hover");
+    }
+  });
+  body.addEventListener("mouseout", (e) => {
+    if (e.target.closest(".link-card, .page-nav-btn, .modal-btn, button")) {
+      body.classList.remove("glow-hover");
+    }
+  });
+
+  // --- rAF loop: lerp toward cursor for fluid trailing ---
+  function tick() {
+    glowX += (mouseX - glowX) * LERP;
+    glowY += (mouseY - glowY) * LERP;
+
+    root.style.setProperty("--x", glowX + "px");
+    root.style.setProperty("--y", glowY + "px");
+
+    rafId = requestAnimationFrame(tick);
+  }
+
+  function startLoop() {
+    if (!rafId) rafId = requestAnimationFrame(tick);
+  }
+})();
+

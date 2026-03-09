@@ -47,7 +47,7 @@ const categories = Object.keys(_grouped).map(c => {
     theme: m[1],
     links: _grouped[c].map(r => ({
       name: r.name,
-      url: 'https://tryhackme.com/room/' + _urlName(r.name),
+      url: 'https://tryhackme.com/room/' + (r.slug || _urlName(r.name)),
       desc: r.description,
       tags: r.tags,
       difficulty: r.difficulty

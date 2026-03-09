@@ -10,7 +10,7 @@
 <h1 align="center">🛡️ CyberSec Resources</h1>
 
 <p align="center">
-A curated collection of <strong>70+ cybersecurity tools</strong> and resources — organized, searchable, and ready to use.
+A curated collection of <strong>75+ cybersecurity tools</strong> and <strong>466 free TryHackMe labs</strong> — organized, searchable, and ready to use.
 </p>
 
 <p align="center">
@@ -33,131 +33,98 @@ Live Demo →
 
 <p>
 <img src="https://img.shields.io/badge/Theme-Dark_Mode-0a0e1a?style=for-the-badge">
-<img src="https://img.shields.io/badge/Tools-70+-38bdf8?style=for-the-badge">
-<img src="https://img.shields.io/badge/Categories-12-a78bfa?style=for-the-badge">
+<img src="https://img.shields.io/badge/Tools-75+-38bdf8?style=for-the-badge">
+<img src="https://img.shields.io/badge/Free_Labs-466-34d399?style=for-the-badge">
+<img src="https://img.shields.io/badge/Categories-37-a78bfa?style=for-the-badge">
 <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
-<img src="https://img.shields.io/badge/License-MIT-orange?style=for-the-badge">
 </p>
 
 </div>
 
 <hr>
 
+<!-- ================= PAGES ================= -->
+
+## 📄 Pages
+
+| Page                      | Description                                                                   |
+| ------------------------- | ----------------------------------------------------------------------------- |
+| **🛡️ CyberSec Resources** | 75+ tools across 12 categories (OSINT, hashing, networking, pentesting, etc.) |
+| **💻 Free Labs**          | 466 free TryHackMe rooms across 25 categories (Intro → Insane difficulty)     |
+
+<hr>
+
 <!-- ================= CATEGORIES ================= -->
-<h2>📂 Categories</h2>
 
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>Category</th>
-<th>Tools</th>
-</tr>
-</thead>
+## 📂 Resource Categories
 
-<tbody>
+| #   | Category                            | Example Tools                               |
+| --- | ----------------------------------- | ------------------------------------------- |
+| 🔓  | **Data Breach & Password Security** | DeHashed, Password Generator                |
+| 🔐  | **Encoding, Decoding & Crypto**     | CyberChef, Base64, JWT.io, Dogbolt          |
+| 🧬  | **Hash Analysis & Cracking**        | CrackStation, Hashcat, John the Ripper      |
+| 🕵️  | **OSINT & Reconnaissance**          | Sherlock, OSINT Framework, Who.is, crt.sh   |
+| 🌐  | **Network, DNS & Infrastructure**   | Nmap, Wireshark, Shodan, Snort              |
+| ⚠️  | **Vulnerability Databases**         | Exploit-DB, CVE, NVD, VulDB                 |
+| 🦠  | **Malware Analysis**                | VirusTotal, ANY.RUN                         |
+| 🖼️  | **Steganography & Image Analysis**  | Aperi'Solve, StegSeek                       |
+| 📧  | **Email Intelligence**              | Hunter.io, Snov.io, Prospeo                 |
+| 📚  | **Security Resources & Wordlists**  | SecLists                                    |
+| 🎯  | **Penetration Testing**             | Burp Suite, Metasploit, Sqlmap, Aircrack-ng |
+| 🔧  | **System & Process Analysis**       | Sysinternals, Autoruns, Process Explorer    |
 
-<tr>
-<td>🔓</td>
-<td><strong>Data Breach & Password Security</strong></td>
-<td>Have I Been Pwned, CrackStation, DeHashed</td>
-</tr>
+## 🧪 Free Labs Categories
 
-<tr>
-<td>🔐</td>
-<td><strong>Encoding, Decoding & Crypto</strong></td>
-<td>CyberChef, Base64, JWT.io, Dogbolt</td>
-</tr>
-
-<tr>
-<td>🧬</td>
-<td><strong>Hash Analysis & Cracking</strong></td>
-<td>Hash Analyzer, Hashcat, SHA256, Hashes.com</td>
-</tr>
-
-<tr>
-<td>🕵️</td>
-<td><strong>OSINT & Reconnaissance</strong></td>
-<td>OSINT Framework, Sherlock, Who.is, crt.sh</td>
-</tr>
-
-<tr>
-<td>🌐</td>
-<td><strong>Network, DNS & Infrastructure</strong></td>
-<td>Nmap, Wireshark, Shodan, OpenVPN</td>
-</tr>
-
-<tr>
-<td>⚠️</td>
-<td><strong>Vulnerability Databases</strong></td>
-<td>Exploit-DB, CVE, NVD, VulDB</td>
-</tr>
-
-<tr>
-<td>🦠</td>
-<td><strong>Malware Analysis</strong></td>
-<td>VirusTotal, ANY.RUN, Spectrum Analyzer</td>
-</tr>
-
-<tr>
-<td>🖼️</td>
-<td><strong>Steganography & Image Analysis</strong></td>
-<td>Aperi'Solve, 0xRick Stego Tools</td>
-</tr>
-
-<tr>
-<td>📧</td>
-<td><strong>Email Intelligence</strong></td>
-<td>Hunter.io, Snov.io, Prospeo</td>
-</tr>
-
-<tr>
-<td>📚</td>
-<td><strong>Security Resources & Wordlists</strong></td>
-<td>SecLists</td>
-</tr>
-
-<tr>
-<td>🎯</td>
-<td><strong>Penetration Testing & Exploitation</strong></td>
-<td>Burp Suite, Metasploit, Sqlmap, Aircrack-ng</td>
-</tr>
-
-<tr>
-<td>🔧</td>
-<td><strong>System & Process Analysis</strong></td>
-<td>Sysinternals, Autoruns, Process Explorer</td>
-</tr>
-
-</tbody>
-</table>
+> 25 categories covering Intro, Linux, Windows, Web, Recon, Scripting, Networking, Tooling, Cryptography, Steganography, Forensics, Reverse Engineering, Malware Analysis, PrivEsc, Active Directory, CTF, PCAP Analysis, Buffer Overflow, Android, Wi-Fi Hacking, Misc, Special Events, Container Security, Exploit Development, and more.
 
 <hr>
 
 <!-- ================= FEATURES ================= -->
-<h2>✨ Features</h2>
 
-<ul>
-<li>🧭 <strong>Sticky Navigation Bar</strong> — Quick-jump categories with scroll-spy highlighting</li>
-<li>🔍 <strong>Real-time search</strong> — Filter tools instantly by name, description, or category</li>
-<li>🎨 <strong>Modern dark theme</strong> — Glassmorphism UI with smooth animations</li>
-<li>📱 <strong>Fully responsive</strong> — Works flawlessly on desktop, tablet, and mobile</li>
-<li>⚡ <strong>No dependencies</strong> — Pure HTML, CSS, and vanilla JavaScript</li>
-<li>🖼️ <strong>Auto favicons</strong> — Resolves and loads brand icons for each tool automatically</li>
-</ul>
+## ✨ Features
+
+- 🧭 **Sticky Navigation Bar** — Quick-jump categories with scroll-spy highlighting
+- 🔍 **Real-time search** — Filter tools instantly by name, description, or category
+- 🪟 **Tool Modal Popup** — Click any card for tool details, tags, and direct link
+- 🎨 **Modern dark theme** — Glassmorphism UI with smooth animations
+- ✨ **Mouse-follow glow** — Subtle cursor-tracking light effect
+- 📱 **Fully responsive** — Works on desktop, tablet, and mobile
+- ⚡ **No dependencies** — Pure HTML, CSS, and vanilla JavaScript
+- 🖼️ **Auto favicons** — Resolves brand icons for each tool automatically
 
 <hr>
 
 <!-- ================= STRUCTURE ================= -->
-<h2>📁 Project Structure</h2>
 
-<pre>
+## 📁 Project Structure
+
+```
 CyberSec-Resources/
-├── index.html
-├── cyber-links.css
-├── cyber-links.js
+├── index.html                  # CyberSec Resources page
+├── free-labs.html              # Free Labs page
+├── cyber-links.css             # Shared styles
+├── app.js                      # Shared render engine
+├── data/
+│   ├── resourcesData.js        # Tools data (75+ tools)
+│   ├── roomsData_raw.js        # TryHackMe rooms (Intro + Easy)
+│   ├── roomsData_medium_hard.js # TryHackMe rooms (Medium → Insane)
+│   └── freeLabsData.js         # Category grouper for labs
 └── README.md
-</pre>
+```
+
+<hr>
+
+<!-- ================= TECH ================= -->
+
+## 🛠️ Tech Stack
+
+| Layer         | Technology                                |
+| ------------- | ----------------------------------------- |
+| **Structure** | HTML5 (semantic)                          |
+| **Styling**   | Vanilla CSS, CSS Variables, Glassmorphism |
+| **Logic**     | Vanilla JavaScript (no frameworks)        |
+| **Hosting**   | GitHub Pages                              |
+| **Icons**     | Google Favicons API + Emoji               |
 
 <hr>
 
