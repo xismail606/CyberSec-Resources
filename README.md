@@ -10,7 +10,7 @@
 <h1 align="center">🛡️ CyberSec Resources</h1>
 
 <p align="center">
-A curated collection of <strong>55+ cybersecurity tools</strong> and resources — organized, searchable, and ready to use.
+A curated collection of <strong>70+ cybersecurity tools</strong> and resources — organized, searchable, and ready to use.
 </p>
 
 <p align="center">
@@ -33,8 +33,8 @@ Live Demo →
 
 <p>
 <img src="https://img.shields.io/badge/Theme-Dark_Mode-0a0e1a?style=for-the-badge">
-<img src="https://img.shields.io/badge/Tools-55+-38bdf8?style=for-the-badge">
-<img src="https://img.shields.io/badge/Categories-10-a78bfa?style=for-the-badge">
+<img src="https://img.shields.io/badge/Tools-70+-38bdf8?style=for-the-badge">
+<img src="https://img.shields.io/badge/Categories-12-a78bfa?style=for-the-badge">
 <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
 <img src="https://img.shields.io/badge/License-MIT-orange?style=for-the-badge">
 </p>
@@ -84,19 +84,19 @@ Live Demo →
 <tr>
 <td>🌐</td>
 <td><strong>Network, DNS & Infrastructure</strong></td>
-<td>Shodan, Censys, Netlas, WiGLE, FOFA</td>
+<td>Nmap, Wireshark, Shodan, OpenVPN</td>
 </tr>
 
 <tr>
 <td>⚠️</td>
 <td><strong>Vulnerability Databases</strong></td>
-<td>CVE, NVD (NIST), Zone-H</td>
+<td>Exploit-DB, CVE, NVD, VulDB</td>
 </tr>
 
 <tr>
 <td>🦠</td>
 <td><strong>Malware Analysis</strong></td>
-<td>ANY.RUN, Spectrum Analyzer</td>
+<td>VirusTotal, ANY.RUN, Spectrum Analyzer</td>
 </tr>
 
 <tr>
@@ -117,6 +117,18 @@ Live Demo →
 <td>SecLists</td>
 </tr>
 
+<tr>
+<td>🎯</td>
+<td><strong>Penetration Testing & Exploitation</strong></td>
+<td>Burp Suite, Metasploit, Sqlmap, Aircrack-ng</td>
+</tr>
+
+<tr>
+<td>🔧</td>
+<td><strong>System & Process Analysis</strong></td>
+<td>Sysinternals, Autoruns, Process Explorer</td>
+</tr>
+
 </tbody>
 </table>
 
@@ -126,11 +138,12 @@ Live Demo →
 <h2>✨ Features</h2>
 
 <ul>
+<li>🧭 <strong>Sticky Navigation Bar</strong> — Quick-jump categories with scroll-spy highlighting</li>
 <li>🔍 <strong>Real-time search</strong> — Filter tools instantly by name, description, or category</li>
 <li>🎨 <strong>Modern dark theme</strong> — Glassmorphism UI with smooth animations</li>
-<li>📱 <strong>Fully responsive</strong> — Works on desktop, tablet, and mobile</li>
-<li>⚡ <strong>No dependencies</strong> — Pure HTML, CSS, and JavaScript</li>
-<li>🖼️ <strong>Auto favicons</strong> — Loads icons for each tool automatically</li>
+<li>📱 <strong>Fully responsive</strong> — Works flawlessly on desktop, tablet, and mobile</li>
+<li>⚡ <strong>No dependencies</strong> — Pure HTML, CSS, and vanilla JavaScript</li>
+<li>🖼️ <strong>Auto favicons</strong> — Resolves and loads brand icons for each tool automatically</li>
 </ul>
 
 <hr>
