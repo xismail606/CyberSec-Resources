@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CyberSec Toolkit — Essential Security Resources</title>
+    <title>Free Labs — TryHackMe Rooms</title>
     <meta
       name="description"
-      content="A curated collection of essential cybersecurity tools and resources for penetration testing, OSINT, vulnerability analysis, and more."
+      content="A curated collection of free TryHackMe labs and rooms for cybersecurity learning and practice."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,7 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./cyber-links.css" />
-     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
   </head>
   <body>
     <!-- Background Effects -->
@@ -48,17 +48,17 @@
       <header class="hero">
         <div class="hero-badge">
           <span class="pulse-dot"></span>
-          CYBERSECURITY TOOLKIT
+          FREE LABS
         </div>
-        <h1>🛡️ CyberSec Resources</h1>
+        <h1>💻 Free Labs</h1>
         <p>
-          Your ultimate arsenal for Cybersecurity, Penetration Testing, OSINT, and Threat Analysis. Carefully curated for security professionals and enthusiasts.
+          A curated collection of free TryHackMe rooms to practice your cybersecurity skills. All rooms are free and require no subscription.
         </p>
 
         <!-- Page Navigation Buttons -->
         <div class="page-nav">
-          <a href="./index.html" class="page-nav-btn active" id="btnResources">🛡️ CyberSec Resources</a>
-          <a href="./free-labs.html" class="page-nav-btn" id="btnFreeLabs">💻 Free Labs</a>
+          <a href="./index.html" class="page-nav-btn" id="btnResources">🛡️ CyberSec Resources</a>
+          <a href="./free-labs.html" class="page-nav-btn active" id="btnFreeLabs">💻 Free Labs</a>
         </div>
 
         <!-- Search -->
@@ -67,7 +67,7 @@
             type="text"
             class="search-input"
             id="searchInput"
-            placeholder="Search tools..."
+            placeholder="Search labs..."
             autocomplete="off"
           />
           <svg
@@ -89,7 +89,7 @@
         <div class="stats-bar">
           <div class="stat-item">
             <div class="stat-number" id="totalTools">0</div>
-            <div class="stat-label">Tools</div>
+            <div class="stat-label">Labs</div>
           </div>
           <div class="stat-item">
             <div class="stat-number" id="totalCategories">0</div>
@@ -117,7 +117,7 @@
           />
         </svg>
         <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 6px">
-          No tools found
+          No labs found
         </p>
         <p>Try a different search term</p>
       </div>
@@ -145,7 +145,7 @@
             </svg>
           </button>
           
-          <h2 class="modal-title" id="modalTitle">Tool Name</h2>
+          <h2 class="modal-title" id="modalTitle">Room Name</h2>
           <div class="modal-subtitle" id="modalSubtitle">Intro • Intro</div>
           
           <p class="modal-desc" id="modalDesc">Description goes here.</p>
@@ -156,7 +156,7 @@
           </div>
           
           <button class="modal-btn" id="modalOpenBtn">
-            Open Tool
+            Go to Room
           </button>
         </div>
       </div>
@@ -180,7 +180,9 @@
       </svg>
     </button>
 
-    <script src="./data/resourcesData.js"></script>
+    <script src="./data/roomsData_raw.js"></script>
+    <script src="./data/roomsData_medium_hard.js"></script>
+    <script src="./data/freeLabsData.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>
