@@ -10,7 +10,7 @@
 <h1 align="center">🛡️ CyberSec Resources</h1>
 
 <p align="center">
-A curated collection of <strong>75+ cybersecurity tools</strong> and <strong>466 free TryHackMe labs</strong> — organized, searchable, and ready to use.
+A curated collection of <strong>89 cybersecurity tools</strong> and <strong>469 free TryHackMe labs</strong> — organized, searchable, and ready to use.
 </p>
 
 <p align="center">
@@ -33,9 +33,9 @@ Live Demo →
 
 <p>
 <img src="https://img.shields.io/badge/Theme-Dark_Mode-0a0e1a?style=for-the-badge">
-<img src="https://img.shields.io/badge/Tools-75+-38bdf8?style=for-the-badge">
-<img src="https://img.shields.io/badge/Free_Labs-466-34d399?style=for-the-badge">
-<img src="https://img.shields.io/badge/Categories-37-a78bfa?style=for-the-badge">
+<img src="https://img.shields.io/badge/Tools-89-38bdf8?style=for-the-badge">
+<img src="https://img.shields.io/badge/Free_Labs-469-34d399?style=for-the-badge">
+<img src="https://img.shields.io/badge/Categories-40-a78bfa?style=for-the-badge">
 <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
 </p>
 
@@ -47,10 +47,10 @@ Live Demo →
 
 ## 📄 Pages
 
-| Page                      | Description                                                                   |
-| ------------------------- | ----------------------------------------------------------------------------- |
-| **🛡️ CyberSec Resources** | 75+ tools across 12 categories (OSINT, hashing, networking, pentesting, etc.) |
-| **💻 Free Labs**          | 466 free TryHackMe rooms across 25 categories (Intro → Insane difficulty)     |
+| Page                      | Description                                                                  |
+| ------------------------- | ---------------------------------------------------------------------------- |
+| **🛡️ CyberSec Resources** | 89 tools across 15 categories (OSINT, hashing, networking, pentesting, etc.) |
+| **💻 Free Labs**          | 469 free TryHackMe rooms across 25 categories (Intro → Insane difficulty)    |
 
 <hr>
 
@@ -58,20 +58,23 @@ Live Demo →
 
 ## 📂 Resource Categories
 
-| #   | Category                            | Example Tools                               |
-| --- | ----------------------------------- | ------------------------------------------- |
-| 🔓  | **Data Breach & Password Security** | DeHashed, Password Generator                |
-| 🔐  | **Encoding, Decoding & Crypto**     | CyberChef, Base64, JWT.io, Dogbolt          |
-| 🧬  | **Hash Analysis & Cracking**        | CrackStation, Hashcat, John the Ripper      |
-| 🕵️  | **OSINT & Reconnaissance**          | Sherlock, OSINT Framework, Who.is, crt.sh   |
-| 🌐  | **Network, DNS & Infrastructure**   | Nmap, Wireshark, Shodan, Snort              |
-| ⚠️  | **Vulnerability Databases**         | Exploit-DB, CVE, NVD, VulDB                 |
-| 🦠  | **Malware Analysis**                | VirusTotal, ANY.RUN                         |
-| 🖼️  | **Steganography & Image Analysis**  | Aperi'Solve, StegSeek                       |
-| 📧  | **Email Intelligence**              | Hunter.io, Snov.io, Prospeo                 |
-| 📚  | **Security Resources & Wordlists**  | SecLists                                    |
-| 🎯  | **Penetration Testing**             | Burp Suite, Metasploit, Sqlmap, Aircrack-ng |
-| 🔧  | **System & Process Analysis**       | Sysinternals, Autoruns, Process Explorer    |
+| #   | Category                               | Example Tools                               |
+| --- | -------------------------------------- | ------------------------------------------- |
+| 🔓  | **Data Breach & Password Security**    | DeHashed, Password Generator                |
+| 🔐  | **Encoding, Decoding & Crypto**        | CyberChef, Base64, JWT.io, Dogbolt          |
+| 🧬  | **Hash Analysis & Cracking**           | CrackStation, Hashcat, John the Ripper      |
+| 🕵️  | **OSINT & Reconnaissance**             | Sherlock, OSINT Framework, Who.is, crt.sh   |
+| 🌐  | **Network, DNS & Infrastructure**      | Nmap, Wireshark, Shodan, Snort              |
+| ⚠️  | **Vulnerability Databases**            | Exploit-DB, CVE, NVD, VulDB                 |
+| 🦠  | **Malware Analysis**                   | VirusTotal, ANY.RUN                         |
+| 🖼️  | **Steganography & Image Analysis**     | Aperi'Solve, StegSeek                       |
+| 📧  | **Email Intelligence**                 | Hunter.io, Snov.io, Prospeo                 |
+| 📚  | **Security Resources & Wordlists**     | SecLists                                    |
+| 🎯  | **Penetration Testing & Exploitation** | Burp Suite, Metasploit, Sqlmap, Aircrack-ng |
+| 🔧  | **System & Process Analysis**          | Sysinternals, Autoruns, Process Explorer    |
+| 🤖  | **AI Assistants**                      | ChatGPT, DeepSeek, Claude, Gemini           |
+| 💻  | **Coding Tools**                       | VS Code, Antigravity                        |
+| 🏴  | **CTF & Learning Platforms**           | TryHackMe, Hack The Box Academy, picoCTF    |
 
 ## 🧪 Free Labs Categories
 
@@ -84,13 +87,14 @@ Live Demo →
 ## ✨ Features
 
 - 🧭 **Sticky Navigation Bar** — Quick-jump categories with scroll-spy highlighting
-- 🔍 **Real-time search** — Filter tools instantly by name, description, or category
+- 🔍 **Real-time Search & Advanced Filters** — Filter tools by name, description, category, or difficulty
+- 🏷️ **Difficulty Tags & Skills** — Interactive tags for OSINT, CVEs, and lab difficulties
 - 🪟 **Tool Modal Popup** — Click any card for tool details, tags, and direct link
-- 🎨 **Modern dark theme** — Glassmorphism UI with smooth animations
-- ✨ **Mouse-follow glow** — Subtle cursor-tracking light effect
-- 📱 **Fully responsive** — Works on desktop, tablet, and mobile
-- ⚡ **No dependencies** — Pure HTML, CSS, and vanilla JavaScript
-- 🖼️ **Auto favicons** — Resolves brand icons for each tool automatically
+- 🎨 **Modern Dark Theme** — Glassmorphism UI with smooth animations
+- ✨ **Mouse-follow Glow** — Subtle cursor-tracking light effect
+- 📱 **Fully Responsive** — Works on desktop, tablet, and mobile
+- ⚡ **No Dependencies** — Pure HTML, CSS, and vanilla JavaScript
+- 🖼️ **Auto Favicons** — Resolves brand icons for each tool automatically
 
 <hr>
 
