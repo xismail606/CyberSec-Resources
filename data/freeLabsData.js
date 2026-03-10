@@ -16,7 +16,7 @@ const _meta = {
   'Forensics': ['🔬', 'cat-thm'],
   'Reverse Engineering': ['⚙️', 'cat-thm'],
   'Malware Analysis': ['🦠', 'cat-thm'],
-  'PrivEsc': ['⬆️', 'cat-thm'],
+  'Privilege Escalation': ['⬆️', 'cat-thm'],
   'Active Directory': ['🏢', 'cat-thm'],
   'CTF': ['🚩', 'cat-thm'],
   'PCAP Analysis': ['📡', 'cat-thm'],
