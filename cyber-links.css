@@ -440,6 +440,42 @@ body.no-glow::before {
   color: var(--accent-cyan);
 }
 
+/* ===== Difficulty Filters ===== */
+.difficulty-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 auto 30px;
+  max-width: 800px;
+}
+
+.diff-btn {
+  background: rgba(17, 24, 39, 0.6);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: var(--transition);
+}
+
+.diff-btn:hover {
+  border-color: rgba(239, 68, 68, 0.4);
+  color: var(--accent-cyan);
+  background: rgba(239, 68, 68, 0.08);
+}
+
+.diff-btn.active {
+  background: rgba(239, 68, 68, 0.15);
+  border-color: var(--accent-cyan);
+  color: var(--text-primary);
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.2);
+}
+
 /* ===== Stats Bar ===== */
 .stats-bar {
   display: flex;

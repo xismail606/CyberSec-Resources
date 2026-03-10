@@ -4,6 +4,7 @@
 
 const container = document.getElementById("categoriesContainer");
 let totalTools = 0;
+let currentDiffFilter = 'all';
 const isLabsPage = document.title.toLowerCase().includes("labs") || window.location.pathname.includes("free-labs");
 const itemLabel = isLabsPage ? "lab" : "tool";
 
@@ -27,12 +28,28 @@ function renderCategories(filter = "") {
 
   categories.forEach((cat) => {
     const filteredLinks = cat.links.filter(
-      (link) =>
-        !filter ||
-        link.name.toLowerCase().includes(filterLower) ||
-        link.desc.toLowerCase().includes(filterLower) ||
-        link.url.toLowerCase().includes(filterLower) ||
-        cat.name.toLowerCase().includes(filterLower),
+      (link) => {
+        const textMatch = !filter ||
+          link.name.toLowerCase().includes(filterLower) ||
+          link.desc.toLowerCase().includes(filterLower) ||
+          link.url.toLowerCase().includes(filterLower) ||
+          cat.name.toLowerCase().includes(filterLower);
+
+        let diffMatch = true;
+        if (currentDiffFilter !== 'all') {
+          const tags = link.tags || [];
+          const linkDiff = link.difficulty ? link.difficulty.toLowerCase() : "";
+          const activeFilter = currentDiffFilter.toLowerCase();
+          
+          if (activeFilter === 'info' || activeFilter === 'intro') {
+             diffMatch = linkDiff === 'info' || linkDiff === 'intro' || tags.includes('info') || tags.includes('intro');
+          } else {
+             diffMatch = linkDiff === activeFilter || tags.includes(activeFilter);
+          }
+        }
+        
+        return textMatch && diffMatch;
+      }
     );
 
     if (filteredLinks.length === 0) return;
@@ -163,6 +180,21 @@ if (searchInput) {
     debounceTimer = setTimeout(() => {
       renderCategories(e.target.value.trim());
     }, 200);
+  });
+}
+
+// ===== DIFFICULTY FILTERS =====
+const diffButtons = document.querySelectorAll(".diff-btn");
+if (diffButtons.length > 0) {
+  diffButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      diffButtons.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      
+      currentDiffFilter = btn.dataset.diff;
+      const searchVal = document.getElementById("searchInput")?.value.trim() || "";
+      renderCategories(searchVal);
+    });
   });
 }
 
