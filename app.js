@@ -335,3 +335,26 @@ document.addEventListener("keydown", (e) => {
   }
 })();
 
+// ===== TYPEWRITER ANIMATION =====
+(() => {
+  const el = document.querySelector(".typewriter");
+  if (!el) return;
+
+  const text = el.getAttribute("data-text") || "";
+  let i = 0;
+
+  function type() {
+    if (i <= text.length) {
+      el.textContent = text.slice(0, i);
+      i++;
+      setTimeout(type, 80);
+    } else {
+      // Keep cursor blinking for a moment, then hide it
+      setTimeout(() => el.classList.add("done"), 1500);
+    }
+  }
+
+  // Start typing after a short delay
+  setTimeout(type, 400);
+})();
+
