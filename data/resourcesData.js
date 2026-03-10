@@ -455,4 +455,85 @@ const categories = [
       },
     ],
   },
+  {
+    name: "AI Assistants",
+    icon: "🤖",
+    theme: "cat-ai",
+    links: [
+      {
+        name: "ChatGPT",
+        url: "https://chatgpt.com/",
+        desc: "AI-powered chatbot for research, coding & problem-solving",
+      },
+      {
+        name: "DeepSeek",
+        url: "https://chat.deepseek.com/",
+        desc: "Advanced AI assistant for reasoning & code generation",
+      },
+      {
+        name: "Claude",
+        url: "https://claude.ai/",
+        desc: "AI assistant by Anthropic for analysis, writing & coding",
+      },
+      {
+        name: "Gemini",
+        url: "https://gemini.google.com/",
+        desc: "Google's multimodal AI for search, code & creative tasks",
+      },
+      {
+        name: "Manus",
+        url: "https://manus.im/",
+        desc: "AI agent that completes complex tasks autonomously",
+      },
+      {
+        name: "Codex",
+        url: "https://chatgpt.com/codex",
+        desc: "ChatGPT's cloud-based coding agent for software tasks",
+      },
+    ],
+  },
+  {
+    name: "Coding Tools",
+    icon: "💻",
+    theme: "cat-coding",
+    links: [
+      {
+        name: "VS Code",
+        url: "https://code.visualstudio.com/",
+        desc: "Lightweight & powerful code editor with extensions ecosystem",
+      },
+      {
+        name: "Antigravity",
+        url: "https://antigravity.google/download",
+        desc: "Google's AI-powered agentic coding assistant",
+      },
+    ],
+  },
+  {
+    name: "CTF & Learning Platforms",
+    icon: "🏴",
+    theme: "cat-ctf",
+    links: [
+      {
+        name: "TryHackMe",
+        url: "https://tryhackme.com/",
+        desc: "Learn cybersecurity through hands-on guided labs & rooms",
+      },
+      {
+        name: "Hack The Box Academy",
+        url: "https://academy.hackthebox.com/",
+        desc: "Structured cybersecurity courses with hands-on exercises",
+      },
+      {
+        name: "picoCTF",
+        url: "https://picoctf.org/",
+        desc: "Free beginner-friendly CTF challenges for learning security",
+      },
+      {
+        name: "CyberTalents",
+        url: "https://cybertalents.com/",
+        desc: "CTF competitions & cybersecurity talent assessments",
+      },
+    ],
+  },
 ];

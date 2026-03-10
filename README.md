@@ -128,6 +128,39 @@ CyberSec-Resources/
 
 <hr>
 
+<!-- ================= USEFUL LINKS ================= -->
+
+## 🔗 Useful Links
+
+### 🤖 AI Assistants
+
+| Platform            | Link                                            |
+| ------------------- | ----------------------------------------------- |
+| **ChatGPT**         | [chatgpt.com](https://chatgpt.com/)             |
+| **DeepSeek**        | [chat.deepseek.com](https://chat.deepseek.com/) |
+| **Claude**          | [claude.ai](https://claude.ai/)                 |
+| **Gemini**          | [gemini.google.com](https://gemini.google.com/) |
+| **Manus**           | [manus.im](https://manus.im/)                   |
+| **Codex (ChatGPT)** | [chatgpt.com/codex](https://chatgpt.com/codex)  |
+
+### 💻 Coding Tools
+
+| Tool            | Link                                                               |
+| --------------- | ------------------------------------------------------------------ |
+| **VS Code**     | [code.visualstudio.com](https://code.visualstudio.com/)            |
+| **Antigravity** | [antigravity.google/download](https://antigravity.google/download) |
+
+### 🎯 CTF & Learning Platforms
+
+| Platform                 | Link                                                      |
+| ------------------------ | --------------------------------------------------------- |
+| **TryHackMe**            | [tryhackme.com](https://tryhackme.com/)                   |
+| **Hack The Box Academy** | [academy.hackthebox.com](https://academy.hackthebox.com/) |
+| **picoCTF**              | [picoctf.org](https://picoctf.org/)                       |
+| **CyberTalents**         | [cybertalents.com](https://cybertalents.com/)             |
+
+<hr>
+
 <!-- ================= AUTHOR ================= -->
 <h2 align="center"> 👤 Author </h2>
 
