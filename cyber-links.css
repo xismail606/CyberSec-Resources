@@ -34,7 +34,7 @@
   /* ===== Mouse Glow — tweak these to customize ===== */
   --glow-color: rgba(239, 68, 68, 0.05);
   --glow-color-inner: rgba(239, 68, 68, 0.09);
-  --glow-size: 200px;
+  --glow-size: 90px;
   --glow-opacity: 0;
   --x: 50%;
   --y: 50%;
