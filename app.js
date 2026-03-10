@@ -4,6 +4,8 @@
 
 const container = document.getElementById("categoriesContainer");
 let totalTools = 0;
+const isLabsPage = document.title.toLowerCase().includes("labs") || window.location.pathname.includes("free-labs");
+const itemLabel = isLabsPage ? "lab" : "tool";
 
 // Slugify helper — turns "Reverse Engineering" → "reverse-engineering"
 const slugify = (s) => s.toLowerCase().replace(/[^\w]+/g, "-").replace(/-+$/,"");
@@ -44,7 +46,7 @@ function renderCategories(filter = "") {
       <div class="category-header">
         <div class="category-icon">${cat.icon}</div>
         <h2 class="category-title">${cat.name}</h2>
-        <span class="category-count">${filteredLinks.length} tool${filteredLinks.length > 1 ? "s" : ""}</span>
+        <span class="category-count">${filteredLinks.length} ${itemLabel}${filteredLinks.length > 1 ? "s" : ""}</span>
       </div>
       <div class="links-grid"> 
         ${filteredLinks
@@ -222,7 +224,7 @@ document.body.addEventListener("click", (e) => {
     modalDesc.textContent = desc;
 
     if (url.includes("tryhackme.com")) {
-      modalSubtitle.textContent = "Intro • Intro";
+      modalSubtitle.textContent = "lab";
       modalOpenBtn.textContent = "Go to Room";
     } else {
       modalSubtitle.textContent = "Tool Details";
