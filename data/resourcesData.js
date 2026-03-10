@@ -490,6 +490,16 @@ const categories = [
         url: "https://chatgpt.com/codex",
         desc: "ChatGPT's cloud-based coding agent for software tasks",
       },
+      {
+        name: "Qwen",
+        url: "https://qwen.ai/home",
+        desc: "Alibaba's AI assistant for multilingual chat & reasoning",
+      },
+      {
+        name: "Kimi",
+        url: "https://www.kimi.com/",
+        desc: "Moonshot AI assistant with long-context understanding",
+      },
     ],
   },
   {
