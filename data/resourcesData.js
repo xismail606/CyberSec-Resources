@@ -351,6 +351,11 @@ const categories = [
         url: "https://www.vedbex.com/home",
         desc: "Vulnerability and exploit database search engine",
       },
+      {
+        name: "Zombie Package Detector",
+        url: "https://github.com/0xQenawy/zombie-package-detector",
+        desc: "Identify unmaintained dependencies by analyzing GitHub repository activity",
+      },
     ],
   },
   {
@@ -442,6 +447,11 @@ const categories = [
         url: "https://t.me/database_lookupbot",
         desc: "Lookup leaked data directly via Telegram bot",
       },
+      {
+        name: "Temp Mail",
+        url: "https://temp-mail.org/en/",
+        desc: "Disposable temporary email service to protect privacy and avoid spam",
+      },
     ],
   },
   {
@@ -520,6 +530,11 @@ const categories = [
         name: "Nuclei",
         url: "https://github.com/projectdiscovery/nuclei",
         desc: "Fast and customizable vulnerability scanner based on simple YAML based DSL",
+      },
+      {
+        name: "GTFOBins",
+        url: "https://gtfobins.org/",
+        desc: "Curated list of Unix binaries that can be used to bypass local security restrictions",
       },
     ],
   },
@@ -617,11 +632,6 @@ const categories = [
         url: "https://github.com/",
         desc: "Hosting for software development and version control using Git",
       },
-      {
-        name: "Zombie Package Detector",
-        url: "https://github.com/0xQenawy/zombie-package-detector",
-        desc: "Identify unmaintained dependencies by analyzing GitHub repository activity",
-      },
     ],
   },
   {
@@ -653,6 +663,11 @@ const categories = [
         name: "CyberTalents",
         url: "https://cybertalents.com/",
         desc: "CTF competitions & cybersecurity talent assessments",
+      },
+      {
+        name: "W3Schools",
+        url: "https://www.w3schools.com/",
+        desc: "Comprehensive web development tutorials and references",
       },
     ],
   },
