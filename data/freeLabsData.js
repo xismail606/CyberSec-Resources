@@ -2,31 +2,42 @@
 // Groups the flat roomsData array into categories for app.js
 
 const _meta = {
-  'Intro': ['🎓', 'cat-thm'],
-  'Linux': ['🐧', 'cat-thm'],
-  'Windows': ['🪟', 'cat-thm'],
-  'Web': ['🌐', 'cat-thm'],
-  'Basics': ['📘', 'cat-thm'],
-  'Recon': ['🔍', 'cat-thm'],
-  'Scripting': ['💻', 'cat-thm'],
-  'Networking': ['🔗', 'cat-thm'],
-  'Tooling': ['🔧', 'cat-thm'],
-  'Cryptography': ['🔐', 'cat-thm'],
-  'Steganography': ['🖼️', 'cat-thm'],
-  'Forensics': ['🔬', 'cat-thm'],
-  'Reverse Engineering': ['⚙️', 'cat-thm'],
-  'Malware Analysis': ['🦠', 'cat-thm'],
+  // 🟢 Foundation
+  'Intro':                ['🎓', 'cat-thm'],
+  'Basics':               ['📘', 'cat-thm'],
+  'Linux':                ['🐧', 'cat-thm'],
+  'Windows':              ['🪟', 'cat-thm'],
+  'Web':                  ['🌐', 'cat-thm'],
+
+  // 🔵 Core Skills
+  'Networking':           ['🔗', 'cat-thm'],
+  'Scripting':            ['💻', 'cat-thm'],
+  'Recon':                ['🔍', 'cat-thm'],
+  'Tooling':              ['🔧', 'cat-thm'],
+
+  // 🟣 Analysis & Investigation
+  'Cryptography':         ['🔐', 'cat-thm'],
+  'Steganography':        ['🖼️', 'cat-thm'],
+  'Forensics':            ['🔬', 'cat-thm'],
+  'PCAP Analysis':        ['📡', 'cat-thm'],
+
+  // 🟠 Offensive Skills
+  'Reverse Engineering':  ['⚙️', 'cat-thm'],
+  'Malware Analysis':     ['🦠', 'cat-thm'],
+  'Buffer Overflow':      ['💥', 'cat-thm'],
+  'Exploit Development':  ['🎯', 'cat-thm'],
+
+  // 🔴 Advanced Topics
   'Privilege Escalation': ['⬆️', 'cat-thm'],
-  'Active Directory': ['🏢', 'cat-thm'],
-  'CTF': ['🚩', 'cat-thm'],
-  'PCAP Analysis': ['📡', 'cat-thm'],
-  'Buffer Overflow': ['💥', 'cat-thm'],
-  'Android': ['📱', 'cat-thm'],
-  'Wi-Fi Hacking': ['📶', 'cat-thm'],
-  'Misc': ['📦', 'cat-thm'],
-  'Special Events': ['🎄', 'cat-thm'],
-  'Container Security': ['🐳', 'cat-thm'],
-  'Exploit Development': ['🎯', 'cat-thm']
+  'Active Directory':     ['🏢', 'cat-thm'],
+  'Container Security':   ['🐳', 'cat-thm'],
+  'Android':              ['📱', 'cat-thm'],
+  'Wi-Fi Hacking':        ['📶', 'cat-thm'],
+
+  // ⚪ Misc
+  'CTF':                  ['🚩', 'cat-thm'],
+  'Special Events':       ['🎄', 'cat-thm'],
+  'Misc':                 ['📦', 'cat-thm'],
 };
 
 const _urlName = (n) => n.toLowerCase().replace(/ /g, '').replace(/[^\w-]+/g, '');
