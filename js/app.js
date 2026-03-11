@@ -115,6 +115,11 @@ renderCategories();
 // ===== NAV LINKS =====
 const navLinksContainer = document.getElementById("navLinks");
 if (navLinksContainer) {
+  let isDraggingNav = false;
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
   categories.forEach((cat) => {
     const a = document.createElement("a");
     a.href = `#cat-${slugify(cat.name)}`;
@@ -122,6 +127,8 @@ if (navLinksContainer) {
     a.textContent = `${cat.icon} ${cat.name}`;
     a.addEventListener("click", (e) => {
       e.preventDefault();
+      if (isDraggingNav) return;
+
       const target = document.getElementById(`cat-${slugify(cat.name)}`);
       if (target) {
         target.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -131,6 +138,65 @@ if (navLinksContainer) {
       document.getElementById("navToggle").classList.remove("open");
     });
     navLinksContainer.appendChild(a);
+  });
+
+  // Mouse Drag to Scroll with Momentum
+  let momentumID;
+  let velX = 0;
+
+  function beginMomentum() {
+    cancelAnimationFrame(momentumID);
+    momentumID = requestAnimationFrame(momentumLoop);
+  }
+
+  function momentumLoop() {
+    if (Math.abs(velX) > 0.5) {
+      navLinksContainer.scrollLeft -= velX;
+      velX *= 0.95; // Friction multiplier
+      momentumID = requestAnimationFrame(momentumLoop);
+    }
+  }
+
+  navLinksContainer.addEventListener('mousedown', (e) => {
+    isDown = true;
+    isDraggingNav = false;
+    navLinksContainer.style.cursor = 'grabbing';
+    navLinksContainer.style.userSelect = 'none';
+    startX = e.pageX - navLinksContainer.offsetLeft;
+    scrollLeft = navLinksContainer.scrollLeft;
+    cancelAnimationFrame(momentumID);
+  });
+
+  navLinksContainer.addEventListener('mouseleave', () => {
+    if (!isDown) return;
+    isDown = false;
+    navLinksContainer.style.cursor = '';
+    navLinksContainer.style.removeProperty('user-select');
+    beginMomentum();
+  });
+
+  navLinksContainer.addEventListener('mouseup', () => {
+    isDown = false;
+    setTimeout(() => { isDraggingNav = false; }, 50); // Small delay to prevent click
+    navLinksContainer.style.cursor = '';
+    navLinksContainer.style.removeProperty('user-select');
+    beginMomentum();
+  });
+
+  navLinksContainer.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - navLinksContainer.offsetLeft;
+    const walk = (x - startX) * 2;
+    
+    // Calculate velocity for momentum
+    const prevScrollLeft = navLinksContainer.scrollLeft;
+    navLinksContainer.scrollLeft = scrollLeft - walk;
+    velX = prevScrollLeft - navLinksContainer.scrollLeft;
+
+    if (Math.abs(walk) > 5) {
+      isDraggingNav = true;
+    }
   });
 }
 
