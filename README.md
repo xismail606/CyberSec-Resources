@@ -47,10 +47,10 @@ Live Demo →
 
 ## 📄 Pages
 
-| Page                      | Description                                                                  |
-| ------------------------- | ---------------------------------------------------------------------------- |
+| Page                      | Description                                                                    |
+| ------------------------- | ------------------------------------------------------------------------------ |
 | **🛡️ CyberSec Resources** | 110+ tools across 17 categories (OSINT, hashing, networking, pentesting, etc.) |
-| **💻 Free Labs**          | 469 free TryHackMe rooms across 25 categories (Intro → Insane difficulty)    |
+| **💻 Free Labs**          | 469 free TryHackMe rooms across 25 categories (Intro → Insane difficulty)      |
 
 <hr>
 
@@ -58,29 +58,32 @@ Live Demo →
 
 ## 📂 Resource Categories
 
-| #   | Category                               | Example Tools                               |
-| --- | -------------------------------------- | ------------------------------------------- |
-| 🔓  | **Data Breach & Password Security**    | DeHashed, Password Generator                |
-| 🔐  | **Encoding, Decoding & Crypto**        | CyberChef, Base64, JWT.io, Dogbolt          |
-| 🧬  | **Hash Analysis & Cracking**           | CrackStation, Hashcat, John the Ripper      |
-| 🕵️  | **OSINT & Reconnaissance**             | Sherlock, OSINT Framework, Who.is, crt.sh   |
-| 🌐  | **Network, DNS & Infrastructure**      | Nmap, Wireshark, Shodan, Snort              |
-| ⚠️  | **Vulnerability Databases**            | Exploit-DB, CVE, NVD, VulDB                 |
-| 🦠  | **Malware Analysis**                   | VirusTotal, ANY.RUN                         |
-| 🖼️  | **Steganography & Image Analysis**     | Aperi'Solve, StegSeek                       |
-| 📧  | **Email Intelligence**                 | Hunter.io, Snov.io, Prospeo                 |
-| 📚  | **Security Resources & Wordlists**     | SecLists, OAuth2 Threat Model               |
-| 🎯  | **Penetration Testing & Exploitation** | Burp Suite, Metasploit, Sqlmap, Nuclei, ffuf|
-| 🔧  | **System & Process Analysis**          | Sysinternals, Autoruns, Process Explorer    |
-| 🤖  | **AI Assistants**                      | ChatGPT, DeepSeek, Claude, Gemini           |
-| 💻  | **Coding Tools**                       | VS Code, Antigravity, GitHub                |
-| 🏴  | **CTF & Learning Platforms**           | TryHackMe, Hack The Box Academy, PortSwigger|
-| 🧩  | **Browser Extensions**                 | FoxyProxy, Wappalyzer, uBlock Origin, DotGit|
-| 📝  | **Reporting & Note Taking**            | Obsidian, Notion, XMind                     |
+| #   | Category                               | Example Tools                                |
+| --- | -------------------------------------- | -------------------------------------------- |
+| 🔓  | **Data Breach & Password Security**    | DeHashed, Password Generator                 |
+| 🔐  | **Encoding, Decoding & Crypto**        | CyberChef, Base64, JWT.io, Dogbolt           |
+| 🧬  | **Hash Analysis & Cracking**           | CrackStation, Hashcat, John the Ripper       |
+| 🕵️  | **OSINT & Reconnaissance**             | Sherlock, OSINT Framework, Who.is, crt.sh    |
+| 🌐  | **Network, DNS & Infrastructure**      | Nmap, Wireshark, Shodan, Snort               |
+| ⚠️  | **Vulnerability Databases**            | Exploit-DB, CVE, NVD, VulDB                  |
+| 🦠  | **Malware Analysis**                   | VirusTotal, ANY.RUN                          |
+| 🖼️  | **Steganography & Image Analysis**     | Aperi'Solve, StegSeek                        |
+| 📧  | **Email Intelligence**                 | Hunter.io, Snov.io, Prospeo                  |
+| 📚  | **Security Resources & Wordlists**     | SecLists, OAuth2 Threat Model                |
+| 🎯  | **Penetration Testing & Exploitation** | Burp Suite, Metasploit, Sqlmap, Nuclei, ffuf |
+| 🔧  | **System & Process Analysis**          | Sysinternals, Autoruns, Process Explorer     |
+| 🤖  | **AI Assistants**                      | ChatGPT, DeepSeek, Claude, Gemini            |
+| 💻  | **Coding Tools**                       | VS Code, Antigravity, GitHub                 |
+| 🏴  | **CTF & Learning Platforms**           | TryHackMe, Hack The Box Academy, PortSwigger |
+| 🧩  | **Browser Extensions**                 | FoxyProxy, Wappalyzer, uBlock Origin, DotGit |
+| 📝  | **Reporting & Note Taking**            | Obsidian, Notion, XMind                      |
 
 ## 🧪 Free Labs Categories
 
 > 25 categories covering Intro, Linux, Windows, Web, Recon, Scripting, Networking, Tooling, Cryptography, Steganography, Forensics, Reverse Engineering, Malware Analysis, PrivEsc, Active Directory, CTF, PCAP Analysis, Buffer Overflow, Android, Wi-Fi Hacking, Misc, Special Events, Container Security, Exploit Development, and more.
+
+> All TryHackMe room links belong to TryHackMe.
+> This website only indexes publicly available links for educational purposes.
 
 <hr>
 
