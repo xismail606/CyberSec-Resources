@@ -1,103 +1,61 @@
 // ===== CyberSec Resources Data =====
 const categories = [
   {
-    name: "Data Breach & Password Security",
-    icon: "🔓",
-    theme: "cat-breach",
+    name: "CTF & Learning Platforms",
+    icon: "🏴",
+    theme: "cat-ctf",
     links: [
       {
-        name: "DeHashed",
-        url: "https://dehashed.com/",
-        desc: "Search leaked databases for compromised credentials",
+        name: "PortSwigger Web Security Academy",
+        url: "https://portswigger.net/web-security/learning-paths",
+        desc: "Free, interactive web security training from the creators of Burp Suite",
       },
       {
-        name: "Password Checker & Generator",
-        url: "https://0xqenawy.github.io/password-checker/generator.html",
-        desc: "Generate strong passwords & test their strength",
+        name: "TryHackMe",
+        url: "https://tryhackme.com/",
+        desc: "Learn cybersecurity through hands-on guided labs & rooms",
       },
       {
-        name: "SECURE-PASSWORD-GENERATOR",
-        url: "https://github.com/xismail606/SECURE-PASSWORD-GENERATOR",
-        desc: "Bash script that generates cryptographically secure passwords",
+        name: "Hack The Box Academy",
+        url: "https://academy.hackthebox.com/",
+        desc: "Structured cybersecurity courses with hands-on exercises",
+      },
+      {
+        name: "picoCTF",
+        url: "https://picoctf.org/",
+        desc: "Free beginner-friendly CTF challenges for learning security",
+      },
+      {
+        name: "CyberTalents",
+        url: "https://cybertalents.com/",
+        desc: "CTF competitions & cybersecurity talent assessments",
+      },
+      {
+        name: "W3Schools",
+        url: "https://www.w3schools.com/",
+        desc: "Comprehensive web development tutorials and references",
       },
     ],
   },
   {
-    name: "Encoding, Decoding & Crypto",
-    icon: "🔐",
-    theme: "cat-encode",
+    name: "Security Resources & Wordlists",
+    icon: "📚",
+    theme: "cat-resources",
     links: [
       {
-        name: "Base64 Decode",
-        url: "https://www.base64decode.org/",
-        desc: "Encode & decode Base64 strings online",
+        name: "SecLists",
+        url: "https://github.com/danielmiessler/SecLists",
+        desc: "Massive collection of wordlists for fuzzing & pentesting",
       },
       {
-        name: "dCode Tools",
-        url: "https://www.dcode.fr/tools-list#character_encoding",
-        desc: "Solve ciphers, decode encodings & analyze crypto",
+        name: "OAuth2 Threat Model",
+        url: "https://web.archive.org/web/20210607123429/https://www.binarybrotherhood.io/oauth2_threat_model.html",
+        desc: "Comprehensive threat model for OAuth2 implementations",
       },
       {
-        name: "CyberChef",
-        url: "https://gchq.github.io/CyberChef/",
-        desc: "Data encoding, encryption & analysis swiss army knife",
-      },
-      {
-        name: "Binary to Text",
-        url: "https://codebeautify.org/binary-to-text",
-        desc: "Convert binary data to readable text format",
-      },
-      {
-        name: "JWT.io",
-        url: "https://www.jwt.io/",
-        desc: "Decode, verify & debug JSON Web Tokens",
-      },
-      {
-        name: "Dogbolt Decompiler",
-        url: "https://dogbolt.org/",
-        desc: "Decompile binaries online using multiple decompilers",
-      },
-    ],
-  },
-  {
-    name: "Hash Analysis & Cracking",
-    icon: "🧬",
-    theme: "cat-hash",
-    links: [
-      {
-        name: "CrackStation",
-        url: "https://crackstation.net/",
-        desc: "Crack password hashes using massive lookup tables",
-      },
-      {
-        name: "Hash Analyzer",
-        url: "https://www.tunnelsup.com/hash-analyzer/",
-        desc: "Identify unknown hash types automatically",
-      },
-      {
-        name: "SHA256 Encrypt/Decrypt",
-        url: "https://10015.io/tools/sha256-encrypt-decrypt",
-        desc: "Generate & verify SHA256 hashes online",
-      },
-      {
-        name: "SHA1 Online",
-        url: "https://www.sha1-online.com/",
-        desc: "Generate SHA1 hashes & reverse lookup",
-      },
-      {
-        name: "Hashes.com",
-        url: "https://hashes.com/en/decrypt/hash",
-        desc: "Decrypt hashes with a large rainbow table database",
-      },
-      {
-        name: "Hashcat Example Hashes",
-        url: "https://hashcat.net/wiki/doku.php?id=example_hashes",
-        desc: "Reference list of all Hashcat-supported hash types",
-      },
-      {
-        name: "John the Ripper",
-        url: "https://www.openwall.com/john/",
-        desc: "Crack passwords offline using dictionary & brute-force attacks",
+        name: "Martian1337 Bug Bounty Notes",
+        url: "https://martian1337.gitbook.io/docs/notes/security-research/bug-bounty",
+        desc: "Extensive notes and methodology for bug bounty hunting",
       },
     ],
   },
@@ -200,6 +158,43 @@ const categories = [
     ],
   },
   {
+    name: "Email Intelligence",
+    icon: "📧",
+    theme: "cat-email",
+    links: [
+      {
+        name: "Hunter.io",
+        url: "https://hunter.io/?via=annie&gad_source=1&gad_campaignid=22707266086&gclid=EAIaIQobChMInbi-ipnJkgMVuZRQBh1TTgv-EAAYASAAEgLNDfD_BwE",
+        desc: "Find & verify professional email addresses by domain",
+      },
+      {
+        name: "Snov.io",
+        url: "https://app.snov.io/",
+        desc: "Find emails, verify deliverability & run outreach",
+      },
+      {
+        name: "AnyMailFinder",
+        url: "https://newapp.anymailfinder.com/auth/login?successUrl=https%3A%2F%2Fnewapp.anymailfinder.com%2Fsearch%2Fsingle",
+        desc: "Discover verified email addresses for any domain",
+      },
+      {
+        name: "Prospeo",
+        url: "https://prospeo.io/login",
+        desc: "Find decision-maker emails for sales prospecting",
+      },
+      {
+        name: "DB Lookup Bot (Telegram)",
+        url: "https://t.me/database_lookupbot",
+        desc: "Lookup leaked data directly via Telegram bot",
+      },
+      {
+        name: "Temp Mail",
+        url: "https://temp-mail.org/en/",
+        desc: "Disposable temporary email service to protect privacy and avoid spam",
+      },
+    ],
+  },
+  {
     name: "Network, DNS & Infrastructure",
     icon: "🌐",
     theme: "cat-network",
@@ -253,11 +248,6 @@ const categories = [
         name: "httpx",
         url: "https://github.com/projectdiscovery/httpx",
         desc: "Fast & multi-purpose HTTP toolkit for reconnaissance and probing",
-      },
-      {
-        name: "PageSpeed Insights",
-        url: "https://pagespeed.web.dev/",
-        desc: "Analyze website speed & performance metrics",
       },
       {
         name: "WiGLE",
@@ -314,6 +304,11 @@ const categories = [
         url: "https://www.kali.org/tools/theharvester/",
         desc: "OSINT tool to gather emails, subdomains, hosts, and employee names",
       },
+      {
+        name: "PageSpeed Insights",
+        url: "https://pagespeed.web.dev/",
+        desc: "Analyze website speed & performance metrics",
+      },
     ],
   },
   {
@@ -355,124 +350,6 @@ const categories = [
         name: "Zombie Package Detector",
         url: "https://github.com/0xQenawy/zombie-package-detector",
         desc: "Identify unmaintained dependencies by analyzing GitHub repository activity",
-      },
-    ],
-  },
-  {
-    name: "Malware Analysis",
-    icon: "🦠",
-    theme: "cat-malware",
-    links: [
-      {
-        name: "ANY.RUN",
-        url: "https://app.any.run/tasks/a66178de-7596-4a05-945d-704dbf6b3b90",
-        desc: "Run & analyze malware behavior in a live sandbox",
-      },
-      {
-        name: "Spectrum Analyzer",
-        url: "https://academo.org/demos/spectrum-analyzer/",
-        desc: "Visualize audio frequency spectrum in real time",
-      },
-      {
-        name: "VirusTotal",
-        url: "https://www.virustotal.com/gui/home/upload",
-        desc: "Scan files, URLs & IPs with 70+ antivirus engines",
-      },
-      {
-        name: "JADX",
-        url: "https://github.com/skylot/jadx",
-        desc: "Dex to Java decompiler for Android APKs",
-      },
-      {
-        name: "MobSF",
-        url: "https://github.com/MobSF/Mobile-Security-Framework-MobSF",
-        desc: "Mobile Security Framework for automated Android/iOS/Windows testing",
-      },
-      {
-        name: "Decompiler.com",
-        url: "https://www.decompiler.com/",
-        desc: "Online Java, Android, Python, and C# decompiler",
-      },
-    ],
-  },
-  {
-    name: "Steganography & Image Analysis",
-    icon: "🖼️",
-    theme: "cat-stego",
-    links: [
-      {
-        name: "Aperi'Solve",
-        url: "https://www.aperisolve.com/",
-        desc: "Automatically detect & extract hidden data in images",
-      },
-      {
-        name: "0xRick Stego Tools",
-        url: "https://0xrick.github.io/lists/stego/#web-tools",
-        desc: "Curated list of steganography tools & techniques",
-      },
-      {
-        name: "StegSeek",
-        url: "https://github.com/RickdeJager/StegSeek",
-        desc: "Brute-force steghide passphrases at high speed",
-      },
-    ],
-  },
-  {
-    name: "Email Intelligence",
-    icon: "📧",
-    theme: "cat-email",
-    links: [
-      {
-        name: "Hunter.io",
-        url: "https://hunter.io/?via=annie&gad_source=1&gad_campaignid=22707266086&gclid=EAIaIQobChMInbi-ipnJkgMVuZRQBh1TTgv-EAAYASAAEgLNDfD_BwE",
-        desc: "Find & verify professional email addresses by domain",
-      },
-      {
-        name: "Snov.io",
-        url: "https://app.snov.io/",
-        desc: "Find emails, verify deliverability & run outreach",
-      },
-      {
-        name: "AnyMailFinder",
-        url: "https://newapp.anymailfinder.com/auth/login?successUrl=https%3A%2F%2Fnewapp.anymailfinder.com%2Fsearch%2Fsingle",
-        desc: "Discover verified email addresses for any domain",
-      },
-      {
-        name: "Prospeo",
-        url: "https://prospeo.io/login",
-        desc: "Find decision-maker emails for sales prospecting",
-      },
-      {
-        name: "DB Lookup Bot (Telegram)",
-        url: "https://t.me/database_lookupbot",
-        desc: "Lookup leaked data directly via Telegram bot",
-      },
-      {
-        name: "Temp Mail",
-        url: "https://temp-mail.org/en/",
-        desc: "Disposable temporary email service to protect privacy and avoid spam",
-      },
-    ],
-  },
-  {
-    name: "Security Resources & Wordlists",
-    icon: "📚",
-    theme: "cat-resources",
-    links: [
-      {
-        name: "SecLists",
-        url: "https://github.com/danielmiessler/SecLists",
-        desc: "Massive collection of wordlists for fuzzing & pentesting",
-      },
-      {
-        name: "OAuth2 Threat Model",
-        url: "https://web.archive.org/web/20210607123429/https://www.binarybrotherhood.io/oauth2_threat_model.html",
-        desc: "Comprehensive threat model for OAuth2 implementations",
-      },
-      {
-        name: "Martian1337 Bug Bounty Notes",
-        url: "https://martian1337.gitbook.io/docs/notes/security-research/bug-bounty",
-        desc: "Extensive notes and methodology for bug bounty hunting",
       },
     ],
   },
@@ -539,6 +416,166 @@ const categories = [
     ],
   },
   {
+    name: "Data Breach & Password Security",
+    icon: "🔓",
+    theme: "cat-breach",
+    links: [
+      {
+        name: "DeHashed",
+        url: "https://dehashed.com/",
+        desc: "Search leaked databases for compromised credentials",
+      },
+      {
+        name: "Password Checker & Generator",
+        url: "https://0xqenawy.github.io/password-checker/generator.html",
+        desc: "Generate strong passwords & test their strength",
+      },
+      {
+        name: "SECURE-PASSWORD-GENERATOR",
+        url: "https://github.com/xismail606/SECURE-PASSWORD-GENERATOR",
+        desc: "Bash script that generates cryptographically secure passwords",
+      },
+    ],
+  },
+  {
+    name: "Encoding, Decoding & Crypto",
+    icon: "🔐",
+    theme: "cat-encode",
+    links: [
+      {
+        name: "Base64 Decode",
+        url: "https://www.base64decode.org/",
+        desc: "Encode & decode Base64 strings online",
+      },
+      {
+        name: "dCode Tools",
+        url: "https://www.dcode.fr/tools-list#character_encoding",
+        desc: "Solve ciphers, decode encodings & analyze crypto",
+      },
+      {
+        name: "CyberChef",
+        url: "https://gchq.github.io/CyberChef/",
+        desc: "Data encoding, encryption & analysis swiss army knife",
+      },
+      {
+        name: "Binary to Text",
+        url: "https://codebeautify.org/binary-to-text",
+        desc: "Convert binary data to readable text format",
+      },
+      {
+        name: "JWT.io",
+        url: "https://www.jwt.io/",
+        desc: "Decode, verify & debug JSON Web Tokens",
+      },
+    ],
+  },
+  {
+    name: "Hash Analysis & Cracking",
+    icon: "🧬",
+    theme: "cat-hash",
+    links: [
+      {
+        name: "CrackStation",
+        url: "https://crackstation.net/",
+        desc: "Crack password hashes using massive lookup tables",
+      },
+      {
+        name: "Hash Analyzer",
+        url: "https://www.tunnelsup.com/hash-analyzer/",
+        desc: "Identify unknown hash types automatically",
+      },
+      {
+        name: "SHA256 Encrypt/Decrypt",
+        url: "https://10015.io/tools/sha256-encrypt-decrypt",
+        desc: "Generate & verify SHA256 hashes online",
+      },
+      {
+        name: "SHA1 Online",
+        url: "https://www.sha1-online.com/",
+        desc: "Generate SHA1 hashes & reverse lookup",
+      },
+      {
+        name: "Hashes.com",
+        url: "https://hashes.com/en/decrypt/hash",
+        desc: "Decrypt hashes with a large rainbow table database",
+      },
+      {
+        name: "Hashcat Example Hashes",
+        url: "https://hashcat.net/wiki/doku.php?id=example_hashes",
+        desc: "Reference list of all Hashcat-supported hash types",
+      },
+      {
+        name: "John the Ripper",
+        url: "https://www.openwall.com/john/",
+        desc: "Crack passwords offline using dictionary & brute-force attacks",
+      },
+    ],
+  },
+  {
+    name: "Malware Analysis",
+    icon: "🦠",
+    theme: "cat-malware",
+    links: [
+      {
+        name: "ANY.RUN",
+        url: "https://app.any.run/tasks/a66178de-7596-4a05-945d-704dbf6b3b90",
+        desc: "Run & analyze malware behavior in a live sandbox",
+      },
+      {
+        name: "VirusTotal",
+        url: "https://www.virustotal.com/gui/home/upload",
+        desc: "Scan files, URLs & IPs with 70+ antivirus engines",
+      },
+      {
+        name: "JADX",
+        url: "https://github.com/skylot/jadx",
+        desc: "Dex to Java decompiler for Android APKs",
+      },
+      {
+        name: "MobSF",
+        url: "https://github.com/MobSF/Mobile-Security-Framework-MobSF",
+        desc: "Mobile Security Framework for automated Android/iOS/Windows testing",
+      },
+      {
+        name: "Decompiler.com",
+        url: "https://www.decompiler.com/",
+        desc: "Online Java, Android, Python, and C# decompiler",
+      },
+      {
+        name: "Dogbolt Decompiler",
+        url: "https://dogbolt.org/",
+        desc: "Decompile binaries online using multiple decompilers",
+      },
+    ],
+  },
+  {
+    name: "Steganography & Image Analysis",
+    icon: "🖼️",
+    theme: "cat-stego",
+    links: [
+      {
+        name: "Aperi'Solve",
+        url: "https://www.aperisolve.com/",
+        desc: "Automatically detect & extract hidden data in images",
+      },
+      {
+        name: "0xRick Stego Tools",
+        url: "https://0xrick.github.io/lists/stego/#web-tools",
+        desc: "Curated list of steganography tools & techniques",
+      },
+      {
+        name: "StegSeek",
+        url: "https://github.com/RickdeJager/StegSeek",
+        desc: "Brute-force steghide passphrases at high speed",
+      },
+      {
+        name: "Spectrum Analyzer",
+        url: "https://academo.org/demos/spectrum-analyzer/",
+        desc: "Visualize audio frequency spectrum in real time",
+      },
+    ],
+  },
+  {
     name: "System & Process Analysis",
     icon: "🔧",
     theme: "cat-system",
@@ -562,6 +599,70 @@ const categories = [
         name: "Process Explorer",
         url: "https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer",
         desc: "Inspect running processes, DLLs & system handles in detail",
+      },
+    ],
+  },
+  {
+    name: "Browser Extensions",
+    icon: "🧩",
+    theme: "cat-extensions",
+    links: [
+      {
+        name: "uBlock Origin",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/",
+        desc: "Efficient, open-source ad and tracker blocker",
+      },
+      {
+        name: "Wappalyzer",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/",
+        desc: "Identify technologies on websites, frameworks, CMS, and more",
+      },
+      {
+        name: "FoxyProxy Standard",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search",
+        desc: "Advanced proxy management for Firefox, easily switch between proxies like Burp",
+      },
+      {
+        name: "Link Gopher",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/link-gopher/",
+        desc: "Extract, sort and deduplicate links from webpages",
+      },
+      {
+        name: "PwnFox",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/pwnfox/",
+        desc: "Firefox proxy add-on for security tools like Burp and ZAP",
+      },
+      {
+        name: "Retire.js",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/retire-js/",
+        desc: "Scan web apps for vulnerable JavaScript libraries",
+      },
+      {
+        name: "DotGit",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/dotgit/",
+        desc: "Check for exposed .git directories and files",
+      },
+    ],
+  },
+  {
+    name: "Coding Tools",
+    icon: "💻",
+    theme: "cat-coding",
+    links: [
+      {
+        name: "VS Code",
+        url: "https://code.visualstudio.com/",
+        desc: "Lightweight & powerful code editor with extensions ecosystem",
+      },
+      {
+        name: "Antigravity",
+        url: "https://antigravity.google/download",
+        desc: "Google's AI-powered agentic coding assistant",
+      },
+      {
+        name: "GitHub",
+        url: "https://github.com/",
+        desc: "Hosting for software development and version control using Git",
       },
     ],
   },
@@ -609,107 +710,6 @@ const categories = [
         name: "Kimi",
         url: "https://www.kimi.com/",
         desc: "Moonshot AI assistant with long-context understanding",
-      },
-    ],
-  },
-  {
-    name: "Coding Tools",
-    icon: "💻",
-    theme: "cat-coding",
-    links: [
-      {
-        name: "VS Code",
-        url: "https://code.visualstudio.com/",
-        desc: "Lightweight & powerful code editor with extensions ecosystem",
-      },
-      {
-        name: "Antigravity",
-        url: "https://antigravity.google/download",
-        desc: "Google's AI-powered agentic coding assistant",
-      },
-      {
-        name: "GitHub",
-        url: "https://github.com/",
-        desc: "Hosting for software development and version control using Git",
-      },
-    ],
-  },
-  {
-    name: "CTF & Learning Platforms",
-    icon: "🏴",
-    theme: "cat-ctf",
-    links: [
-      {
-        name: "PortSwigger Web Security Academy",
-        url: "https://portswigger.net/web-security/learning-paths",
-        desc: "Free, interactive web security training from the creators of Burp Suite",
-      },
-      {
-        name: "TryHackMe",
-        url: "https://tryhackme.com/",
-        desc: "Learn cybersecurity through hands-on guided labs & rooms",
-      },
-      {
-        name: "Hack The Box Academy",
-        url: "https://academy.hackthebox.com/",
-        desc: "Structured cybersecurity courses with hands-on exercises",
-      },
-      {
-        name: "picoCTF",
-        url: "https://picoctf.org/",
-        desc: "Free beginner-friendly CTF challenges for learning security",
-      },
-      {
-        name: "CyberTalents",
-        url: "https://cybertalents.com/",
-        desc: "CTF competitions & cybersecurity talent assessments",
-      },
-      {
-        name: "W3Schools",
-        url: "https://www.w3schools.com/",
-        desc: "Comprehensive web development tutorials and references",
-      },
-    ],
-  },
-  {
-    name: "Browser Extensions",
-    icon: "🧩",
-    theme: "cat-extensions",
-    links: [
-      {
-        name: "uBlock Origin",
-        url: "https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/",
-        desc: "Efficient, open-source ad and tracker blocker",
-      },
-      {
-        name: "Wappalyzer",
-        url: "https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/",
-        desc: "Identify technologies on websites, frameworks, CMS, and more",
-      },
-      {
-        name: "FoxyProxy Standard",
-        url: "https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search",
-        desc: "Advanced proxy management for Firefox, easily switch between proxies like Burp",
-      },
-      {
-        name: "Link Gopher",
-        url: "https://addons.mozilla.org/en-US/firefox/addon/link-gopher/",
-        desc: "Extract, sort and deduplicate links from webpages",
-      },
-      {
-        name: "PwnFox",
-        url: "https://addons.mozilla.org/en-US/firefox/addon/pwnfox/",
-        desc: "Firefox proxy add-on for security tools like Burp and ZAP",
-      },
-      {
-        name: "Retire.js",
-        url: "https://addons.mozilla.org/en-US/firefox/addon/retire-js/",
-        desc: "Scan web apps for vulnerable JavaScript libraries",
-      },
-      {
-        name: "DotGit",
-        url: "https://addons.mozilla.org/en-US/firefox/addon/dotgit/",
-        desc: "Check for exposed .git directories and files",
       },
     ],
   },

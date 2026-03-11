@@ -20,7 +20,7 @@ const roomsData = [
     { name: 'Intro to Research', category: 'Intro', difficulty: 'Intro', description: 'Learn how to use search engines to find information.', tags: ['intro', 'osint', 'research'] },
     { name: 'Cat Regex', category: 'Intro', difficulty: 'Intro', description: 'Learn how to use regular expressions.', tags: ['intro', 'scripting'] },
     { name: 'Careers in Cyber', category: 'Intro', difficulty: 'Intro', description: 'Learn about the different careers in cyber security.', tags: ['intro', 'career'] },
-    { name: 'jr sec analyst intro uxo', category: 'Intro', difficulty: 'Intro', description: 'An introduction to the role of a junior security analyst.', tags: ['intro', 'career', 'blue team'] },
+    { name: 'Junior Security Analyst Intro', slug: 'jrsecanalystintrouxo', category: 'Intro', difficulty: 'Intro', description: 'An introduction to the role of a junior security analyst.', tags: ['intro', 'career', 'blue team'] },
     { name: 'Linux Modules', category: 'Linux', difficulty: 'Easy', description: 'Learn about Linux kernel modules.', tags: ['easy', 'linux', 'kernel'] },
     { name: 'Linux Fundamentals Part 1', category: 'Linux', difficulty: 'Easy', description: 'Get started with the basic Linux commands and concepts.', tags: ['easy', 'linux', 'bash', 'commands'] },
     { name: 'Linux Fundamentals Part 2', category: 'Linux', difficulty: 'Easy', description: 'Continue your journey with more advanced Linux commands.', tags: ['easy', 'linux', 'bash', 'permissions'] },
