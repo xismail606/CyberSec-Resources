@@ -250,6 +250,11 @@ const categories = [
         desc: "Mass reverse DNS lookups for IP ranges",
       },
       {
+        name: "httpx",
+        url: "https://github.com/projectdiscovery/httpx",
+        desc: "Fast & multi-purpose HTTP toolkit for reconnaissance and probing",
+      },
+      {
         name: "PageSpeed Insights",
         url: "https://pagespeed.web.dev/",
         desc: "Analyze website speed & performance metrics",
@@ -284,6 +289,26 @@ const categories = [
         url: "https://openvpn.net/",
         desc: "Create secure encrypted VPN tunnels",
       },
+      {
+        name: "SecurityTrails",
+        url: "https://securitytrails.com/",
+        desc: "Comprehensive current and historical DNS and domain data",
+      },
+      {
+        name: "DNSDumpster",
+        url: "https://dnsdumpster.com/",
+        desc: "DNS recon & research, find & lookup dns records",
+      },
+      {
+        name: "Amass",
+        url: "https://github.com/owasp-amass/amass",
+        desc: "In-depth Attack Surface Mapping and Asset Discovery",
+      },
+      {
+        name: "Subfinder",
+        url: "https://github.com/projectdiscovery/subfinder",
+        desc: "Fast passive subdomain enumeration tool",
+      },
     ],
   },
   {
@@ -316,6 +341,11 @@ const categories = [
         url: "https://vuldb.com/",
         desc: "Track & research latest vulnerability disclosures",
       },
+      {
+        name: "Vedbex",
+        url: "https://www.vedbex.com/home",
+        desc: "Vulnerability and exploit database search engine",
+      },
     ],
   },
   {
@@ -337,6 +367,21 @@ const categories = [
         name: "VirusTotal",
         url: "https://www.virustotal.com/gui/home/upload",
         desc: "Scan files, URLs & IPs with 70+ antivirus engines",
+      },
+      {
+        name: "JADX",
+        url: "https://github.com/skylot/jadx",
+        desc: "Dex to Java decompiler for Android APKs",
+      },
+      {
+        name: "MobSF",
+        url: "https://github.com/MobSF/Mobile-Security-Framework-MobSF",
+        desc: "Mobile Security Framework for automated Android/iOS/Windows testing",
+      },
+      {
+        name: "Decompiler.com",
+        url: "https://www.decompiler.com/",
+        desc: "Online Java, Android, Python, and C# decompiler",
       },
     ],
   },
@@ -404,6 +449,16 @@ const categories = [
         url: "https://github.com/danielmiessler/SecLists",
         desc: "Massive collection of wordlists for fuzzing & pentesting",
       },
+      {
+        name: "OAuth2 Threat Model",
+        url: "https://web.archive.org/web/20210607123429/https://www.binarybrotherhood.io/oauth2_threat_model.html",
+        desc: "Comprehensive threat model for OAuth2 implementations",
+      },
+      {
+        name: "Martian1337 Bug Bounty Notes",
+        url: "https://martian1337.gitbook.io/docs/notes/security-research/bug-bounty",
+        desc: "Extensive notes and methodology for bug bounty hunting",
+      },
     ],
   },
   {
@@ -411,6 +466,21 @@ const categories = [
     icon: "🎯",
     theme: "cat-pentest",
     links: [
+      {
+        name: "Kali Tools",
+        url: "https://www.kali.org/tools/",
+        desc: "Complete documentation and directory of all tools included in Kali Linux",
+      },
+      {
+        name: "Hydra",
+        url: "https://www.kali.org/tools/hydra/",
+        desc: "Fast network logon cracker which supports many different services",
+      },
+      {
+        name: "Gobuster",
+        url: "https://www.kali.org/tools/gobuster/",
+        desc: "Directory/file & DNS busting tool written in Go",
+      },
       {
         name: "Burp Suite",
         url: "https://portswigger.net/burp",
@@ -431,6 +501,21 @@ const categories = [
         url: "https://www.aircrack-ng.org/",
         desc: "Crack WPA/WEP keys & audit Wi-Fi network security",
       },
+      {
+        name: "Smuggler",
+        url: "https://github.com/defparam/smuggler",
+        desc: "An HTTP Request Smuggling / Desync testing tool",
+      },
+      {
+        name: "ffuf",
+        url: "https://github.com/ffuf/ffuf",
+        desc: "Fast web fuzzer written in Go",
+      },
+      {
+        name: "Nuclei",
+        url: "https://github.com/projectdiscovery/nuclei",
+        desc: "Fast and customizable vulnerability scanner based on simple YAML based DSL",
+      },
     ],
   },
   {
@@ -438,6 +523,11 @@ const categories = [
     icon: "🔧",
     theme: "cat-system",
     links: [
+      {
+        name: "Linux Downloads",
+        url: "https://www.linux.org/pages/download/",
+        desc: "Official downloads and resources for various Linux distributions",
+      },
       {
         name: "Sysinternals Suite",
         url: "https://learn.microsoft.com/en-us/sysinternals/",
@@ -517,6 +607,11 @@ const categories = [
         url: "https://antigravity.google/download",
         desc: "Google's AI-powered agentic coding assistant",
       },
+      {
+        name: "GitHub",
+        url: "https://github.com/",
+        desc: "Hosting for software development and version control using Git",
+      },
     ],
   },
   {
@@ -524,6 +619,11 @@ const categories = [
     icon: "🏴",
     theme: "cat-ctf",
     links: [
+      {
+        name: "PortSwigger Web Security Academy",
+        url: "https://portswigger.net/web-security/learning-paths",
+        desc: "Free, interactive web security training from the creators of Burp Suite",
+      },
       {
         name: "TryHackMe",
         url: "https://tryhackme.com/",
@@ -543,6 +643,70 @@ const categories = [
         name: "CyberTalents",
         url: "https://cybertalents.com/",
         desc: "CTF competitions & cybersecurity talent assessments",
+      },
+    ],
+  },
+  {
+    name: "Browser Extensions",
+    icon: "🧩",
+    theme: "cat-extensions",
+    links: [
+      {
+        name: "uBlock Origin",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/",
+        desc: "Efficient, open-source ad and tracker blocker",
+      },
+      {
+        name: "Wappalyzer",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/",
+        desc: "Identify technologies on websites, frameworks, CMS, and more",
+      },
+      {
+        name: "FoxyProxy Standard",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search",
+        desc: "Advanced proxy management for Firefox, easily switch between proxies like Burp",
+      },
+      {
+        name: "Link Gopher",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/link-gopher/",
+        desc: "Extract, sort and deduplicate links from webpages",
+      },
+      {
+        name: "PwnFox",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/pwnfox/",
+        desc: "Firefox proxy add-on for security tools like Burp and ZAP",
+      },
+      {
+        name: "Retire.js",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/retire-js/",
+        desc: "Scan web apps for vulnerable JavaScript libraries",
+      },
+      {
+        name: "DotGit",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/dotgit/",
+        desc: "Check for exposed .git directories and files",
+      },
+    ],
+  },
+  {
+    name: "Reporting & Note Taking",
+    icon: "📝",
+    theme: "cat-notes",
+    links: [
+      {
+        name: "Obsidian",
+        url: "https://obsidian.md/",
+        desc: "Powerful, local knowledge base that works on top of a local folder of plain text Markdown files",
+      },
+      {
+        name: "Notion",
+        url: "https://www.notion.com/",
+        desc: "All-in-one workspace for notes, tasks, wikis, and databases",
+      },
+      {
+        name: "XMind",
+        url: "https://xmind.com/",
+        desc: "Full-featured mind mapping and brainstorming tool",
       },
     ],
   },
