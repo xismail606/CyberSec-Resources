@@ -309,6 +309,11 @@ const categories = [
         url: "https://github.com/projectdiscovery/subfinder",
         desc: "Fast passive subdomain enumeration tool",
       },
+      {
+        name: "The Harvester",
+        url: "https://www.kali.org/tools/theharvester/",
+        desc: "OSINT tool to gather emails, subdomains, hosts, and employee names",
+      },
     ],
   },
   {
@@ -327,8 +332,8 @@ const categories = [
         desc: "Browse NIST's database of analyzed vulnerabilities & CVSS scores",
       },
       {
-        name: "Zone-H Archive",
-        url: "https://www.zone-h.org/archive/special=1?hz=1",
+        name: "Zone-H",
+        url: "https://www.zone-h.org/",
         desc: "Archive of website defacements & hacking incidents",
       },
       {
