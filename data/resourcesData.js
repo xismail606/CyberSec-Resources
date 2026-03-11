@@ -612,6 +612,11 @@ const categories = [
         url: "https://github.com/",
         desc: "Hosting for software development and version control using Git",
       },
+      {
+        name: "Zombie Package Detector",
+        url: "https://github.com/0xQenawy/zombie-package-detector",
+        desc: "Identify unmaintained dependencies by analyzing GitHub repository activity",
+      },
     ],
   },
   {
