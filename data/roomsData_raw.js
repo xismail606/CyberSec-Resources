@@ -221,6 +221,7 @@ const roomsData = [
     { name: 'Intro to IoT Pentesting', slug: 'iotintro', category: 'Misc', difficulty: 'Easy', description: 'An introduction to IoT pentesting.', tags: ['easy', 'iot', 'pentesting'] },
     { name: 'Printer Hacking 101', category: 'Misc', difficulty: 'Easy', description: 'An introduction to printer hacking.', tags: ['easy', 'iot', 'pentesting'] },
     { name: 'Introduction to Flask', slug: 'flask', category: 'Misc', difficulty: 'Easy', description: 'An introduction to the Flask web framework.', tags: ['easy', 'web', 'python', 'flask'] },
+    { name: 'React2Shell: CVE-2025-55182', slug: 'react2shellcve202555182', category: 'Misc', difficulty: 'Easy', description: 'Explore the CVE-2025-55182 vulnerability in React server components.', tags: ['easy', 'cve', 'exploit', 'react', 'web'] },
     { name: 'MITRE', category: 'Misc', difficulty: 'Easy', description: 'An introduction to the MITRE ATT&CK framework.', tags: ['easy', 'blue team', 'threat intel'] },
     { name: 'magician', category: 'Misc', difficulty: 'Easy', description: 'A CTF with a focus on magic tricks.', tags: ['easy', 'ctf', 'fun'] },
     { name: 'JPGChat', category: 'Misc', difficulty: 'Easy', description: 'A CTF with a focus on steganography.', tags: ['easy', 'ctf', 'steganography'] },
