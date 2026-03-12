@@ -280,6 +280,11 @@ const categories = [
         desc: "Create secure encrypted VPN tunnels",
       },
       {
+        name: "RiseupVPN",
+        url: "https://riseup.net/en/vpn",
+        desc: "Easy, non-profit VPN service that does not log your IP address",
+      },
+      {
         name: "SecurityTrails",
         url: "https://securitytrails.com/",
         desc: "Comprehensive current and historical DNS and domain data",
@@ -663,6 +668,11 @@ const categories = [
         name: "GitHub",
         url: "https://github.com/",
         desc: "Hosting for software development and version control using Git",
+      },
+      {
+        name: "Vim Basics",
+        url: "https://www.notion.so/Vim-Basics-30398d17556c803fb742d15a414aa793?source=copy_link",
+        desc: "Essential notes and commands for mastering Vim basics",
       },
     ],
   },
