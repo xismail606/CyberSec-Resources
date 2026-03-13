@@ -7,10 +7,10 @@ const _meta = {
   'Basics':               ['📘', 'cat-thm'],
   'Linux':                ['🐧', 'cat-thm'],
   'Windows':              ['🪟', 'cat-thm'],
-  'Web':                  ['🌐', 'cat-thm'],
 
   // 🔵 Core Skills
   'Networking':           ['🔗', 'cat-thm'],
+  'Web':                  ['🌐', 'cat-thm'],
   'Scripting':            ['💻', 'cat-thm'],
   'Recon':                ['🔍', 'cat-thm'],
   'Tooling':              ['🔧', 'cat-thm'],
@@ -26,9 +26,9 @@ const _meta = {
   'Malware Analysis':     ['🦠', 'cat-thm'],
   'Buffer Overflow':      ['💥', 'cat-thm'],
   'Exploit Development':  ['🎯', 'cat-thm'],
+  'Privilege Escalation': ['⬆️', 'cat-thm'],
 
   // 🔴 Advanced Topics
-  'Privilege Escalation': ['⬆️', 'cat-thm'],
   'Active Directory':     ['🏢', 'cat-thm'],
   'Container Security':   ['🐳', 'cat-thm'],
   'Android':              ['📱', 'cat-thm'],
@@ -49,9 +49,14 @@ roomsData.forEach(r => {
   _grouped[r.category].push(r);
 });
 
-// Build categories array for app.js
-const categories = Object.keys(_grouped).map(c => {
-  const m = _meta[c] || ['📁', 'cat-thm'];
+// Sort rooms alphabetically within each category
+Object.values(_grouped).forEach(arr => arr.sort((a, b) => a.name.localeCompare(b.name)));
+
+// Build categories array for app.js (ordered by _meta)
+window.__cyberData = Object.keys(_meta)
+  .filter(c => _grouped[c])
+  .map(c => {
+  const m = _meta[c];
   return {
     name: c,
     icon: m[0],
@@ -60,7 +65,7 @@ const categories = Object.keys(_grouped).map(c => {
       name: r.name,
       url: 'https://tryhackme.com/room/' + (r.slug || _urlName(r.name)),
       desc: r.description,
-      tags: r.tags,
+      tags: [r.difficulty.toLowerCase(), ...r.tags],
       difficulty: r.difficulty
     }))
   };

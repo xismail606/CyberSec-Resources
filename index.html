@@ -20,6 +20,8 @@
      <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
   </head>
   <body>
+    <!-- Skip Navigation -->
+    <a href="#categoriesContainer" class="skip-nav">Skip to content</a>
     <!-- Background Effects -->
     <div class="bg-grid"></div>
     <div class="orb orb-1"></div>
@@ -64,7 +66,7 @@
         </div>
 
         <!-- Search -->
-        <div class="search-wrapper">
+        <div class="search-wrapper" role="search">
           <input
             type="text"
             class="search-input"
@@ -98,6 +100,7 @@
             <div class="stat-label">Categories</div>
           </div>
         </div>
+        <div id="searchAnnounce" class="sr-only" aria-live="polite"></div>
       </header>
 
       <!-- Categories Container -->
@@ -118,7 +121,7 @@
             d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
           />
         </svg>
-        <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 6px">
+        <p class="no-results-title">
           No tools found
         </p>
         <p>Try a different search term</p>

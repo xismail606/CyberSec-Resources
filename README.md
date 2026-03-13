@@ -10,7 +10,7 @@
 <h1 align="center">🛡️ CyberSec Resources</h1>
 
 <p align="center">
-A curated collection of <strong>110+ cybersecurity tools</strong> and <strong>+472 free TryHackMe labs</strong> — organized, searchable, and ready to use.
+A curated collection of <strong>126 cybersecurity tools</strong> and <strong>481 free TryHackMe labs</strong> — organized, searchable, and ready to use.
 </p>
 
 <p align="center">
@@ -33,8 +33,8 @@ Live Demo →
 
 <p>
 <img src="https://img.shields.io/badge/Theme-Dark_Mode-0a0e1a?style=for-the-badge">
-<img src="https://img.shields.io/badge/Tools-110%2B-38bdf8?style=for-the-badge">
-<img src="https://img.shields.io/badge/Free_Labs-+472-34d399?style=for-the-badge">
+<img src="https://img.shields.io/badge/Tools-126-38bdf8?style=for-the-badge">
+<img src="https://img.shields.io/badge/Free_Labs-481-34d399?style=for-the-badge">
 <img src="https://img.shields.io/badge/Categories-42-a78bfa?style=for-the-badge">
 <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
 </p>
@@ -49,8 +49,8 @@ Live Demo →
 
 | Page                      | Description                                                                    |
 | ------------------------- | ------------------------------------------------------------------------------ |
-| **🛡️ CyberSec Resources** | 110+ tools across 17 categories (OSINT, hashing, networking, pentesting, etc.) |
-| **💻 Free Labs**          | +472 free TryHackMe rooms across 25 categories (Intro → Insane difficulty)     |
+| **🛡️ CyberSec Resources** | 126 tools across 17 categories (OSINT, hashing, networking, pentesting, etc.) |
+| **💻 Free Labs**          | 481 free TryHackMe rooms across 25 categories (Intro → Insane difficulty)     |
 
 <hr>
 
@@ -97,9 +97,11 @@ Live Demo →
 - 🪟 **Tool Modal Popup** — Click any card for tool details, tags, and direct link
 - 🎨 **Modern Dark Theme** — Glassmorphism UI with smooth animations
 - ✨ **Mouse-follow Glow** — Subtle cursor-tracking light effect
-- 📱 **Fully Responsive** — Works on desktop, tablet, and mobile
-- ⚡ **No Dependencies** — Pure HTML, CSS, and vanilla JavaScript
-- 🖼️ **Auto Favicons** — Resolves brand icons for each tool automatically
+- 🛡️ **Secure by Design** — Built-in XSS prevention and sanitized data rendering
+- ⚡ **Optimized Performance** — Intelligent favicon caching and lightning-fast DOM visibility toggling
+- ♿ **Accessible** — Fully keyboard navigable with focus trapping, skip-nav, and ARIA live regions
+- 📱 **Fully Responsive** — Works smoothly on desktop, tablet, and mobile browsers
+- 📦 **No Dependencies** — Pure HTML5, Vanilla CSS, and modular Vanilla JavaScript
 
 <hr>
 

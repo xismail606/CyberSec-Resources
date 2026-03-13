@@ -1,5 +1,5 @@
 // ===== CyberSec Resources Data =====
-const categories = [
+window.__cyberData = [
   {
     name: "CTF & Learning Platforms",
     icon: "🏴",
@@ -164,7 +164,7 @@ const categories = [
     links: [
       {
         name: "Hunter.io",
-        url: "https://hunter.io/?via=annie&gad_source=1&gad_campaignid=22707266086&gclid=EAIaIQobChMInbi-ipnJkgMVuZRQBh1TTgv-EAAYASAAEgLNDfD_BwE",
+        url: "https://hunter.io/",
         desc: "Find & verify professional email addresses by domain",
       },
       {
@@ -174,7 +174,7 @@ const categories = [
       },
       {
         name: "AnyMailFinder",
-        url: "https://newapp.anymailfinder.com/auth/login?successUrl=https%3A%2F%2Fnewapp.anymailfinder.com%2Fsearch%2Fsingle",
+        url: "https://anymailfinder.com/",
         desc: "Discover verified email addresses for any domain",
       },
       {
@@ -323,7 +323,7 @@ const categories = [
     links: [
       {
         name: "CVE Records",
-        url: "https://www.cve.org/CVERecord/SearchResults?query=laravel&source=post_page-----24a3bd5dda9a---------------------------------------",
+        url: "https://www.cve.org/",
         desc: "Search the official CVE vulnerability record database",
       },
       {
@@ -624,7 +624,7 @@ const categories = [
       },
       {
         name: "FoxyProxy Standard",
-        url: "https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/",
         desc: "Advanced proxy management for Firefox, easily switch between proxies like Burp",
       },
       {
@@ -747,4 +747,3 @@ const categories = [
   },
 ];
 
-//x606
