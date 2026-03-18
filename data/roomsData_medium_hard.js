@@ -302,4 +302,6 @@ roomsData.push(
     { name: 'Roundcube: CVE-2025-49113', slug: 'roundcubecve202549113', category: 'Misc', difficulty: 'Medium', description: 'Exploit CVE-2025-49113 in Roundcube.', tags: ['cve', 'exploit', 'email'] },
     { name: 'Erlang/OTP SSH: CVE-2025-32433', slug: 'erlangotpsshcve202532433', category: 'Misc', difficulty: 'Hard', description: 'Exploit CVE-2025-32433 in Erlang/OTP SSH.', tags: ['cve', 'exploit', 'ssh'] },
     { name: 'Git and Crumpets', slug: 'gitandcrumpets', category: 'Misc', difficulty: 'Hard', description: 'Exploit a git-based challenge.', tags: ['git', 'web'] },
+    // --- Love Affair Begins 2026 (Special Event) ---
+    { name: 'Love at First Breach 2026 - Advanced Track', slug: 'lafbctf2026advanced', category: 'Special Events', difficulty: 'Hard', description: 'Go deeper into TryHeartMe\'s web of lies.', tags: ['ctf', 'special event', 'valentine'] },
 );

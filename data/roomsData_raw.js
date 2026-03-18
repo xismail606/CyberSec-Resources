@@ -315,6 +315,8 @@ const roomsData = [
     { name: 'CVE-2021-41773/42013', slug: 'cve202141773', category: 'Misc', difficulty: 'Info', description: 'Walkthrough on CVE-2021-41773 and CVE-2021-42013 in Apache.', tags: ['cve', 'exploit', 'apache'] },
     { name: 'Insekube', slug: 'insekube', category: 'Misc', difficulty: 'Easy', description: 'A room about insecure Kubernetes deployments.', tags: ['kubernetes', 'cloud'] },
     // --- Missing Easy CTF rooms ---
+    { name: 'Missing Person', slug: 'missingperson', category: 'CTF', difficulty: 'Easy', description: 'Use your OSINT skills to help the police track down a missing person.', tags: ['ctf', 'osint'] },
+    { name: 'Dev Diaries', slug: 'devdiaries', category: 'CTF', difficulty: 'Easy', description: 'Hunt through online development traces to uncover what was left behind.', tags: ['ctf', 'osint', 'recon'] },
     { name: 'The Phishing Pond', slug: 'phishingpond', category: 'CTF', difficulty: 'Easy', description: 'A CTF with a focus on phishing.', tags: ['ctf', 'phishing'] },
     { name: 'Oracle 9', slug: 'oracle9', category: 'CTF', difficulty: 'Easy', description: 'A CTF focused on Oracle exploitation.', tags: ['ctf', 'database'] },
     { name: 'Soupedecode 01', slug: 'soupedecode01', category: 'CTF', difficulty: 'Easy', description: 'A CTF focused on decoding and enumeration.', tags: ['ctf', 'web'] },
