@@ -35,6 +35,11 @@ window.__cyberData = [
         url: "https://www.w3schools.com/",
         desc: "Comprehensive web development tutorials and references",
       },
+      {
+        name: "Linux Journey",
+        url: "https://linuxjourney.com/",
+        desc: "Free, interactive, and comprehensive courses for learning Linux from scratch",
+      },
     ],
   },
   {
@@ -747,3 +752,4 @@ window.__cyberData = [
   },
 ];
 
+//x606

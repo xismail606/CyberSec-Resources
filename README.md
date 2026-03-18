@@ -10,7 +10,7 @@
 <h1 align="center">🛡️ CyberSec Resources</h1>
 
 <p align="center">
-A curated collection of <strong>126 cybersecurity tools</strong> and <strong>481 free TryHackMe labs</strong> — organized, searchable, and ready to use.
+A curated collection of <strong>127 cybersecurity tools</strong> and <strong>624 free TryHackMe labs</strong> — organized, searchable, and ready to use.
 </p>
 
 <p align="center">
@@ -33,8 +33,8 @@ Live Demo →
 
 <p>
 <img src="https://img.shields.io/badge/Theme-Dark_Mode-0a0e1a?style=for-the-badge">
-<img src="https://img.shields.io/badge/Tools-126-38bdf8?style=for-the-badge">
-<img src="https://img.shields.io/badge/Free_Labs-481-34d399?style=for-the-badge">
+<img src="https://img.shields.io/badge/Tools-127-38bdf8?style=for-the-badge">
+<img src="https://img.shields.io/badge/Free_Labs-624-34d399?style=for-the-badge">
 <img src="https://img.shields.io/badge/Categories-42-a78bfa?style=for-the-badge">
 <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
 </p>
@@ -49,8 +49,8 @@ Live Demo →
 
 | Page                      | Description                                                                    |
 | ------------------------- | ------------------------------------------------------------------------------ |
-| **🛡️ CyberSec Resources** | 126 tools across 17 categories (OSINT, hashing, networking, pentesting, etc.) |
-| **💻 Free Labs**          | 481 free TryHackMe rooms across 25 categories (Intro → Insane difficulty)     |
+| **🛡️ CyberSec Resources** | 127 tools across 17 categories (OSINT, hashing, networking, pentesting, etc.) |
+| **💻 Free Labs**          | 624 free TryHackMe rooms across 25 categories (Intro → Insane difficulty)     |
 
 <hr>
 
@@ -119,7 +119,7 @@ CyberSec-Resources/
 ├── js/
 │   └── app.js                  # Shared render engine
 ├── data/
-│   ├── resourcesData.js        # Tools data (110+ tools)
+│   ├── resourcesData.js        # Tools data (120+ tools)
 │   ├── roomsData_raw.js        # TryHackMe rooms (Intro + Easy)
 │   ├── roomsData_medium_hard.js # TryHackMe rooms (Medium → Insane)
 │   └── freeLabsData.js         # Category grouper for labs
