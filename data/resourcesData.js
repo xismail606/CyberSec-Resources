@@ -160,6 +160,21 @@ window.__cyberData = [
         url: "https://github.com/sherlock-project/sherlock",
         desc: "Track usernames across 400+ social networks",
       },
+      {
+        name: "PeopleFinder",
+        url: "https://www.peoplefinder.com/",
+        desc: "Search for public records, contact information, and background details",
+      },
+      {
+        name: "BuiltWith",
+        url: "https://builtwith.com/",
+        desc: "Discover the technology stack and frameworks used by any website",
+      },
+      {
+        name: "Recon-ng",
+        url: "https://www.kali.org/tools/recon-ng/",
+        desc: "Full-featured open source web reconnaissance framework written in Python",
+      },
     ],
   },
   {
@@ -310,6 +325,11 @@ window.__cyberData = [
         desc: "Fast passive subdomain enumeration tool",
       },
       {
+        name: "Sublist3r",
+        url: "https://github.com/aboul3la/Sublist3r",
+        desc: "Fast subdomains enumeration tool for penetration testers",
+      },
+      {
         name: "The Harvester",
         url: "https://www.kali.org/tools/theharvester/",
         desc: "OSINT tool to gather emails, subdomains, hosts, and employee names",
@@ -384,6 +404,16 @@ window.__cyberData = [
         desc: "Directory/file & DNS busting tool written in Go",
       },
       {
+        name: "DirBuster",
+        url: "https://www.kali.org/tools/dirbuster/",
+        desc: "Multi-threaded Java application to brute force directories and files names on web servers",
+      },
+      {
+        name: "Enum4linux",
+        url: "https://www.kali.org/tools/enum4linux/",
+        desc: "Tool for enumerating information from Windows and Samba systems",
+      },
+      {
         name: "Burp Suite",
         url: "https://portswigger.net/burp",
         desc: "Intercept, scan & exploit web app vulnerabilities",
@@ -395,12 +425,12 @@ window.__cyberData = [
       },
       {
         name: "Sqlmap",
-        url: "https://sqlmap.org/",
+        url: "https://www.kali.org/tools/sqlmap/",
         desc: "Automate SQL injection detection & database extraction",
       },
       {
         name: "Aircrack-ng",
-        url: "https://www.aircrack-ng.org/",
+        url: "https://www.kali.org/tools/aircrack-ng/",
         desc: "Crack WPA/WEP keys & audit Wi-Fi network security",
       },
       {
