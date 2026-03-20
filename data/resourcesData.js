@@ -425,7 +425,7 @@ window.__cyberData = [
       },
       {
         name: "Sqlmap",
-        url: "https://www.kali.org/tools/sqlmap/",
+        url: "https://github.com/sqlmapproject/sqlmap",
         desc: "Automate SQL injection detection & database extraction",
       },
       {
