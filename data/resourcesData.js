@@ -512,6 +512,11 @@ window.__cyberData = [
         url: "https://scanbot.io/qr-code-scanner-online/",
         desc: "Fast and secure online QR code scanner and reader",
       },
+      {
+        name: "Vigenère Cipher (dCode)",
+        url: "https://www.dcode.fr/vigenere-cipher",
+        desc: "Tool to decrypt/encrypt with Vigenère cipher automatically",
+      },
     ],
   },
   {
@@ -553,6 +558,11 @@ window.__cyberData = [
         name: "John the Ripper",
         url: "https://www.openwall.com/john/",
         desc: "Crack passwords offline using dictionary & brute-force attacks",
+      },
+      {
+        name: "MD5 Hashing",
+        url: "https://md5hashing.net/",
+        desc: "Decrypt and encrypt hashes using multiple algorithms like MD5, SHA1, SHA256",
       },
     ],
   },
@@ -622,6 +632,16 @@ window.__cyberData = [
         name: "Sonic Visualiser",
         url: "https://www.sonicvisualiser.org/download.html",
         desc: "Application for viewing and analysing the contents of music audio files",
+      },
+      {
+        name: "Steghide",
+        url: "https://www.kali.org/tools/steghide/",
+        desc: "Steganography program that is able to hide data in various kinds of image- and audio-files",
+      },
+      {
+        name: "Outguess",
+        url: "https://www.kali.org/tools/outguess/",
+        desc: "Universal steganographic tool that allows the insertion of hidden information into the redundant bits of data sources",
       },
     ],
   },
