@@ -507,6 +507,11 @@ window.__cyberData = [
         url: "https://www.jwt.io/",
         desc: "Decode, verify & debug JSON Web Tokens",
       },
+      {
+        name: "Scanbot QR Scanner",
+        url: "https://scanbot.io/qr-code-scanner-online/",
+        desc: "Fast and secure online QR code scanner and reader",
+      },
     ],
   },
   {
@@ -612,6 +617,11 @@ window.__cyberData = [
         name: "Spectrum Analyzer",
         url: "https://academo.org/demos/spectrum-analyzer/",
         desc: "Visualize audio frequency spectrum in real time",
+      },
+      {
+        name: "Sonic Visualiser",
+        url: "https://www.sonicvisualiser.org/download.html",
+        desc: "Application for viewing and analysing the contents of music audio files",
       },
     ],
   },
