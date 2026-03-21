@@ -89,14 +89,23 @@
   .social ul li a {
     font-size: 0; /* Hide text */
     justify-content: center;
+    align-items: center;
     padding: 0;
-  }
-  .social ul li i {
+    gap: 0;
     width: 48px;
     height: 48px;
-    font-size: 20px;
-    padding: 0;
     border-radius: 50%;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .social ul li i {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: var(--sidebar-mobile-shadow, 0 4px 12px rgba(0, 0, 0, 0.4));
     background: var(--sidebar-mobile-icon-bg, rgba(15, 10, 10, 0.95));
     border: 1px solid var(--border-color);

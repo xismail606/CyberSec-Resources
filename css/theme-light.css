@@ -5,14 +5,23 @@
 
 /* ===== Smooth Theme Transition ===== */
 html.theme-transitioning,
-html.theme-transitioning *,
-html.theme-transitioning *::before,
-html.theme-transitioning *::after {
-  transition: background-color 0.3s ease,
-              color 0.3s ease,
-              border-color 0.3s ease,
-              box-shadow 0.3s ease,
-              background 0.3s ease !important;
+html.theme-transitioning body,
+html.theme-transitioning .navbar,
+html.theme-transitioning .nav-links a,
+html.theme-transitioning .search-wrapper,
+html.theme-transitioning .search-input,
+html.theme-transitioning .card,
+html.theme-transitioning .diff-btn,
+html.theme-transitioning .page-nav-btn,
+html.theme-transitioning .category-item,
+html.theme-transitioning .sidebar,
+html.theme-transitioning .social a,
+html.theme-transitioning .footer,
+html.theme-transitioning .thm-modal,
+html.theme-transitioning .modal-content {
+  transition: background-color 0.7s ease,
+              border-color 0.7s ease,
+              box-shadow 0.7s ease !important;
 }
 
 /* ===== Light Mode Variable Overrides ===== */

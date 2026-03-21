@@ -44,8 +44,8 @@
   function transitionTheme(theme) {
     html.classList.add("theme-transitioning");
     applyTheme(theme);
-    // Remove class after transitions finish
-    setTimeout(() => html.classList.remove("theme-transitioning"), 400);
+    // Remove class after transitions finish (sync with CSS duration)
+    setTimeout(() => html.classList.remove("theme-transitioning"), 750);
   }
 
   // ===== Toggle button UI =====
