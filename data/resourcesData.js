@@ -377,6 +377,11 @@ window.__cyberData = [
         desc: "Vulnerability and exploit database search engine",
       },
       {
+        name: "CVE Details",
+        url: "https://www.cvedetails.com/",
+        desc: "Comprehensive CVE security vulnerability database with CVSS scores & statistics",
+      },
+      {
         name: "Zombie Package Detector",
         url: "https://github.com/0xQenawy/zombie-package-detector",
         desc: "Identify unmaintained dependencies by analyzing GitHub repository activity",
