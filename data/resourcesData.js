@@ -458,6 +458,11 @@ window.__cyberData = [
         url: "https://gtfobins.org/",
         desc: "Curated list of Unix binaries that can be used to bypass local security restrictions",
       },
+      {
+        name: "Nikto",
+        url: "https://www.kali.org/tools/nikto/",
+        desc: "Open-source web server scanner that tests for dangerous files, outdated software & misconfigurations",
+      },
     ],
   },
   {
