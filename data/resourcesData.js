@@ -175,6 +175,11 @@ window.__cyberData = [
         url: "https://www.kali.org/tools/recon-ng/",
         desc: "Full-featured open source web reconnaissance framework written in Python",
       },
+      {
+        name: "IntelTechniques Search Tool",
+        url: "https://inteltechniques.com/tools/Search.html",
+        desc: "Multi-engine OSINT search aggregator for deep investigations across people, domains & more",
+      },
     ],
   },
   {
