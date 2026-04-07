@@ -350,4 +350,13 @@ const roomsData = [
     { name: 'AI in Security - old sAInt nick', slug: 'AIforcyber-aoc2025-y9wWQ1zRgB', category: 'Special Events', difficulty: 'Easy', description: 'AOC 2025: An AI in security challenge.', tags: ['ctf', 'ai', 'christmas'] },
     { name: 'ICS/Modbus - Claus for Concern', slug: 'ICS-modbus-aoc2025-g3m6n9b1v4', category: 'Special Events', difficulty: 'Easy', description: 'AOC 2025: An ICS/Modbus challenge.', tags: ['ctf', 'ics', 'christmas'] },
     { name: 'Passwords - A Cracking Christmas', slug: 'attacks-on-ecrypted-files-aoc2025-asdfghj123', category: 'Special Events', difficulty: 'Easy', description: 'AOC 2025: A password cracking challenge.', tags: ['ctf', 'crypto', 'christmas'] },
+    // --- New rooms (April 2026) ---
+    { name: 'Phishing Basics', slug: 'phishingbasics', category: 'Intro', difficulty: 'Easy', description: 'Explore phishing techniques and tools for penetration testing.', tags: ['phishing', 'red team', 'basics'] },
+    { name: 'CSRF Introduction', slug: 'csrfintroduction', category: 'Web', difficulty: 'Easy', description: 'Understand CSRF vulnerability and practice exploiting insecure state-changing requests.', tags: ['web', 'csrf'] },
+    { name: 'Have a Break', slug: 'haveabreak', category: 'CTF', difficulty: 'Medium', description: 'Can you help us uncover the mystery behind the KitKat heist?', tags: ['ctf', 'forensics', 'puzzle'] },
+    { name: 'Spring AI: CVE-2026-22738', slug: 'springaicve202622738', category: 'Misc', difficulty: 'Medium', description: 'Exploit CVE-2026-22738: unauthenticated RCE via SpEL injection in Spring AI\'s SimpleVectorStore.', tags: ['cve', 'exploit', 'spring', 'rce'] },
+    { name: 'Water Bottle', slug: 'waterbottle', category: 'CTF', difficulty: 'Easy', description: 'Track down a vanished water station using nothing but fragments of memory and OSINT.', tags: ['ctf', 'osint'] },
+    { name: 'Wazuh: CVE-2026-25769', slug: 'wazuhcve202625769', category: 'Misc', difficulty: 'Medium', description: 'Learn how attackers exploit CVE-2026-25769 in Wazuh to gain RCE.', tags: ['cve', 'exploit', 'wazuh', 'rce'] },
+    { name: 'Vulnerability Scanning Tools', slug: 'vulnerabilityscanningtools', category: 'Recon', difficulty: 'Medium', description: 'Learn about scanning tools such as Nmap, OpenVAS, and Nikto, and explore the world of pentesting.', tags: ['nmap', 'openvas', 'nikto', 'recon', 'tooling'] },
+    { name: 'Plant Photographer', slug: 'plantphotographer', category: 'CTF', difficulty: 'Hard', description: 'Dig deeper and try to uncover the flag hidden behind the scenes.', tags: ['ctf', 'web', 'hard'] },
 ];
