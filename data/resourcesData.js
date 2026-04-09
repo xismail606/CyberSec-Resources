@@ -727,6 +727,151 @@ window.__cyberData = [
         url: "https://addons.mozilla.org/en-US/firefox/addon/dotgit/",
         desc: "Check for exposed .git directories and files",
       },
+      {
+        name: "Hack-Tools (Firefox)",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/hacktools/",
+        desc: "All-in-one web pentesting extension for Firefox",
+      },
+      {
+        name: "Hack-Tools (Chrome)",
+        url: "https://chromewebstore.google.com/detail/hack-tools/cmbndhnoonmghfofefkcccljbkdpamhi",
+        desc: "All-in-one web pentesting extension for Chrome",
+      },
+      {
+        name: "HackBar (Chrome)",
+        url: "https://chromewebstore.google.com/detail/hackbar/ginpbkfigcoaokgflihfhhmglmbchinc",
+        desc: "Web penetration testing tool for Chrome",
+      },
+      {
+        name: "HackBar Tool (Firefox)",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/hackbartool/",
+        desc: "Web penetration testing tool for Firefox",
+      },
+      {
+        name: "Firefox HackBar",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/firefox-hackbar/",
+        desc: "Web penetration testing extension for Firefox",
+      },
+      {
+        name: "Cookie-Editor (Firefox)",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/cookie-editor/",
+        desc: "Create, edit and delete cookies for the current tab",
+      },
+      {
+        name: "Cookie-Editor (Chrome)",
+        url: "https://chromewebstore.google.com/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm",
+        desc: "Create, edit and delete cookies for the current tab",
+      },
+      {
+        name: "CORS Everywhere",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/",
+        desc: "Enable cross-origin resource sharing by altering HTTP headers",
+      },
+      {
+        name: "Endpointer",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/endpointer/",
+        desc: "Extract endpoints from Javascript files",
+      },
+      {
+        name: "FancyTracker",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/fancytracker-ff/",
+        desc: "Track and analyze webpage requests and resources",
+      },
+      {
+        name: "HTTP Header Live",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/http-header-live/",
+        desc: "View and edit HTTP headers for web requests",
+      },
+      {
+        name: "Wayback Machine",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/wayback-machine_new/",
+        desc: "Access archived versions of web pages and save current ones",
+      },
+      {
+        name: "Security Headers Analyser",
+        url: "https://addons.mozilla.org/en-GB/firefox/addon/securityheaders-io-analyser/",
+        desc: "Analyze and grade HTTP response security headers",
+      },
+      {
+        name: "OWASP Penetration Testing Kit",
+        url: "https://chromewebstore.google.com/detail/owasp-penetration-testing/ojkchikaholjmcnefhjlbohackpeeknd",
+        desc: "Automate security tests and intercept HTTP traffic",
+      },
+      {
+        name: "JS Beautify",
+        url: "https://addons.mozilla.org/en-GB/firefox/addon/js-beautify-css-html/",
+        desc: "Format and beautify minified JavaScript, CSS, and HTML",
+      },
+      {
+        name: "Code Formatter (Chrome)",
+        url: "https://chromewebstore.google.com/detail/code-formatter-json-css-j/bhimnoepicmcjfkbmhckamllnibadfal",
+        desc: "Format and beautify JS, CSS, and HTML files",
+      },
+      {
+        name: "Mitaka (Chrome)",
+        url: "https://chromewebstore.google.com/detail/mitaka/bfjbejmeoibbdpfdbmbacmefcbannnbg",
+        desc: "Search IPs, domains, URLs, and hashes across multiple threat intel engines",
+      },
+      {
+        name: "Mitaka (Firefox)",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/mitaka/",
+        desc: "Search IPs, domains, URLs, and hashes across multiple threat intel engines",
+      },
+      {
+        name: "BuiltWith (Firefox)",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/builtwith/",
+        desc: "Find out what a website is built with upon a simple click",
+      },
+      {
+        name: "BuiltWith (Chrome)",
+        url: "https://chromewebstore.google.com/detail/builtwith-technology-prof/dapjbgnjinbpoindlpdmhochffioedbn",
+        desc: "Find out what a website is built with upon a simple click",
+      },
+      {
+        name: "Shodan",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/shodan-addon/",
+        desc: "See where websites are hosted and who owns the IP",
+      },
+      {
+        name: "TruffleHog",
+        url: "https://chromewebstore.google.com/detail/trufflehog-pingpwn/ojpilaklfjcfpehafidhijapphckbbbo",
+        desc: "Find leaked credentials and secrets on websites",
+      },
+      {
+        name: "Requestly (Chrome)",
+        url: "https://chromewebstore.google.com/detail/requestly-supercharge-you/mdnleldcmiljblolnjhpnblkcekpdkpa",
+        desc: "Intercept, log, and modify HTTP requests and responses",
+      },
+      {
+        name: "Open Multiple URLs (Firefox)",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/open-multiple-urls/",
+        desc: "Extract and open multiple URLs at once",
+      },
+      {
+        name: "Open Multiple URLs (Chrome)",
+        url: "https://chromewebstore.google.com/detail/open-multiple-urls/oifijhaokejakekmnjmphonojcfkpbbh",
+        desc: "Extract and open multiple URLs at once",
+      },
+      {
+        name: "ModHeader (Chrome)",
+        url: "https://chromewebstore.google.com/detail/modheader-modify-http-hea/idgpnmonknjnojddfkpgkljpfnnfcklj",
+        desc: "Modify HTTP request and response headers",
+      },
+      {
+        name: "Modify Header Value (Firefox)",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/modify-header-value/",
+        desc: "Modify HTTP request and response headers",
+      },
+      {
+        name: "User-Agent Switcher (Chrome)",
+        url: "https://chromewebstore.google.com/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg",
+        desc: "Quickly and easily switch between popular user agents",
+      },
+      {
+        name: "User-Agent Switcher (Firefox)",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/",
+        desc: "Quickly and easily switch between popular user agents",
+      },
     ],
   },
   {
