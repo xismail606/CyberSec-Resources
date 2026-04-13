@@ -1283,3 +1283,7 @@ body.no-glow::before {
   background: rgba(251, 191, 36, 0.12);
   color: var(--accent-amber);
 }
+.cat-writeups .category-icon {
+  background: rgba(248, 113, 113, 0.12);
+  color: var(--accent-red-light);
+}

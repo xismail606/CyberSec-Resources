@@ -217,6 +217,16 @@ window.__cyberData = [
         url: "https://temp-mail.org/en/",
         desc: "Disposable temporary email service to protect privacy and avoid spam",
       },
+      {
+        name: "eTempMail Mailbox",
+        url: "https://etempmail.net/mailbox",
+        desc: "Instant disposable email inbox for anonymous sign-ups & testing",
+      },
+      {
+        name: "eTempMail",
+        url: "https://etempmail.com/",
+        desc: "Free temporary email generator with auto-refresh inbox",
+      },
     ],
   },
   {
@@ -967,6 +977,43 @@ window.__cyberData = [
         name: "XMind",
         url: "https://xmind.com/",
         desc: "Full-featured mind mapping and brainstorming tool",
+      },
+    ],
+  },
+  {
+    name: "Write-ups & Bug Bounty",
+    icon: "✍️",
+    theme: "cat-writeups",
+    links: [
+      {
+        name: "Medium",
+        url: "https://medium.com/",
+        desc: "Popular blogging platform with extensive cybersecurity & bug bounty write-ups",
+      },
+      {
+        name: "Bugcrowd",
+        url: "https://www.bugcrowd.com/",
+        desc: "Crowdsourced cybersecurity platform connecting researchers with bug bounty programs",
+      },
+      {
+        name: "HackerOne Bug Bounty Programs",
+        url: "https://www.hackerone.com/bug-bounty-programs",
+        desc: "Discover and join bug bounty programs from leading companies worldwide",
+      },
+      {
+        name: "Intigriti Bug Bytes",
+        url: "https://www.intigriti.com/researchers/blog/bug-bytes",
+        desc: "Weekly digest of the best bug bounty write-ups, tools & resources",
+      },
+      {
+        name: "Pentester Land",
+        url: "https://pentester.land/",
+        desc: "Curated collection of real-world bug bounty write-ups & pentesting resources",
+      },
+      {
+        name: "HackerOne Hacktivity",
+        url: "https://hackerone.com/hacktivity/overview?queryString=disclosed%3Atrue&sortField=latest_disclosable_activity_at&sortDirection=DESC&pageIndex=0",
+        desc: "Browse publicly disclosed vulnerability reports from HackerOne programs",
       },
     ],
   },
