@@ -10,7 +10,7 @@
 <h1 align="center">🛡️ CyberSec Resources</h1>
 
 <p align="center">
-A curated collection of <strong>133 cybersecurity tools</strong> and <strong>628 free TryHackMe labs</strong> — organized, searchable, and ready to use.
+A curated collection of <strong>180 cybersecurity tools</strong> and <strong>636 free TryHackMe labs</strong> — organized, searchable, and ready to use.
 </p>
 
 <p align="center">
@@ -33,9 +33,9 @@ Live Demo →
 
 <p>
 <img src="https://img.shields.io/badge/Theme-Dark_Mode-0a0e1a?style=for-the-badge">
-<img src="https://img.shields.io/badge/Tools-133-38bdf8?style=for-the-badge">
-<img src="https://img.shields.io/badge/Free_Labs-628-34d399?style=for-the-badge">
-<img src="https://img.shields.io/badge/Categories-42-a78bfa?style=for-the-badge">
+<img src="https://img.shields.io/badge/Tools-180-38bdf8?style=for-the-badge">
+<img src="https://img.shields.io/badge/Free_Labs-636-34d399?style=for-the-badge">
+<img src="https://img.shields.io/badge/Categories-43-a78bfa?style=for-the-badge">
 <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
 </p>
 
@@ -47,10 +47,10 @@ Live Demo →
 
 ## 📄 Pages
 
-| Page                      | Description                                                                    |
-| ------------------------- | ------------------------------------------------------------------------------ |
-| **🛡️ CyberSec Resources** | 133 tools across 17 categories (OSINT, hashing, networking, pentesting, etc.) |
-| **💻 Free Labs**          | 628 free TryHackMe rooms across 25 categories (Intro → Insane difficulty)     |
+| Page                      | Description                                                                   |
+| ------------------------- | ----------------------------------------------------------------------------- |
+| **🛡️ CyberSec Resources** | 180 tools across 18 categories (OSINT, hashing, networking, pentesting, etc.) |
+| **💻 Free Labs**          | 636 free TryHackMe rooms across 25 categories (Intro → Insane difficulty)     |
 
 <hr>
 
@@ -77,6 +77,7 @@ Live Demo →
 | 🏴  | **CTF & Learning Platforms**           | TryHackMe, Hack The Box Academy, PortSwigger |
 | 🧩  | **Browser Extensions**                 | FoxyProxy, Wappalyzer, uBlock Origin, DotGit |
 | 📝  | **Reporting & Note Taking**            | Obsidian, Notion, XMind                      |
+| ✍️  | **Write-ups & Bug Bounty**             | Medium, HackerOne, Bugcrowd, Pentester Land  |
 
 ## 🧪 Free Labs Categories
 
@@ -113,16 +114,20 @@ Live Demo →
 CyberSec-Resources/
 ├── index.html                  # CyberSec Resources page
 ├── free-labs.html              # Free Labs page
+├── assets/
+│   └── x606-logo1.webp        # Site logo
 ├── css/
 │   ├── cyber-links.css         # Shared styles
-│   └── side.css                # Sidebar styles
+│   ├── sidebar.css             # Sidebar styles
+│   └── theme-light.css         # Light theme overrides
 ├── js/
-│   └── app.js                  # Shared render engine
+│   ├── main.js                 # Shared render engine
+│   └── theme-toggle.js         # Dark / Light theme switcher
 ├── data/
-│   ├── resourcesData.js        # Tools data (120+ tools)
-│   ├── roomsData_raw.js        # TryHackMe rooms (Intro + Easy)
-│   ├── roomsData_medium_hard.js # TryHackMe rooms (Medium → Insane)
-│   └── freeLabsData.js         # Category grouper for labs
+│   ├── resources.data.js       # Tools data (180 tools)
+│   ├── rooms.data.js           # TryHackMe rooms (Intro + Easy)
+│   ├── rooms.medium-hard.js    # TryHackMe rooms (Medium → Insane)
+│   └── free-labs.data.js       # Category grouper for labs
 └── README.md
 ```
 

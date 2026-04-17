@@ -1,5 +1,5 @@
 // ===== TryHackMe Free Labs — Category Grouper =====
-// Groups the flat roomsData array into categories for app.js
+// Groups the flat roomsData array into categories for main.js
 
 const _meta = {
   // 🟢 Foundation
@@ -52,7 +52,7 @@ roomsData.forEach(r => {
 // Sort rooms alphabetically within each category
 Object.values(_grouped).forEach(arr => arr.sort((a, b) => a.name.localeCompare(b.name)));
 
-// Build categories array for app.js (ordered by _meta)
+// Build categories array for main.js (ordered by _meta)
 window.__cyberData = Object.keys(_meta)
   .filter(c => _grouped[c])
   .map(c => {

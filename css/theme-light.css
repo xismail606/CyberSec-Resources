@@ -116,7 +116,7 @@ html[data-theme="light"] {
   --bg-grid-line: rgba(239, 68, 68, 0.04);
   --orb3-bg: rgba(52, 211, 153, 0.05);
 
-  /* Sidebar (side.css) */
+  /* Sidebar (sidebar.css) */
   --sidebar-bg: rgba(255, 255, 255, 0.92);
   --sidebar-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
   --sidebar-hover-bg: linear-gradient(135deg, rgba(239, 68, 68, 0.08), rgba(255, 255, 255, 0.98));
