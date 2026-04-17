@@ -21,6 +21,7 @@
 
   let totalTools = 0;
   let currentDiffFilter = "all";
+  let selectedCategories = new Set();
 
   // ===== FAVICON CACHE =====
   const _faviconCache = {};
@@ -155,7 +156,13 @@
           }
         }
 
-        const visible = textMatch && diffMatch;
+        // Category match (Advanced Search)
+        let catMatch = true;
+        if (selectedCategories && selectedCategories.size > 0) {
+          catMatch = selectedCategories.has(sec.catName);
+        }
+
+        const visible = textMatch && diffMatch && catMatch;
         card.el.style.display = visible ? "" : "none";
         if (visible) sectionVisible++;
       });
@@ -189,91 +196,7 @@
   // ===== INITIAL BUILD =====
   buildDOM();
 
-  // ===== NAV LINKS =====
-  const navLinksContainer = $("navLinks");
-  if (navLinksContainer) {
-    let isDraggingNav = false;
-    let isDown = false;
-    let startX, scrollLeft;
 
-    categories.forEach((cat) => {
-      const a = document.createElement("a");
-      a.href = `#cat-${slugify(cat.name)}`;
-      a.className = "nav-link";
-      a.textContent = `${cat.icon} ${cat.name}`;
-      a.addEventListener("click", (e) => {
-        e.preventDefault();
-        if (isDraggingNav) return;
-        const target = $(`cat-${slugify(cat.name)}`);
-        if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
-        navLinksContainer.classList.remove("open");
-        $("navToggle")?.classList.remove("open");
-      });
-      navLinksContainer.appendChild(a);
-    });
-
-    // Mouse Drag to Scroll with Momentum
-    let momentumID, velX = 0;
-
-    function beginMomentum() {
-      cancelAnimationFrame(momentumID);
-      momentumID = requestAnimationFrame(momentumLoop);
-    }
-
-    function momentumLoop() {
-      if (Math.abs(velX) > 0.5) {
-        navLinksContainer.scrollLeft -= velX;
-        velX *= 0.95;
-        momentumID = requestAnimationFrame(momentumLoop);
-      }
-    }
-
-    navLinksContainer.addEventListener("mousedown", (e) => {
-      isDown = true;
-      isDraggingNav = false;
-      navLinksContainer.style.cursor = "grabbing";
-      navLinksContainer.style.userSelect = "none";
-      startX = e.pageX - navLinksContainer.offsetLeft;
-      scrollLeft = navLinksContainer.scrollLeft;
-      cancelAnimationFrame(momentumID);
-    });
-
-    navLinksContainer.addEventListener("mouseleave", () => {
-      if (!isDown) return;
-      isDown = false;
-      navLinksContainer.style.cursor = "";
-      navLinksContainer.style.removeProperty("user-select");
-      beginMomentum();
-    });
-
-    navLinksContainer.addEventListener("mouseup", () => {
-      isDown = false;
-      setTimeout(() => { isDraggingNav = false; }, 50);
-      navLinksContainer.style.cursor = "";
-      navLinksContainer.style.removeProperty("user-select");
-      beginMomentum();
-    });
-
-    navLinksContainer.addEventListener("mousemove", (e) => {
-      if (!isDown) return;
-      e.preventDefault();
-      const x = e.pageX - navLinksContainer.offsetLeft;
-      const walk = (x - startX) * 2;
-      const prevScrollLeft = navLinksContainer.scrollLeft;
-      navLinksContainer.scrollLeft = scrollLeft - walk;
-      velX = prevScrollLeft - navLinksContainer.scrollLeft;
-      if (Math.abs(walk) > 5) isDraggingNav = true;
-    });
-  }
-
-  // ===== MOBILE NAV TOGGLE =====
-  const navToggle = $("navToggle");
-  if (navToggle && navLinksContainer) {
-    navToggle.addEventListener("click", () => {
-      navToggle.classList.toggle("open");
-      navLinksContainer.classList.toggle("open");
-    });
-  }
 
   // ===== SEARCH (Debounced) =====
   const searchInput = $("searchInput");
@@ -287,7 +210,18 @@
     });
   }
 
-  // ===== DIFFICULTY FILTERS =====
+  // ===== DIFFICULTY FILTERS (chips inside advanced panel on labs page) =====
+  const diffChipsContainer = $("difficultyChips");
+  const diffLevels = [
+    { key: "info", label: "Info/Intro", icon: "ℹ️" },
+    { key: "easy", label: "Easy", icon: "🟢" },
+    { key: "medium", label: "Medium", icon: "🟡" },
+    { key: "hard", label: "Hard", icon: "🔴" },
+    { key: "insane", label: "Insane", icon: "💀" },
+    { key: "ctf", label: "CTF", icon: "🏴" },
+  ];
+
+  // Legacy: still support standalone diff-btn if they exist
   const diffButtons = document.querySelectorAll(".diff-btn");
   if (diffButtons.length > 0) {
     diffButtons.forEach((btn) => {
@@ -300,27 +234,182 @@
     });
   }
 
+  // Build difficulty chips in advanced panel
+  if (diffChipsContainer) {
+    diffLevels.forEach((diff) => {
+      const chip = document.createElement("button");
+      chip.className = "filter-chip diff-chip";
+      chip.dataset.diff = diff.key;
+      chip.innerHTML = `<span class="chip-icon">${diff.icon}</span><span>${diff.label}</span>`;
+      chip.addEventListener("click", () => {
+        const wasActive = chip.classList.contains("active");
+        // Single-select: remove active from all diff chips
+        diffChipsContainer.querySelectorAll(".diff-chip").forEach((c) => c.classList.remove("active"));
+        if (wasActive) {
+          currentDiffFilter = "all";
+        } else {
+          chip.classList.add("active");
+          currentDiffFilter = diff.key;
+        }
+        updateAdvancedFilters();
+        applyFilter(searchInput?.value.trim() || "");
+      });
+      diffChipsContainer.appendChild(chip);
+    });
+  }
+
+  // ===== ADVANCED SEARCH =====
+  const advToggle = $("advSearchToggle");
+  const advPanel = $("advSearchPanel");
+  const advBadge = $("advSearchBadge");
+  const filterChipsContainer = $("filterChips");
+  const activeFiltersBar = $("activeFiltersBar");
+  const activeFiltersList = $("activeFiltersList");
+  const advSelectAll = $("advSelectAll");
+  const advClearAll = $("advClearAll");
+  const activeFiltersClear = $("activeFiltersClear");
+
+
+
+  if (advToggle && advPanel && filterChipsContainer) {
+    // Build category chips from data
+    categories.forEach((cat) => {
+      const chip = document.createElement("button");
+      chip.className = "filter-chip";
+      chip.dataset.category = cat.name;
+      chip.innerHTML = `<span class="chip-icon">${cat.icon}</span><span>${_esc(cat.name)}</span><span class="chip-count">${cat.links.length}</span>`;
+      chip.addEventListener("click", () => {
+        chip.classList.toggle("active");
+        if (chip.classList.contains("active")) {
+          selectedCategories.add(cat.name);
+        } else {
+          selectedCategories.delete(cat.name);
+        }
+        updateAdvancedFilters();
+        applyFilter(searchInput?.value.trim() || "");
+      });
+      filterChipsContainer.appendChild(chip);
+    });
+
+    // Toggle panel
+    advToggle.addEventListener("click", () => {
+      const isOpen = advPanel.classList.toggle("open");
+      advToggle.setAttribute("aria-expanded", isOpen);
+      advPanel.setAttribute("aria-hidden", !isOpen);
+    });
+
+    // Select All (categories only)
+    if (advSelectAll) {
+      advSelectAll.addEventListener("click", () => {
+        selectedCategories.clear();
+        categories.forEach((cat) => selectedCategories.add(cat.name));
+        filterChipsContainer.querySelectorAll(".filter-chip").forEach((c) => c.classList.add("active"));
+        updateAdvancedFilters();
+        applyFilter(searchInput?.value.trim() || "");
+      });
+    }
+
+    // Clear All
+    if (advClearAll) {
+      advClearAll.addEventListener("click", () => {
+        clearAllAdvanced();
+      });
+    }
+
+    // Active filters clear
+    if (activeFiltersClear) {
+      activeFiltersClear.addEventListener("click", () => {
+        clearAllAdvanced();
+      });
+    }
+
+    // Keyboard shortcut: Ctrl+Shift+F
+    document.addEventListener("keydown", (e) => {
+      if (e.ctrlKey && e.shiftKey && e.key === "F") {
+        e.preventDefault();
+        advToggle.click();
+      }
+    });
+  }
+
+  function clearAllAdvanced() {
+    selectedCategories.clear();
+    if (filterChipsContainer) filterChipsContainer.querySelectorAll(".filter-chip").forEach((c) => c.classList.remove("active"));
+    // Reset difficulty
+    currentDiffFilter = "all";
+    if (diffChipsContainer) diffChipsContainer.querySelectorAll(".diff-chip").forEach((c) => c.classList.remove("active"));
+    updateAdvancedFilters();
+    applyFilter(searchInput?.value.trim() || "");
+  }
+
+  function updateAdvancedFilters() {
+    const catCount = selectedCategories.size;
+    const hasDiff = currentDiffFilter !== "all";
+    const totalCount = catCount + (hasDiff ? 1 : 0);
+
+    // Badge
+    if (advBadge) {
+      if (totalCount > 0) {
+        advBadge.textContent = totalCount;
+        advBadge.classList.add("visible");
+      } else {
+        advBadge.classList.remove("visible");
+      }
+    }
+
+    // Active filters bar
+    if (activeFiltersBar && activeFiltersList) {
+      if (totalCount > 0) {
+        activeFiltersBar.classList.add("visible");
+        activeFiltersList.innerHTML = "";
+
+        // Category tags
+        selectedCategories.forEach((catName) => {
+          const cat = categories.find((c) => c.name === catName);
+          const tag = document.createElement("span");
+          tag.className = "active-filter-tag";
+          tag.innerHTML = `${cat ? cat.icon : ""} ${_esc(catName)} <span class="remove-tag">✕</span>`;
+          tag.addEventListener("click", () => {
+            selectedCategories.delete(catName);
+            if (filterChipsContainer) {
+              const chip = filterChipsContainer.querySelector(`[data-category="${catName}"]`);
+              if (chip) chip.classList.remove("active");
+            }
+            updateAdvancedFilters();
+            applyFilter(searchInput?.value.trim() || "");
+          });
+          activeFiltersList.appendChild(tag);
+        });
+
+        // Difficulty tag
+        if (hasDiff) {
+          const diffInfo = diffLevels.find((d) => d.key === currentDiffFilter);
+          const tag = document.createElement("span");
+          tag.className = "active-filter-tag";
+          tag.innerHTML = `${diffInfo ? diffInfo.icon : ""} ${diffInfo ? diffInfo.label : currentDiffFilter} <span class="remove-tag">✕</span>`;
+          tag.addEventListener("click", () => {
+            currentDiffFilter = "all";
+            if (diffChipsContainer) diffChipsContainer.querySelectorAll(".diff-chip").forEach((c) => c.classList.remove("active"));
+            updateAdvancedFilters();
+            applyFilter(searchInput?.value.trim() || "");
+          });
+          activeFiltersList.appendChild(tag);
+        }
+      } else {
+        activeFiltersBar.classList.remove("visible");
+      }
+    }
+  }
+
+
   // ===== CONSOLIDATED SCROLL LISTENER =====
   const navbar = $("navbar");
   const scrollBtn = $("scrollTop");
-
-  function updateActiveNav() {
-    const sections = document.querySelectorAll(".category");
-    const navLinks = document.querySelectorAll(".nav-link");
-    let currentId = "";
-    sections.forEach((section) => {
-      if (section.getBoundingClientRect().top <= 120) currentId = section.id;
-    });
-    navLinks.forEach((link) => {
-      link.classList.toggle("active", link.getAttribute("href") === `#${currentId}`);
-    });
-  }
 
   window.addEventListener("scroll", () => {
     const y = window.scrollY;
     if (navbar) navbar.classList.toggle("scrolled", y > 50);
     if (scrollBtn) scrollBtn.classList.toggle("visible", y > 400);
-    updateActiveNav();
   }, { passive: true });
 
   if (scrollBtn) {

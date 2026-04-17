@@ -152,17 +152,6 @@ html[data-theme="light"] .nav-logo:hover {
   color: #a5b4fc;
 }
 
-html[data-theme="light"] .nav-link {
-  color: #c7d2fe;
-}
-
-html[data-theme="light"] .nav-link:hover {
-  color: #e0e7ff;
-}
-
-html[data-theme="light"] .nav-link.active {
-  color: #fff;
-}
 
 html[data-theme="light"] .nav-social a {
   color: #a5b4fc;
@@ -180,7 +169,77 @@ html[data-theme="light"] .theme-toggle:hover {
   color: #e0e7ff;
 }
 
-html[data-theme="light"] .nav-toggle span {
-  background: #c7d2fe;
+
+/* ===== Light Mode — Advanced Search Overrides ===== */
+html[data-theme="light"] .adv-search-toggle {
+  background: rgba(223, 228, 248, 0.7);
 }
 
+html[data-theme="light"] .adv-search-toggle:hover {
+  background: rgba(99, 102, 241, 0.06);
+}
+
+html[data-theme="light"] .adv-search-toggle[aria-expanded="true"] {
+  background: rgba(99, 102, 241, 0.1);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.1);
+}
+
+html[data-theme="light"] .adv-search-badge {
+  background: var(--accent-red);
+}
+
+html[data-theme="light"] .adv-search-kbd {
+  background: rgba(99, 102, 241, 0.08);
+  border-color: rgba(99, 102, 241, 0.15);
+  color: var(--text-muted);
+}
+
+html[data-theme="light"] .adv-search-inner {
+  background: rgba(239, 241, 251, 0.92);
+}
+
+html[data-theme="light"] .filter-chip {
+  background: rgba(223, 228, 248, 0.6);
+}
+
+html[data-theme="light"] .filter-chip:hover {
+  background: rgba(99, 102, 241, 0.06);
+}
+
+html[data-theme="light"] .filter-chip.active {
+  background: rgba(99, 102, 241, 0.12);
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.1);
+}
+
+html[data-theme="light"] .filter-chip .chip-count {
+  background: rgba(99, 102, 241, 0.08);
+}
+
+html[data-theme="light"] .filter-chip.active .chip-count {
+  background: rgba(99, 102, 241, 0.15);
+  color: var(--accent-red);
+}
+
+html[data-theme="light"] .active-filters-bar {
+  background: rgba(99, 102, 241, 0.04);
+  border-color: rgba(99, 102, 241, 0.1);
+}
+
+html[data-theme="light"] .active-filter-tag {
+  background: rgba(99, 102, 241, 0.08);
+  border-color: rgba(99, 102, 241, 0.18);
+}
+
+html[data-theme="light"] .active-filter-tag:hover {
+  background: rgba(99, 102, 241, 0.15);
+  border-color: rgba(99, 102, 241, 0.35);
+}
+
+html[data-theme="light"] .active-filters-clear {
+  border-color: rgba(99, 102, 241, 0.18);
+}
+
+html[data-theme="light"] .active-filters-clear:hover {
+  background: rgba(99, 102, 241, 0.1);
+  border-color: rgba(99, 102, 241, 0.35);
+}
