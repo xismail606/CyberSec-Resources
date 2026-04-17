@@ -26,108 +26,161 @@ html.theme-transitioning .modal-content {
 
 /* ===== Light Mode Variable Overrides ===== */
 html[data-theme="light"] {
-  --bg-primary: #f5f5f7;
-  --bg-secondary: #ffffff;
-  --bg-card: rgba(255, 255, 255, 0.85);
-  --bg-card-hover: rgba(250, 240, 240, 0.95);
-  --border-color: rgba(200, 60, 60, 0.18);
-  --border-hover: rgba(239, 68, 68, 0.45);
-  --text-primary: #1a1a1a;
-  --text-secondary: #4a4a4a;
-  --text-muted: #7a7a7a;
+  --bg-primary: #e8ecf8;
+  --bg-secondary: #eff1fb;
+  --bg-card: rgba(239, 241, 251, 0.88);
+  --bg-card-hover: rgba(230, 233, 250, 0.95);
+  --border-color: rgba(99, 102, 241, 0.18);
+  --border-hover: rgba(99, 102, 241, 0.45);
+  --text-primary: #1a1a2e;
+  --text-secondary: #4a4a6a;
+  --text-muted: #7a7a9a;
 
-  --glow-red: rgba(239, 68, 68, 0.08);
-  --glow-red-dark: rgba(185, 28, 28, 0.08);
-  --glow-color: rgba(239, 68, 68, 0.03);
-  --glow-color-inner: rgba(239, 68, 68, 0.06);
+  /* Accent overrides for light mode */
+  --accent-red: #6366f1;
+  --accent-red-dark: #4f46e5;
+  --accent-red-light: #818cf8;
+  --accent-red-deep: #4338ca;
+  --accent-rose: #a78bfa;
+  --accent-amber: #f59e0b;
 
-  /* Navbar */
-  --navbar-bg: rgba(245, 245, 247, 0.85);
-  --navbar-bg-scrolled: rgba(245, 245, 247, 0.96);
-  --navbar-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
-  --nav-link-hover-bg: rgba(239, 68, 68, 0.07);
-  --nav-link-hover-border: rgba(239, 68, 68, 0.15);
-  --nav-link-active-bg: rgba(239, 68, 68, 0.1);
-  --nav-link-active-border: rgba(239, 68, 68, 0.25);
-  --nav-social-hover-bg: rgba(239, 68, 68, 0.08);
-  --nav-social-hover-border: rgba(239, 68, 68, 0.18);
-  --nav-mobile-bg: rgba(245, 245, 247, 0.97);
+  --glow-red: rgba(99, 102, 241, 0.08);
+  --glow-red-dark: rgba(79, 70, 229, 0.08);
+  --glow-color: rgba(99, 102, 241, 0.03);
+  --glow-color-inner: rgba(99, 102, 241, 0.06);
+
+  /* Navbar — Deep Indigo header */
+  --navbar-bg: rgba(30, 27, 75, 0.92);
+  --navbar-bg-scrolled: rgba(30, 27, 75, 0.97);
+  --navbar-shadow: 0 4px 20px rgba(30, 27, 75, 0.25);
+  --nav-link-hover-bg: rgba(129, 140, 248, 0.12);
+  --nav-link-hover-border: rgba(129, 140, 248, 0.25);
+  --nav-link-active-bg: rgba(129, 140, 248, 0.18);
+  --nav-link-active-border: rgba(129, 140, 248, 0.4);
+  --nav-social-hover-bg: rgba(129, 140, 248, 0.12);
+  --nav-social-hover-border: rgba(129, 140, 248, 0.25);
+  --nav-mobile-bg: rgba(30, 27, 75, 0.97);
 
   /* Search */
-  --search-bg: rgba(240, 240, 245, 0.8);
-  --search-focus-ring: rgba(239, 68, 68, 0.12);
-  --search-focus-shadow: rgba(0, 0, 0, 0.06);
+  --search-bg: rgba(223, 228, 248, 0.7);
+  --search-focus-ring: rgba(99, 102, 241, 0.15);
+  --search-focus-shadow: rgba(99, 102, 241, 0.06);
 
   /* Difficulty Buttons */
-  --diff-btn-bg: rgba(240, 240, 245, 0.8);
-  --diff-btn-hover-border: rgba(239, 68, 68, 0.4);
-  --diff-btn-hover-bg: rgba(239, 68, 68, 0.06);
-  --diff-btn-active-bg: rgba(239, 68, 68, 0.12);
-  --diff-btn-active-shadow: 0 0 12px rgba(239, 68, 68, 0.12);
+  --diff-btn-bg: rgba(223, 228, 248, 0.7);
+  --diff-btn-hover-border: rgba(99, 102, 241, 0.4);
+  --diff-btn-hover-bg: rgba(99, 102, 241, 0.06);
+  --diff-btn-active-bg: rgba(99, 102, 241, 0.12);
+  --diff-btn-active-shadow: 0 0 12px rgba(99, 102, 241, 0.12);
 
   /* Cards */
-  --card-gradient: rgba(239, 68, 68, 0.03);
-  --card-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(239, 68, 68, 0.12);
-  --favicon-bg: rgba(100, 116, 139, 0.08);
+  --card-gradient: rgba(99, 102, 241, 0.03);
+  --card-shadow-hover: 0 8px 24px rgba(99, 102, 241, 0.08), 0 0 0 1px rgba(99, 102, 241, 0.12);
+  --favicon-bg: rgba(99, 102, 241, 0.06);
 
   /* Page Nav Buttons */
-  --page-btn-bg: rgba(255, 255, 255, 0.7);
-  --page-btn-hover-border: rgba(239, 68, 68, 0.3);
-  --page-btn-hover-bg: rgba(239, 68, 68, 0.06);
-  --page-btn-hover-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-  --page-btn-active-bg: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(185, 28, 28, 0.1));
-  --page-btn-active-border: rgba(239, 68, 68, 0.35);
-  --page-btn-active-shadow: 0 0 16px rgba(239, 68, 68, 0.1);
+  --page-btn-bg: rgba(239, 241, 251, 0.7);
+  --page-btn-hover-border: rgba(99, 102, 241, 0.3);
+  --page-btn-hover-bg: rgba(99, 102, 241, 0.06);
+  --page-btn-hover-shadow: 0 4px 16px rgba(99, 102, 241, 0.08);
+  --page-btn-active-bg: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(79, 70, 229, 0.1));
+  --page-btn-active-border: rgba(99, 102, 241, 0.35);
+  --page-btn-active-shadow: 0 0 16px rgba(99, 102, 241, 0.1);
 
   /* Category */
-  --category-count-bg: rgba(239, 68, 68, 0.06);
-  --category-count-border: rgba(239, 68, 68, 0.15);
-  --hero-badge-bg: rgba(239, 68, 68, 0.06);
-  --hero-badge-border: rgba(239, 68, 68, 0.2);
+  --category-count-bg: rgba(99, 102, 241, 0.06);
+  --category-count-border: rgba(99, 102, 241, 0.15);
+  --hero-badge-bg: rgba(99, 102, 241, 0.06);
+  --hero-badge-border: rgba(99, 102, 241, 0.2);
 
   /* Scroll Top */
-  --scroll-top-bg: rgba(239, 68, 68, 0.1);
-  --scroll-top-border: rgba(239, 68, 68, 0.25);
-  --scroll-top-hover-bg: rgba(239, 68, 68, 0.18);
+  --scroll-top-bg: rgba(99, 102, 241, 0.1);
+  --scroll-top-border: rgba(99, 102, 241, 0.25);
+  --scroll-top-hover-bg: rgba(99, 102, 241, 0.18);
 
   /* Scrollbar */
-  --scroll-track: #e8e8e8;
-  --scroll-thumb: linear-gradient(#ef4444, #b91c1c);
+  --scroll-track: #dde1f5;
+  --scroll-thumb: linear-gradient(#6366f1, #4f46e5);
 
   /* Modal */
-  --modal-overlay-bg: rgba(0, 0, 0, 0.35);
-  --modal-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15), 0 0 30px rgba(239, 68, 68, 0.04);
-  --modal-close-hover-bg: rgba(239, 68, 68, 0.08);
-  --modal-close-hover-border: rgba(239, 68, 68, 0.18);
-  --modal-tag-bg: rgba(239, 68, 68, 0.07);
-  --modal-tag-border: rgba(239, 68, 68, 0.18);
+  --modal-overlay-bg: rgba(26, 26, 46, 0.35);
+  --modal-shadow: 0 25px 50px -12px rgba(99, 102, 241, 0.12), 0 0 30px rgba(99, 102, 241, 0.04);
+  --modal-close-hover-bg: rgba(99, 102, 241, 0.08);
+  --modal-close-hover-border: rgba(99, 102, 241, 0.18);
+  --modal-tag-bg: rgba(99, 102, 241, 0.07);
+  --modal-tag-border: rgba(99, 102, 241, 0.18);
 
   /* Footer */
-  --footer-link-bg: rgba(239, 68, 68, 0.05);
-  --footer-link-border: rgba(239, 68, 68, 0.15);
-  --footer-link-hover-bg: rgba(239, 68, 68, 0.1);
-  --footer-link-hover-border: rgba(239, 68, 68, 0.3);
-  --footer-link-hover-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --footer-link-bg: rgba(99, 102, 241, 0.05);
+  --footer-link-border: rgba(99, 102, 241, 0.15);
+  --footer-link-hover-bg: rgba(99, 102, 241, 0.1);
+  --footer-link-hover-border: rgba(99, 102, 241, 0.3);
+  --footer-link-hover-shadow: 0 4px 12px rgba(99, 102, 241, 0.08);
 
   /* Background Effects */
-  --bg-grid-glow1: rgba(239, 68, 68, 0.04);
-  --bg-grid-glow2: rgba(185, 28, 28, 0.03);
-  --bg-grid-glow3: rgba(239, 68, 68, 0.02);
-  --bg-grid-line: rgba(239, 68, 68, 0.04);
+  --bg-grid-glow1: rgba(99, 102, 241, 0.04);
+  --bg-grid-glow2: rgba(79, 70, 229, 0.03);
+  --bg-grid-glow3: rgba(99, 102, 241, 0.02);
+  --bg-grid-line: rgba(99, 102, 241, 0.04);
   --orb3-bg: rgba(52, 211, 153, 0.05);
 
   /* Sidebar (sidebar.css) */
-  --sidebar-bg: rgba(255, 255, 255, 0.92);
-  --sidebar-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
-  --sidebar-hover-bg: linear-gradient(135deg, rgba(239, 68, 68, 0.08), rgba(255, 255, 255, 0.98));
-  --sidebar-hover-shadow: 0 8px 20px rgba(239, 68, 68, 0.12);
-  --sidebar-icon-bg: rgba(239, 68, 68, 0.08);
-  --sidebar-icon-border: rgba(239, 68, 68, 0.12);
-  --sidebar-icon-hover-bg: rgba(239, 68, 68, 0.25);
-  --sidebar-icon-hover-shadow: 0 0 14px rgba(239, 68, 68, 0.2);
-  --sidebar-icon-hover-border: rgba(239, 68, 68, 0.35);
-  --sidebar-mobile-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  --sidebar-mobile-icon-bg: rgba(255, 255, 255, 0.95);
-  --sidebar-mobile-icon-active: rgba(239, 68, 68, 0.4);
+  --sidebar-bg: rgba(239, 241, 251, 0.92);
+  --sidebar-shadow: 0 4px 6px rgba(99, 102, 241, 0.06);
+  --sidebar-hover-bg: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(255, 255, 255, 0.98));
+  --sidebar-hover-shadow: 0 8px 20px rgba(99, 102, 241, 0.12);
+  --sidebar-icon-bg: rgba(99, 102, 241, 0.08);
+  --sidebar-icon-border: rgba(99, 102, 241, 0.12);
+  --sidebar-icon-hover-bg: rgba(99, 102, 241, 0.2);
+  --sidebar-icon-hover-shadow: 0 0 14px rgba(99, 102, 241, 0.18);
+  --sidebar-icon-hover-border: rgba(99, 102, 241, 0.35);
+  --sidebar-mobile-shadow: 0 4px 12px rgba(99, 102, 241, 0.1);
+  --sidebar-mobile-icon-bg: rgba(239, 241, 251, 0.95);
+  --sidebar-mobile-icon-active: rgba(99, 102, 241, 0.4);
+}
+
+/* ===== Light Mode — Dark Navbar Text Overrides ===== */
+html[data-theme="light"] .navbar {
+  border-bottom-color: rgba(99, 102, 241, 0.1);
+}
+
+html[data-theme="light"] .nav-logo {
+  color: #e0e7ff;
+}
+
+html[data-theme="light"] .nav-logo:hover {
+  color: #a5b4fc;
+}
+
+html[data-theme="light"] .nav-link {
+  color: #c7d2fe;
+}
+
+html[data-theme="light"] .nav-link:hover {
+  color: #e0e7ff;
+}
+
+html[data-theme="light"] .nav-link.active {
+  color: #fff;
+}
+
+html[data-theme="light"] .nav-social a {
+  color: #a5b4fc;
+}
+
+html[data-theme="light"] .nav-social a:hover {
+  color: #e0e7ff;
+}
+
+html[data-theme="light"] .theme-toggle {
+  color: #a5b4fc;
+}
+
+html[data-theme="light"] .theme-toggle:hover {
+  color: #e0e7ff;
+}
+
+html[data-theme="light"] .nav-toggle span {
+  background: #c7d2fe;
 }
 
