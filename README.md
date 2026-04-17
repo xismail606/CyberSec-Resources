@@ -90,19 +90,19 @@ Live Demo →
 
 <!-- ================= FEATURES ================= -->
 
-## ✨ Features
+## ✨ Features & What's New
 
-- 🧭 **Sticky Navigation Bar** — Quick-jump categories with scroll-spy highlighting
-- 🔍 **Real-time Search & Advanced Filters** — Filter tools by name, description, category, or difficulty
-- 🏷️ **Difficulty Tags & Skills** — Interactive tags for OSINT, CVEs, and lab difficulties
-- 🪟 **Tool Modal Popup** — Click any card for tool details, tags, and direct link
-- 🎨 **Modern Dark Theme** — Glassmorphism UI with smooth animations
-- ✨ **Mouse-follow Glow** — Subtle cursor-tracking light effect
-- 🛡️ **Secure by Design** — Built-in XSS prevention and sanitized data rendering
-- ⚡ **Optimized Performance** — Intelligent favicon caching and lightning-fast DOM visibility toggling
-- ♿ **Accessible** — Fully keyboard navigable with focus trapping, skip-nav, and ARIA live regions
-- 📱 **Fully Responsive** — Works smoothly on desktop, tablet, and mobile browsers
-- 📦 **No Dependencies** — Pure HTML5, Vanilla CSS, and modular Vanilla JavaScript
+- 🌗 **Light & Dark Modes** — Beautiful glassmorphism UI with seamless theme toggling and refined color schemes.
+- 🔍 **Integrated Advanced Search** — Powerful real-time search and filtering seamlessly integrated into the navigation bar.
+- 🧭 **Sticky Navigation Bar** — Quick-jump categories with scroll-spy highlighting.
+- 🏷️ **Difficulty Tags & Skills** — Interactive tags for OSINT, CVEs, and TryHackMe lab difficulties.
+- 🪟 **Tool Modal Popup** — Click any card for tool details, tags, and direct links.
+- ✨ **Mouse-follow Glow** — Subtle cursor-tracking light effect for enhanced interactivity.
+- 🛡️ **Secure by Design** — Built-in XSS prevention and sanitized data rendering.
+- ⚡ **Optimized Performance** — Intelligent favicon caching and lightning-fast DOM visibility toggling.
+- ♿ **Accessible** — Fully keyboard navigable with focus trapping, skip-nav, and ARIA live regions.
+- 📱 **Fully Responsive** — Works smoothly on desktop, tablet, and mobile browsers.
+- 📦 **No Dependencies** — Pure HTML5, Vanilla CSS, and modular Vanilla JavaScript.
 
 <hr>
 
