@@ -38,6 +38,9 @@ const _meta = {
   'CTF':                  ['🚩', 'cat-thm'],
   'Special Events':       ['🎄', 'cat-thm'],
   'Misc':                 ['📦', 'cat-thm'],
+  
+  // 🟣 AI
+  'AI':                   ['🤖', 'cat-thm'],
 };
 
 const _urlName = (n) => n.toLowerCase().replace(/ /g, '').replace(/[^\w-]+/g, '');
