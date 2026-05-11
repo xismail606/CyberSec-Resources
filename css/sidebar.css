@@ -1,5 +1,5 @@
 /* ===================================
-  SOCIAL SIDEBAR
+  SOCIAL SIDEBAR — Obsidian Lux
 =================================== */
 .social {
   position: fixed;
@@ -15,8 +15,8 @@
 .social ul li {
   display: block;
   margin: 5px;
-  background: var(--sidebar-bg, rgba(15, 10, 10, 0.92));
-  backdrop-filter: blur(10px);
+  background: var(--sidebar-bg, rgba(9, 9, 11, 0.92));
+  backdrop-filter: blur(16px);
   width: 300px;
   text-align: right;
   padding: 10px;
@@ -27,9 +27,9 @@
 }
 .social ul li:hover {
   transform: translateX(110px);
-  background: var(--sidebar-hover-bg, linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(10, 5, 5, 0.95)));
+  background: var(--sidebar-hover-bg, rgba(24, 24, 27, 0.95));
   border-color: var(--border-hover);
-  box-shadow: var(--sidebar-hover-shadow, 0 8px 20px rgba(239, 68, 68, 0.25));
+  box-shadow: var(--sidebar-hover-shadow, 0 8px 25px rgba(168, 85, 247, 0.15));
 }
 .social ul li a {
   color: var(--text-primary);
@@ -43,7 +43,7 @@
 }
 .social ul li i {
   color: var(--accent-red-light);
-  background: var(--sidebar-icon-bg, rgba(239, 68, 68, 0.12));
+  background: var(--sidebar-icon-bg, rgba(168, 85, 247, 0.08));
   padding: 10px;
   border-radius: 50%;
   width: 40px;
@@ -53,14 +53,14 @@
   align-items: center;
   justify-content: center;
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid var(--sidebar-icon-border, rgba(239, 68, 68, 0.15));
+  border: 1px solid var(--sidebar-icon-border, rgba(168, 85, 247, 0.12));
 }
 .social ul li:hover i {
   color: #ffffff;
-  background: var(--sidebar-icon-hover-bg, rgba(239, 68, 68, 0.35));
+  background: var(--sidebar-icon-hover-bg, rgba(168, 85, 247, 0.3));
   transform: rotate(360deg);
-  box-shadow: var(--sidebar-icon-hover-shadow, 0 0 18px rgba(239, 68, 68, 0.35));
-  border-color: var(--sidebar-icon-hover-border, rgba(239, 68, 68, 0.4));
+  box-shadow: var(--sidebar-icon-hover-shadow, 0 0 18px rgba(168, 85, 247, 0.25));
+  border-color: var(--sidebar-icon-hover-border, rgba(168, 85, 247, 0.4));
 }
 
 /* Mobile: floating icons at bottom left (no hover slide on touch) */
@@ -87,7 +87,7 @@
     box-shadow: none;
   }
   .social ul li a {
-    font-size: 0; /* Hide text */
+    font-size: 0;
     justify-content: center;
     align-items: center;
     padding: 0;
@@ -107,13 +107,13 @@
     justify-content: center;
     align-items: center;
     box-shadow: var(--sidebar-mobile-shadow, 0 4px 12px rgba(0, 0, 0, 0.4));
-    background: var(--sidebar-mobile-icon-bg, rgba(15, 10, 10, 0.95));
+    background: var(--sidebar-mobile-icon-bg, rgba(9, 9, 11, 0.95));
     border: 1px solid var(--border-color);
     color: var(--accent-red-light);
   }
   .social ul li i:hover,
   .social ul li i:active {
-    background: var(--sidebar-mobile-icon-active, rgba(239, 68, 68, 0.6));
+    background: var(--sidebar-mobile-icon-active, rgba(168, 85, 247, 0.5));
     transform: scale(1.05);
   }
 }
