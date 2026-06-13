@@ -1022,6 +1022,558 @@ window.__cyberData = [
       },
     ],
   },
+  {
+    name: "Basic Security Tools",
+    icon: "🛠️",
+    theme: "cat-tools",
+    links: [
+      {
+        name: "XSSTRON",
+        url: "https://github.com/RenwaX23/XSSTRON",
+        desc: "Electron JS Browser To Find XSS Vulnerabilities Automatically",
+      },
+      {
+        name: "Burpsuite Sharpener",
+        url: "https://github.com/mdsecresearch/BurpSuiteSharpener",
+        desc: "Extension should add a number of UI and functional features to Burp Suite to make working with it easie",
+      },
+      {
+        name: "Automate to find IP address",
+        url: "https://medium.com/@calfcrusher/automate-and-finds-the-ip-address-of-a-website-behind-cloudflare-45db99510b4b",
+        desc: "Automate and finds the IP address of a website behind Cloudflare",
+      },
+      {
+        name: "Taser",
+        url: "https://github.com/m8r0wn/taser",
+        desc: "Python3 resource library for creating security related tooling",
+      },
+      {
+        name: "Uro",
+        url: "https://github.com/s0md3v/uro",
+        desc: "Using a URL list for security testing can be painful as there are a lot of URLs that have uninteresting/duplicate content; uro aims to solve that.",
+      },
+      {
+        name: "Fire",
+        url: "https://github.com/thelicato/fire",
+        desc: "This is a simple tool meant to work in a pipeline of other scripts. It takes domains on stdin and outputs them on stdout if they resolve",
+      },
+      {
+        name: "PASTIS",
+        url: "https://github.com/quarkslab/pastis",
+        desc: "The PASTIS project is a fuzzing framework aiming at combining various software testing techniques within the same workflow to perform collaborative fuzzing also called ensemble fuzzing.",
+      },
+      {
+        name: "MCVA",
+        url: "https://slowmist.medium.com/meta-mask-clickjacking-vulnerability-analysis-f3e7c22ff4d9",
+        desc: "MetaMask Clickjacking Vulnerability Analysis",
+      },
+      {
+        name: "Burp Automator",
+        url: "https://github.com/tristanlatr/burpa",
+        desc: "A Burp Suite Automation Tool. It provides a high level CLI and Python interfaces to Burp Suite scanner and can be used to setup Dynamic Application Security Testing (DAST)",
+      },
+      {
+        name: "GoWhois",
+        url: "https://github.com/famasoon/gowhois",
+        desc: "Whois command implemented by golang with awesome whois servers list",
+      },
+      {
+        name: "Relateddomains",
+        url: "https://github.com/gwen001/related-domains",
+        desc: "Find related domains of a given domain",
+      },
+      {
+        name: "Ciphey",
+        url: "https://github.com/Ciphey/Ciphey",
+        desc: "Automatically decrypt encryptions without knowing the key or cipher, decode encodings, and crack hashes.",
+      },
+      {
+        name: "CSPRecon",
+        url: "https://github.com/edoardottt/csprecon",
+        desc: "Discover new target domains using Content Security Policy",
+      },
+      {
+        name: "CookieMonster",
+        url: "https://github.com/iangcarroll/cookiemonster",
+        desc: "This helps you detect and abuse vulnerable implementations of stateless sessions",
+      },
+      {
+        name: "DNSSEC",
+        url: "https://www.securesystems.de/blog/subdomain-enumeration-with-DNSSEC/",
+        desc: "Subdomain Enumeration with DNSSEC",
+      },
+      {
+        name: "ReconNG",
+        url: "https://medium.com/@kaorrosi/osint-research-with-recon-ng-727661a70ea4",
+        desc: "OSINT Research",
+      },
+      {
+        name: "Katana",
+        url: "https://github.com/projectdiscovery/katana",
+        desc: "A nextgeneration crawling and spidering framework.",
+      },
+      {
+        name: "BurpText4Shell",
+        url: "https://github.com/silentsignal/burp-text4shell",
+        desc: "Test4shell scanner for Burp Suite.",
+      },
+      {
+        name: "RUSTSCAN",
+        url: "https://beinguncommon.medium.com/rust-scan-the-modern-port-scanner-d6d3084e9c82",
+        desc: "THE MODERN PORT SCANNER",
+      },
+      {
+        name: "Holy FFUF!",
+        url: "https://mikekitckchan.medium.com/holy-ffuf-a-beginner-guide-to-fuzz-with-ffuf-4bc6a66b5391",
+        desc: "A Beginner Guide to Fuzz with FFUF",
+      },
+      {
+        name: "GraphQLmap",
+        url: "https://github.com/swisskyrepo/GraphQLmap",
+        desc: "This is a scripting engine to interact with a graphql endpoint for pentesting purposes",
+      },
+      {
+        name: "VAmPI",
+        url: "https://github.com/erev0s/VAmPI",
+        desc: "Vulnerable REST API with OWASP top 10 vulnerabilities for security testing",
+      },
+      {
+        name: "Clif",
+        url: "https://github.com/0x4ndy/clif",
+        desc: "This is a commandline interface (CLI) application fuzzer, pretty much what wfuzz or ffuf are for web.",
+      },
+      {
+        name: "Ghauri",
+        url: "https://github.com/r0oth3x49/ghauri",
+        desc: "This is an advanced crossplatform tool that automates the process of detecting and exploiting SQL injection security flaws",
+      },
+      {
+        name: "DOM Invader",
+        url: "https://portswigger.net/blog/introducing-dom-invader",
+        desc: "Introducing DOM Invader, DOM XSS just got a whole lot easier to find",
+      },
+      {
+        name: "JiraLens",
+        url: "https://github.com/MayankPandey01/Jira-Lens",
+        desc: "Fast and customizable vulnerability scanner For JIRA written in Python",
+      },
+      {
+        name: "Urls deduplication",
+        url: "https://github.com/rotemreiss/uddup",
+        desc: "Urls deduplication tool for better recon.",
+      },
+      {
+        name: "ZKar",
+        url: "https://github.com/phith0n/zkar",
+        desc: "This is a Java serialization protocol analysis tool implement in Go.",
+      },
+      {
+        name: "Smap",
+        url: "https://github.com/s0md3v/Smap",
+        desc: "This is a dropin replacement for Nmap powered by shodan.io",
+      },
+      {
+        name: "DumpXSS",
+        url: "https://github.com/Stonzyy/dumpxss",
+        desc: "A scanner tool For XSS Vulnerability",
+      },
+      {
+        name: "x8",
+        url: "https://github.com/Sh1Yo/x8",
+        desc: "Hidden parameters discovery suite written in Rust",
+      },
+      {
+        name: "Nginxpwner",
+        url: "https://github.com/stark0de/nginxpwner",
+        desc: "This is a simple tool to look for common Nginx misconfigurations and vulnerabilities.",
+      },
+      {
+        name: "BurpGPT",
+        url: "https://github.com/aress31/burpgpt",
+        desc: "A Burp Suite extension that integrates OpenAI's GPT to perform an additional passive scan for discovering highly bespoke vulnerabilities, and enables running trafficbased analysis of any type.",
+      },
+      {
+        name: "Caido",
+        url: "https://caido.io/",
+        desc: "Lightweight Web Security Auditing Toolkit",
+      },
+      {
+        name: "AssetFinder",
+        url: "https://securitytrails.com/blog/assetfinder",
+        desc: "A Handy Subdomain and Domain Discovery Tool",
+      },
+      {
+        name: "Secret Magpie",
+        url: "https://github.com/punk-security/secret-magpie",
+        desc: "Secret Detection Tool",
+      },
+      {
+        name: "Designing sockfuzzer",
+        url: "https://googleprojectzero.blogspot.com/2021/04/designing-sock-fuzzer-network-syscall.html",
+        desc: "A network syscall fuzzer for XNU.",
+      },
+      {
+        name: "Proto Find",
+        url: "https://github.com/kosmosec/proto-find",
+        desc: "Check if your target is vulnerable for client side prototype pollution",
+      },
+      {
+        name: "Protoscan",
+        url: "https://github.com/KathanP19/protoscan",
+        desc: "Prototype Pollution Scanner made in Golang.",
+      },
+      {
+        name: "BufferPwn",
+        url: "https://github.com/PabloMK7/ENLBufferPwn",
+        desc: "RCE vulnerability in the common network code of several first party Nintendo games since the Nintendo 3DS",
+      },
+      {
+        name: "CRLFuzz",
+        url: "https://blog.intigriti.com/2021/10/05/hacker-tools-crlfuzz/",
+        desc: "Hacker Tools: Injecting CRLF for bounties",
+      },
+      {
+        name: "NFT",
+        url: "https://portswigger.net/daily-swig/new-differential-fuzzing-tool-reveals-novel-http-request-smuggling-techniques",
+        desc: "New differential fuzzing tool reveals novel HTTP request smuggling techniques.",
+      },
+      {
+        name: "S3Scanner",
+        url: "https://github.com/sa7mon/S3Scanner",
+        desc: "Scan for open S3 buckets and dump the contents.",
+      },
+      {
+        name: "Kurl",
+        url: "https://crates.io/crates/kurl",
+        desc: "HTTP Requests for security researchers",
+      },
+      {
+        name: "UDON",
+        url: "https://github.com/dhn/udon",
+        desc: "A simple tool that helps to find assets/domains based on the Google Analytics ID.",
+      },
+      {
+        name: "roxify",
+        url: "https://github.com/projectdiscovery/proxify",
+        desc: "Swiss Army knife Proxy tool for HTTP/HTTPS traffic capture, manipulation, and replay on the go",
+      },
+      {
+        name: "revshells",
+        url: "https://www.revshells.com/",
+        desc: "Online Reverse Shell Generator",
+      },
+      {
+        name: "S3cret Scanner",
+        url: "https://github.com/Eilonh/s3crets_scanner",
+        desc: "Hunting For Secrets Uploaded To Public S3 Buckets",
+      },
+      {
+        name: "HTTPLoot",
+        url: "https://github.com/redhuntlabs/HTTPLoot",
+        desc: "An automated tool which can simultaneously crawl, fill forms, trigger error/debug pages and \"loot\" secrets out of the clientfacing code of sites",
+      },
+      {
+        name: "Cewl",
+        url: "https://www.hackingarticles.in/a-detailed-guide-on-cewl/",
+        desc: "A Detailed Guide on Cewl",
+      },
+      {
+        name: "hakoriginfinder",
+        url: "https://github.com/hakluke/hakoriginfinder",
+        desc: "A tool for discovering the origin host behind a reverse proxy. Useful for bypassing WAFs and other reverse proxies",
+      },
+      {
+        name: "PurplePanda",
+        url: "https://github.com/carlospolop/PurplePanda",
+        desc: "Identify privilege escalation paths within and across different clouds",
+      },
+      {
+        name: "TProxer",
+        url: "https://github.com/ethicalhackingplayground/TProxer",
+        desc: "A Burp Suite extension made to automate the process of finding reverse proxy path based SSRF",
+      },
+      {
+        name: "STEWS",
+        url: "https://github.com/PalindromeLabs/STEWS",
+        desc: "This is a tool suite for security testing of WebSockets",
+      },
+      {
+        name: "Webrecon",
+        url: "https://github.com/xerohackcom/webrecon",
+        desc: "Automated Web Recon Shell Scripts",
+      },
+      {
+        name: "ffuf Primer",
+        url: "https://danielmiessler.com/study/ffuf/",
+        desc: "More on FFUF",
+      },
+      {
+        name: "Wafme0w",
+        url: "https://github.com/Lu1sDV/wafme0w",
+        desc: "A fast and lightweight Web Application Firewall fingerprinting tool.",
+      },
+      {
+        name: "Leakos",
+        url: "https://github.com/carlospolop/Leakos",
+        desc: "Search with gitleaks and trufflehog in the responses of the given URLs or in all the repos of an organization and its members.",
+      },
+      {
+        name: "Pycript",
+        url: "https://github.com/Anof-cyber/Pycript",
+        desc: "This is a Burp Suite extension that enables users to encrypt and decrypt requests for manual and automated application penetration testing.",
+      },
+      {
+        name: "Gotator",
+        url: "https://github.com/Josue87/gotator",
+        desc: "This is a tool to generate DNS wordlists through permutations.",
+      },
+      {
+        name: "ChopChop",
+        url: "https://github.com/michelin/ChopChop",
+        desc: "This is a CLI to help developers scanning endpoints and identifying exposition of sensitive services/files/folders",
+      },
+      {
+        name: "Baserunner",
+        url: "https://iosiro.com/blog/baserunner-exploiting-firebase-datastores",
+        desc: "This is a tool for exploring and exploiting Firebase datastores",
+      },
+      {
+        name: "Oralyzer",
+        url: "https://github.com/r0075h3ll/Oralyzer",
+        desc: "This a simple python script that probes for Open Redirection vulnerability in a website. It does that by fuzzing the URL that is provided in the input",
+      },
+      {
+        name: "vAPI",
+        url: "https://github.com/roottusk/vapi",
+        desc: "This is Vulnerable Adversely Programmed Interface which is SelfHostable API that mimics OWASP API Top 10 scenarios in the means of Exercises.",
+      },
+      {
+        name: "FIVERECON",
+        url: "https://github.com/edoardottt/favirecon",
+        desc: "Use favicon.ico to improve your target recon phase. Quickly detect technologies, WAF, exposed panels, known services.",
+      },
+      {
+        name: "Turbo Intruder",
+        url: "https://blog.intigriti.com/2022/03/01/hacker-tools-turbo-intruder/",
+        desc: "This Hacker Tool is Going faster than ever!",
+      },
+      {
+        name: "nrich",
+        url: "https://gitlab.com/shodanpublic/nrich",
+        desc: "A commandline tool to quickly analyze all IPs in a file and see which ones have open ports/ vulnerabilities. Can also be fed data from stdin to be used in a data pipeline.",
+      },
+      {
+        name: "Meg",
+        url: "https://blog.intigriti.com/2022/02/01/hacker-tools-meg/",
+        desc: "Endpoint scan the masses!",
+      },
+      {
+        name: "PureDNS",
+        url: "https://github.com/d3mondev/puredns",
+        desc: "Subdomain bruteforcing tool that improves massdns to accurately handle wildcard subdomains and DNS poisoning.",
+      },
+      {
+        name: "JWTReauth",
+        url: "https://research.nccgroup.com/2022/08/25/tool-release-jwt-reauth/",
+        desc: "A new tool for JWT Reauth issues",
+      },
+      {
+        name: "S3Sec",
+        url: "https://github.com/0xmoot/s3sec",
+        desc: "Check AWS S3 instances for read/write/delete access",
+      },
+      {
+        name: "Jira Scan",
+        url: "https://github.com/bcoles/jira_scan",
+        desc: "This is a simple remote scanner for Atlassian Jira.",
+      },
+      {
+        name: "Webpack Exploder",
+        url: "https://spaceraccoon.github.io/webpack-exploder/",
+        desc: "Unpack the source code of React and other Webpacked Javascript apps! Check out Expanding the Attack Surface.",
+      },
+      {
+        name: "Raider",
+        url: "https://github.com/DigeeX/raider",
+        desc: "Web authentication testing framework",
+      },
+      {
+        name: "Reconator",
+        url: "https://github.com/gokulapap/Reconator",
+        desc: "Automated Recon for Pentesting & Bug Bounty",
+      },
+      {
+        name: "Log4j2Scan",
+        url: "https://github.com/whwlsfb/Log4j2Scan",
+        desc: "Log4j2 RCE Passive Scanner plugin for BurpSuite",
+      },
+      {
+        name: "WARF",
+        url: "https://github.com/iamnihal/warf",
+        desc: "This is a Web Application Reconnaissance Framework that helps to gather information about the target.",
+      },
+      {
+        name: "GooFuzz",
+        url: "https://github.com/m3n0sd0n4ld/GooFuzz",
+        desc: "GooFuzz is a tool to perform fuzzing with an OSINT approach, managing to enumerate directories, files, subdomains or parameters without leaving evidence on the target's server and by means of advanced Google searches (Google Dorking).",
+      },
+      {
+        name: "GradeJS",
+        url: "https://github.com/fingerprintjs/gradejs",
+        desc: "This tool analyzes production Webpack bundles without having access to the source code of a website.",
+      },
+      {
+        name: "Waymore",
+        url: "https://github.com/xnl-h4ck3r/waymore",
+        desc: "Find way more from the Wayback Machine!",
+      },
+      {
+        name: "Pastos",
+        url: "https://github.com/carlospolop/Pastos",
+        desc: "Search pastes in tens of webs in seconds with GCSE.",
+      },
+      {
+        name: "gitlabsubdomains",
+        url: "https://github.com/gwen001/gitlab-subdomains",
+        desc: "Find subdomains on GitLab",
+      },
+      {
+        name: "Cero",
+        url: "https://github.com/glebarez/cero",
+        desc: "Scrape domain names from SSL certificates of arbitrary hosts",
+      },
+      {
+        name: "CSRF Generator",
+        url: "https://github.com/merttasci/csrf-poc-generator",
+        desc: "This html file creates a csrf poc form to any http request.",
+      },
+      {
+        name: "Trivy",
+        url: "https://github.com/aquasecurity/trivy",
+        desc: "A Simple and Comprehensive Vulnerability Scanner for Containers, Suitable for CI",
+      },
+      {
+        name: "Lepus",
+        url: "https://github.com/gfek/Lepus",
+        desc: "This is a tool for enumerating subdomains, checking for subdomain takeovers and perform port scans and boy, is it fast!",
+      },
+      {
+        name: "subzuf",
+        url: "https://github.com/elceef/subzuf",
+        desc: "subzuf is a subdomain bruteforce fuzzer coupled with an immensly simple but effective DNS reponseguided algorithm.",
+      },
+      {
+        name: "Frogy",
+        url: "https://github.com/iamthefrogy/frogy/",
+        desc: "Using the combination of different subdomain enumeration tools and logic this script tries to identify more subdomains and TLDs in recon.",
+      },
+      {
+        name: "xnLinkFinder",
+        url: "https://github.com/xnl-h4ck3r/xnLinkFinder",
+        desc: "A python tool used to discover endpoints for a given target",
+      },
+      {
+        name: "BLH",
+        url: "https://github.com/MayankPandey01/BrokenLinkHijacker",
+        desc: "BrokenLinkHijacker is a Fast Broken Link Hijacker Tool written in Python",
+      },
+      {
+        name: "netlas.io",
+        url: "https://medium.com/@thebugbountyhunter/review-netlasio-for-bugbounty-c062a87b544f",
+        desc: "A new search engine for discover, research and monitor any asset. It is so useful for your #bugbounty recon automation.",
+      },
+      {
+        name: "bbr",
+        url: "https://github.com/codingo/bbr",
+        desc: "It is an open source tool to aid in command line driven generation of bug bounty reports based on user provided templates.",
+      },
+      {
+        name: "PacketStreamer",
+        url: "https://oweng.medium.com/introducing-packet-streamer-distributed-packet-capture-for-cloud-native-platforms-3e7f9ac57ab1",
+        desc: "This is a tool for distributed packet capture for cloudnative platforms",
+      },
+      {
+        name: "JSpector",
+        url: "https://github.com/hisxo/JSpector",
+        desc: "It is a Burp Suite extension that passively crawls JavaScript files and automatically creates issues with URLs and endpoints found on the JS files",
+      },
+      {
+        name: "Uncover",
+        url: "https://blog.projectdiscovery.io/uncover/",
+        desc: "Quickly discover exposed hosts using multiple search engines",
+      },
+      {
+        name: "ASNMap",
+        url: "https://blog.projectdiscovery.io/asnmap/",
+        desc: "A Golang CLI tool for speedy reconnaissance using ASN data",
+      },
+      {
+        name: "Go Dork",
+        url: "https://github.com/dwisiswant0/go-dork",
+        desc: "The fastest dork scanner written in Go",
+      },
+      {
+        name: "ClusterFuzzLite",
+        url: "https://github.com/google/clusterfuzzlite",
+        desc: "Simple continuous fuzzing that runs in CI",
+      },
+      {
+        name: "Gorks",
+        url: "https://github.com/carlospolop/Gorks",
+        desc: "Google Dorks finally made easy to run without hiding.",
+      },
+      {
+        name: "dnsmonster",
+        url: "https://github.com/mosajjal/dnsmonster",
+        desc: "Passive DNS Capture/Monitoring Framework",
+      },
+      {
+        name: "fail2ban",
+        url: "https://research.securitum.com/fail2ban-remote-code-execution/",
+        desc: "Remote Code Execution",
+      },
+      {
+        name: "ppfuzz",
+        url: "https://github.com/dwisiswant0/ppfuzz?tag=v1.0.0",
+        desc: "Prototype Pollution Fuzzer",
+      },
+      {
+        name: "userefuzz",
+        url: "https://github.com/root-tanishq/userefuzz",
+        desc: "UserAgent , XForwardedFor and Referer SQLI Fuzzer",
+      },
+      {
+        name: "Astra",
+        url: "https://github.com/Sachin-v3rma/Astra",
+        desc: "Astra finds urls, endpoints, aws buckets, api keys, tokens, etc from a given url/s",
+      },
+      {
+        name: "Cloudlist",
+        url: "https://github.com/projectdiscovery/cloudlist",
+        desc: "This is a tool for listing Assets from multiple Cloud Providers",
+      },
+      {
+        name: "r2flutch",
+        url: "https://github.com/as0ler/r2flutch",
+        desc: "A tool to decrypt iOS apps using r2frida",
+      },
+      {
+        name: "Shodan Dorks",
+        url: "https://shahjerry33.medium.com/shodan-dorks-the-gods-eye-f224f9b3984f",
+        desc: "The H4CK3R God’s Eye",
+      },
+      {
+        name: "Gouge",
+        url: "https://github.com/mqst/gouge",
+        desc: "Gouge is a simple Burp extension to extract or gouge all URLs which are seen in JS files as you visit different websites/webpages in Burp Suite",
+      },
+      {
+        name: "mxtakeover",
+        url: "https://github.com/musana/mx-takeover",
+        desc: "This tool focuses DNS MX records and detects misconfigured MX records.",
+      }
+    ],
+  },
 ];
 
 //x606

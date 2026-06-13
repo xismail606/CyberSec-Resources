@@ -17,7 +17,8 @@
   const categories = window.__cyberData || [];
   const container = $("categoriesContainer");
   const isLabsPage = document.title.toLowerCase().includes("labs") || window.location.pathname.includes("free-labs");
-  const itemLabel = isLabsPage ? "lab" : "tool";
+  const isWriteupsPage = document.title.toLowerCase().includes("writeup") || window.location.pathname.includes("writeup");
+  const itemLabel = isLabsPage ? "lab" : isWriteupsPage ? "writeup" : "tool";
 
   let totalTools = 0;
   let currentDiffFilter = "all";
@@ -461,6 +462,9 @@
     if (url.includes("tryhackme.com")) {
       modalSubtitle.textContent = "lab";
       modalOpenBtn.textContent = "Go to Room";
+    } else if (isWriteupsPage) {
+      modalSubtitle.textContent = "Bug Bounty Writeup";
+      modalOpenBtn.textContent = "Read Writeup";
     } else {
       modalSubtitle.textContent = "Tool Details";
       modalOpenBtn.textContent = "Open Tool";
