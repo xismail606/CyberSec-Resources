@@ -10,7 +10,7 @@
 <h1 align="center">🛡️ CyberSec Resources</h1>
 
 <p align="center">
-A curated collection of <strong>180 cybersecurity tools</strong> and <strong>648 free TryHackMe labs</strong> — organized, searchable, and ready to use.
+A curated collection of <strong>289 cybersecurity tools</strong>, <strong>648 free TryHackMe labs</strong>, and <strong>1,248 bug bounty writeups</strong> — organized, searchable, and ready to use.
 </p>
 
 <p align="center">
@@ -33,9 +33,10 @@ Live Demo →
 
 <p>
 <img src="https://img.shields.io/badge/Theme-Dark_Mode-0a0e1a?style=for-the-badge">
-<img src="https://img.shields.io/badge/Tools-180-38bdf8?style=for-the-badge">
+<img src="https://img.shields.io/badge/Tools-289-38bdf8?style=for-the-badge">
 <img src="https://img.shields.io/badge/Free_Labs-648-34d399?style=for-the-badge">
-<img src="https://img.shields.io/badge/Categories-43-a78bfa?style=for-the-badge">
+<img src="https://img.shields.io/badge/Writeups-1248-c084fc?style=for-the-badge">
+<img src="https://img.shields.io/badge/Categories-87-a78bfa?style=for-the-badge">
 <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
 </p>
 
@@ -47,10 +48,11 @@ Live Demo →
 
 ## 📄 Pages
 
-| Page                      | Description                                                                   |
-| ------------------------- | ----------------------------------------------------------------------------- |
-| **🛡️ CyberSec Resources** | 180 tools across 18 categories (OSINT, hashing, networking, pentesting, etc.) |
-| **💻 Free Labs**          | 648 free TryHackMe rooms across 25 categories (Intro → Insane difficulty)     |
+| Page                         | Description                                                                       |
+| ---------------------------- | --------------------------------------------------------------------------------- |
+| **🛡️ CyberSec Resources**    | 289 tools across 19 categories (OSINT, hashing, networking, pentesting, etc.)     |
+| **💻 Free Labs**             | 648 free TryHackMe rooms across 26 categories (Intro → Insane difficulty)         |
+| **🐛 Bug Bounty Writeups**   | 1,248 real-world writeups across 42 categories (XSS, SSRF, IDOR, RCE, CSRF, etc.) |
 
 <hr>
 
@@ -60,30 +62,38 @@ Live Demo →
 
 | #   | Category                               | Example Tools                                |
 | --- | -------------------------------------- | -------------------------------------------- |
+| 🏴  | **CTF & Learning Platforms**           | TryHackMe, Hack The Box Academy, PortSwigger |
+| 📚  | **Security Resources & Wordlists**     | SecLists, OAuth2 Threat Model                |
+| 🕵️  | **OSINT & Reconnaissance**             | Sherlock, OSINT Framework, Who.is, crt.sh    |
+| 📧  | **Email Intelligence**                 | Hunter.io, Snov.io, Prospeo                  |
+| 🌐  | **Network, DNS & Infrastructure**      | Nmap, Wireshark, Shodan, Snort               |
+| ⚠️  | **Vulnerability Databases**            | Exploit-DB, CVE, NVD, VulDB                  |
+| 🎯  | **Penetration Testing & Exploitation** | Burp Suite, Metasploit, Sqlmap, Nuclei, ffuf |
 | 🔓  | **Data Breach & Password Security**    | DeHashed, Password Generator                 |
 | 🔐  | **Encoding, Decoding & Crypto**        | CyberChef, Base64, JWT.io, Dogbolt           |
 | 🧬  | **Hash Analysis & Cracking**           | CrackStation, Hashcat, John the Ripper       |
-| 🕵️  | **OSINT & Reconnaissance**             | Sherlock, OSINT Framework, Who.is, crt.sh    |
-| 🌐  | **Network, DNS & Infrastructure**      | Nmap, Wireshark, Shodan, Snort               |
-| ⚠️  | **Vulnerability Databases**            | Exploit-DB, CVE, NVD, VulDB                  |
-| 🦠  | **Malware Analysis**                   | VirusTotal, ANY.RUN                          |
-| 🖼️  | **Steganography & Image Analysis**     | Aperi'Solve, StegSeek                        |
-| 📧  | **Email Intelligence**                 | Hunter.io, Snov.io, Prospeo                  |
-| 📚  | **Security Resources & Wordlists**     | SecLists, OAuth2 Threat Model                |
-| 🎯  | **Penetration Testing & Exploitation** | Burp Suite, Metasploit, Sqlmap, Nuclei, ffuf |
+| 🦠  | **Malware Analysis**                   | VirusTotal, ANY.RUN, MobSF                   |
+| 🖼️  | **Steganography & Image Analysis**     | Aperi'Solve, StegSeek, Steghide              |
 | 🔧  | **System & Process Analysis**          | Sysinternals, Autoruns, Process Explorer     |
+| 🧩  | **Browser Extensions**                 | FoxyProxy, Wappalyzer, uBlock Origin, DotGit |
 | 🤖  | **AI Assistants**                      | ChatGPT, DeepSeek, Claude, Gemini            |
 | 💻  | **Coding Tools**                       | VS Code, Antigravity, GitHub                 |
-| 🏴  | **CTF & Learning Platforms**           | TryHackMe, Hack The Box Academy, PortSwigger |
-| 🧩  | **Browser Extensions**                 | FoxyProxy, Wappalyzer, uBlock Origin, DotGit |
 | 📝  | **Reporting & Note Taking**            | Obsidian, Notion, XMind                      |
 | ✍️  | **Write-ups & Bug Bounty**             | Medium, HackerOne, Bugcrowd, Pentester Land  |
+| 🛠️  | **Useful Tools**                       | Regex101, JSON Formatter, Wayback Machine    |
 
 ## 🧪 Free Labs Categories
 
-> 25 categories covering Intro, Linux, Windows, Web, Recon, Scripting, Networking, Tooling, Cryptography, Steganography, Forensics, Reverse Engineering, Malware Analysis, PrivEsc, Active Directory, CTF, PCAP Analysis, Buffer Overflow, Android, Wi-Fi Hacking, Misc, Special Events, Container Security, Exploit Development, and more.
+> 26 categories covering Intro, Basics, Linux, Windows, Networking, Web, Scripting, Recon, Tooling, Cryptography, Steganography, Forensics, PCAP Analysis, Reverse Engineering, Malware Analysis, Buffer Overflow, Exploit Development, Privilege Escalation, Active Directory, Container Security, Android, Wi-Fi Hacking, CTF, Special Events, Misc, and AI.
 
 > All TryHackMe room links belong to TryHackMe.
+> This website only indexes publicly available links for educational purposes.
+
+## 🐛 Bug Bounty Writeups Categories
+
+> 42 categories covering General Writeups, XSS, SSRF, IDOR, RCE, CSRF, SQL Injection, Account Takeover, Authentication Bypass, Prototype Pollution, Information Disclosure, HTTP Request Smuggling, Web Cache Poisoning, CORS Misconfiguration, Open Redirect, File Upload, Race Condition, Privilege Escalation, Denial of Service, Business Logic, and many more.
+
+> Writeup links belong to their respective authors and platforms.
 > This website only indexes publicly available links for educational purposes.
 
 <hr>
@@ -103,6 +113,7 @@ Live Demo →
 - ♿ **Accessible** — Fully keyboard navigable with focus trapping, skip-nav, and ARIA live regions.
 - 📱 **Fully Responsive** — Works smoothly on desktop, tablet, and mobile browsers.
 - 📦 **No Dependencies** — Pure HTML5, Vanilla CSS, and modular Vanilla JavaScript.
+- 🐛 **Bug Bounty Writeups** — 1,248 real-world writeups across 42 vulnerability categories with toast notifications for broken links.
 
 <hr>
 
@@ -114,6 +125,7 @@ Live Demo →
 CyberSec-Resources/
 ├── index.html                  # CyberSec Resources page
 ├── free-labs.html              # Free Labs page
+├── bug-bounty-writeups.html    # Bug Bounty Writeups page
 ├── assets/
 │   └── x606-logo1.webp        # Site logo
 ├── css/
@@ -124,10 +136,11 @@ CyberSec-Resources/
 │   ├── main.js                 # Shared render engine
 │   └── theme-toggle.js         # Dark / Light theme switcher
 ├── data/
-│   ├── resources.data.js       # Tools data (180 tools)
+│   ├── resources.data.js       # Tools data (289 tools)
 │   ├── rooms.data.js           # TryHackMe rooms (Intro + Easy)
 │   ├── rooms.medium-hard.js    # TryHackMe rooms (Medium → Insane)
-│   └── free-labs.data.js       # Category grouper for labs
+│   ├── free-labs.data.js       # Category grouper for labs
+│   └── writeups.data.js        # Bug bounty writeups (1,248 writeups)
 ├── LICENSE
 └── README.md
 ```
