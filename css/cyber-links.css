@@ -1234,8 +1234,6 @@ body.no-glow::before {
 }
 
 /* ===== Responsive ===== */
-@media (max-width: 900px) {
-}
 
 @media (max-width: 768px) {
   .container {
@@ -1568,4 +1566,12 @@ body.no-glow::before {
 .cat-writeups .category-icon {
   background: rgba(192, 132, 252, 0.12);
   color: var(--accent-red-light);
+}
+.cat-tools .category-icon {
+  background: rgba(168, 85, 247, 0.12);
+  color: var(--accent-red);
+}
+.cat-general .category-icon {
+  background: rgba(124, 58, 237, 0.1);
+  color: var(--accent-red-dark);
 }
