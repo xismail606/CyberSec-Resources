@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bug Bounty Writeups — Security Research & Vulnerability Disclosures</title>
+    <title>AI Tools — AI Assistants & Resources</title>
     <meta
       name="description"
-      content="A massive curated collection of 1200+ bug bounty writeups covering XSS, SSRF, IDOR, RCE, CSRF, and more. Learn from real-world vulnerability disclosures."
+      content="A curated collection of AI assistants and tools for cybersecurity professionals. This section is under development."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,9 +17,9 @@
     <link rel="stylesheet" href="./css/cyber-links.css" />
     <link rel="stylesheet" href="./css/sidebar.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐛</text></svg>">
+     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
   </head>
-  <body class="no-glow">
+  <body>
     <!-- Skip Navigation -->
     <a href="#categoriesContainer" class="skip-nav">Skip to content</a>
     <!-- Background Effects -->
@@ -49,20 +49,28 @@
       <header class="hero">
         <div class="hero-badge">
           <span class="pulse-dot"></span>
-          BUG BOUNTY WRITEUPS
+          AI TOOLS
         </div>
-        <h1>🐛 <span class="typewriter" data-text="Bug Bounty Writeups"></span></h1>
+        <h1>🤖 <span class="typewriter" data-text="AI Tools"></span></h1>
         <p>
-         A massive collection of 1200+ real-world bug bounty writeups and vulnerability disclosures.
-         Learn from XSS, SSRF, IDOR, RCE, CSRF, and many more vulnerability classes.
+         A curated collection of AI assistants and tools to boost your productivity in cybersecurity research, coding, and analysis.
         </p>
+
+        <!-- Under Development Banner -->
+        <div style="background: linear-gradient(135deg, rgba(251, 191, 36, 0.15), rgba(245, 158, 11, 0.08)); border: 1px solid rgba(251, 191, 36, 0.3); border-radius: 12px; padding: 16px 24px; margin: 20px auto; max-width: 600px; display: flex; align-items: center; gap: 12px; backdrop-filter: blur(10px);">
+          <span style="font-size: 24px;">🚧</span>
+          <div>
+            <strong style="color: #fbbf24; font-size: 14px; letter-spacing: 0.5px;">UNDER DEVELOPMENT</strong>
+            <p style="margin: 4px 0 0; font-size: 13px; opacity: 0.8;">This section is still being built. More AI tools & resources coming soon!</p>
+          </div>
+        </div>
 
         <!-- Page Navigation Buttons -->
         <div class="page-nav">
           <a href="./index.html" class="page-nav-btn" id="btnResources">🛡️ CyberSec Resources</a>
           <a href="./free-labs.html" class="page-nav-btn" id="btnFreeLabs">💻 Free Labs</a>
-          <a href="./bug-bounty-writeups.html" class="page-nav-btn active" id="btnWriteups">🐛 Bug Bounty Writeups</a>
-          <a href="./ai-tools.html" class="page-nav-btn" id="btnAiTools">🤖 AI Tools</a>
+          <a href="./bug-bounty-writeups.html" class="page-nav-btn" id="btnWriteups">🐛 Bug Bounty Writeups</a>
+          <a href="./ai-tools.html" class="page-nav-btn active" id="btnAiTools">🤖 AI Tools</a>
         </div>
 
         <!-- Search -->
@@ -85,7 +93,7 @@
             type="text"
             class="search-input"
             id="searchInput"
-            placeholder="Search writeups..."
+            placeholder="Search AI tools..."
             autocomplete="off"
           />
           <button class="adv-search-toggle" id="advSearchToggle" aria-expanded="false" aria-controls="advSearchPanel" title="Advanced Search">
@@ -121,7 +129,7 @@
         <div class="stats-bar">
           <div class="stat-item">
             <div class="stat-number" id="totalTools">0</div>
-            <div class="stat-label">Writeups</div>
+            <div class="stat-label">Tools</div>
           </div>
           <div class="stat-item">
             <div class="stat-number" id="totalCategories">0</div>
@@ -150,7 +158,7 @@
           />
         </svg>
         <p class="no-results-title">
-          No writeups found
+          No tools found
         </p>
         <p>Try a different search term</p>
       </div>
@@ -178,8 +186,8 @@
             </svg>
           </button>
           
-          <h2 class="modal-title" id="modalTitle">Writeup Title</h2>
-          <div class="modal-subtitle" id="modalSubtitle">Bug Bounty Writeup</div>
+          <h2 class="modal-title" id="modalTitle">Tool Name</h2>
+          <div class="modal-subtitle" id="modalSubtitle">Intro • Intro</div>
           
           <p class="modal-desc" id="modalDesc">Description goes here.</p>
           
@@ -189,7 +197,7 @@
           </div>
           
           <button class="modal-btn" id="modalOpenBtn">
-            Read Writeup
+            Open Tool
           </button>
         </div>
       </div>
@@ -220,111 +228,8 @@
       </ul>
     </div>
 
-    <!-- Toast Notification -->
-    <div class="writeup-toast" id="writeupToast">
-      <div class="writeup-toast-icon">⚠️</div>
-      <div class="writeup-toast-content">
-        <strong>Heads up!</strong>
-        <p>Some links may no longer work as they are from older writeups. If a link is broken, try searching for the title on Google.</p>
-      </div>
-      <button class="writeup-toast-close" id="writeupToastClose" aria-label="Close">&times;</button>
-    </div>
-
-    <style>
-      .writeup-toast {
-        position: fixed;
-        top: 80px;
-        left: 50%;
-        transform: translateX(-50%) translateY(-200%);
-        max-width: 520px;
-        width: 90%;
-        background: linear-gradient(135deg, rgba(30, 30, 50, 0.95), rgba(40, 30, 60, 0.95));
-        border: 1px solid rgba(168, 85, 247, 0.4);
-        border-radius: 14px;
-        padding: 16px 20px;
-        display: flex;
-        align-items: flex-start;
-        gap: 12px;
-        z-index: 10000;
-        backdrop-filter: blur(16px);
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 20px rgba(168, 85, 247, 0.15);
-        opacity: 0;
-        transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease;
-      }
-      .writeup-toast.show {
-        transform: translateX(-50%) translateY(0);
-        opacity: 1;
-      }
-      .writeup-toast.hide {
-        transform: translateX(-50%) translateY(-200%);
-        opacity: 0;
-      }
-      .writeup-toast-icon {
-        font-size: 24px;
-        flex-shrink: 0;
-        margin-top: 2px;
-      }
-      .writeup-toast-content {
-        flex: 1;
-        color: #e2e8f0;
-        font-family: 'Inter', sans-serif;
-      }
-      .writeup-toast-content strong {
-        display: block;
-        font-size: 14px;
-        font-weight: 700;
-        color: #c084fc;
-        margin-bottom: 4px;
-      }
-      .writeup-toast-content p {
-        font-size: 13px;
-        line-height: 1.5;
-        margin: 0;
-        color: #a0aec0;
-      }
-      .writeup-toast-close {
-        background: none;
-        border: none;
-        color: #64748b;
-        font-size: 20px;
-        cursor: pointer;
-        padding: 0 0 0 4px;
-        line-height: 1;
-        flex-shrink: 0;
-        transition: color 0.2s;
-      }
-      .writeup-toast-close:hover {
-        color: #e2e8f0;
-      }
-      @media (max-width: 480px) {
-        .writeup-toast {
-          width: 95%;
-          top: 70px;
-        }
-      }
-    </style>
-
-    <script>
-      (function() {
-        var toast = document.getElementById('writeupToast');
-        var closeBtn = document.getElementById('writeupToastClose');
-        // Show after a short delay
-        setTimeout(function() { toast.classList.add('show'); }, 800);
-        // Auto-hide after 8 seconds
-        var autoHide = setTimeout(function() {
-          toast.classList.remove('show');
-          toast.classList.add('hide');
-        }, 8000);
-        closeBtn.addEventListener('click', function() {
-          clearTimeout(autoHide);
-          toast.classList.remove('show');
-          toast.classList.add('hide');
-        });
-      })();
-    </script>
-
     <script src="./js/theme-toggle.js"></script>
-    <script src="./data/writeups.data.js"></script>
+    <script src="./data/ai.data.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

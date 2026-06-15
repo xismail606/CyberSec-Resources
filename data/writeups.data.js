@@ -2,6 +2,43 @@
 // Auto-generated and enhanced descriptions
 window.__cyberData = [
   {
+    name: "Write-ups & Bug Bounty",
+    icon: "✍️",
+    theme: "cat-writeups",
+    links: [
+      {
+        name: "Medium",
+        url: "https://medium.com/",
+        desc: "Popular blogging platform with extensive cybersecurity & bug bounty write-ups",
+      },
+      {
+        name: "Bugcrowd",
+        url: "https://www.bugcrowd.com/",
+        desc: "Crowdsourced cybersecurity platform connecting researchers with bug bounty programs",
+      },
+      {
+        name: "HackerOne Bug Bounty Programs",
+        url: "https://www.hackerone.com/bug-bounty-programs",
+        desc: "Discover and join bug bounty programs from leading companies worldwide",
+      },
+      {
+        name: "Intigriti Bug Bytes",
+        url: "https://www.intigriti.com/researchers/blog/bug-bytes",
+        desc: "Weekly digest of the best bug bounty write-ups, tools & resources",
+      },
+      {
+        name: "Pentester Land",
+        url: "https://pentester.land/",
+        desc: "Curated collection of real-world bug bounty write-ups & pentesting resources",
+      },
+      {
+        name: "HackerOne Hacktivity",
+        url: "https://hackerone.com/hacktivity/overview?queryString=disclosed%3Atrue&sortField=latest_disclosable_activity_at&sortDirection=DESC&pageIndex=0",
+        desc: "Browse publicly disclosed vulnerability reports from HackerOne programs",
+      },
+    ],
+  },
+  {
     name: "General Writeups",
     icon: "📝",
     theme: "cat-general",
