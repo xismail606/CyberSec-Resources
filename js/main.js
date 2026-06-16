@@ -6,10 +6,10 @@
 
   // ===== UTILITIES =====
   const $ = (sel) => document.getElementById(sel);
+  const _escEl = document.createElement("span");
   const _esc = (s) => {
-    const d = document.createElement("span");
-    d.textContent = s;
-    return d.innerHTML;
+    _escEl.textContent = s;
+    return _escEl.innerHTML;
   };
   const slugify = (s) => s.toLowerCase().replace(/[^\w]+/g, "-").replace(/-+$/, "");
 
@@ -34,7 +34,10 @@
    */
   function getFavicon(url) {
     try {
-      const domain = new URL(url).hostname;
+      const match = url.match(/^https?:\/\/([^/?#]+)(?:[/?#]|$)/i);
+      const domain = match ? match[1] : null;
+      if (!domain) return "";
+      
       if (!_faviconCache[domain]) {
         _faviconCache[domain] = `https://www.google.com/s2/favicons?domain=${domain}&sz=64`;
       }
@@ -49,118 +52,104 @@
   let allCards = [];    // {el, name, desc, url, catName, tags, difficulty, sectionEl}
   let allSections = []; // {el, catName, countEl, cards[]}
 
-  /**
-   * Builds and appends a category section element.
-   * @param {Object} cat - Category object from data
-   * @returns {HTMLElement} The constructed section element
-   */
-  function createCategorySection(cat) {
-    const section = document.createElement("section");
-    section.className = `category ${cat.theme}`;
-    section.id = `cat-${slugify(cat.name)}`;
-
-    const header = document.createElement("div");
-    header.className = "category-header";
-    header.innerHTML = `
-      <div class="category-icon">${_esc(cat.icon)}</div>
-      <h2 class="category-title">${_esc(cat.name)}</h2>
-      <span class="category-count">${cat.links.length} ${itemLabel}${cat.links.length > 1 ? "s" : ""}</span>
-    `;
-    section.appendChild(header);
-    return section;
-  }
-
-  /**
-   * Builds and returns an individual link card element.
-   * @param {Object} link - Link object from data
-   * @param {String} catName - The name of the category this link belongs to
-   * @returns {HTMLElement} The constructed link card element
-   */
-  function createLinkCard(link, catName) {
-    const card = document.createElement("a");
-    card.href = link.url;
-    card.target = "_blank";
-    card.rel = "noopener noreferrer";
-    card.className = "link-card tool-card-btn";
-    card.title = link.desc;
-
-    // Store data attributes for modal
-    card.dataset.name = link.name;
-    card.dataset.desc = link.desc;
-    card.dataset.url = link.url;
-    card.dataset.tags = JSON.stringify(link.tags || []);
-    card.dataset.category = catName;
-    if (link.difficulty) card.dataset.difficulty = link.difficulty;
-
-    card.innerHTML = `
-      <div class="link-favicon">
-        <img src="${getFavicon(link.url)}" alt="" loading="lazy" onerror="this.style.display='none'">
-      </div>
-      <div class="link-info">
-        <div class="link-name">${_esc(link.name)}</div>
-        <div class="link-domain">${_esc(link.desc)}</div>
-      </div>
-      <span class="card-arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
-        </svg>
-      </span>
-    `;
-    return card;
-  }
+  const escAttr = (s) => String(s || "").replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
   /**
    * Builds and appends all resource cards to the DOM.
+   * Uses highly optimized string-based rendering to eliminate layout thrashing.
    */
   function buildDOM() {
     if (!container) return;
-    container.innerHTML = "";
+    
     allCards = [];
     allSections = [];
+    let _pendingSections = [];
     let toolCount = 0;
-
-    const fragment = document.createDocumentFragment();
+    let html = "";
 
     categories.forEach((cat) => {
       if (!cat.links || !Array.isArray(cat.links)) return;
 
-      const section = createCategorySection(cat);
-      const grid = document.createElement("div");
-      grid.className = "links-grid";
-
-      const sectionCards = [];
+      html += `
+        <section class="category ${escAttr(cat.theme)}" id="cat-${slugify(cat.name)}">
+          <div class="category-header">
+            <div class="category-icon">${_esc(cat.icon)}</div>
+            <h2 class="category-title">${_esc(cat.name)}</h2>
+            <span class="category-count">${cat.links.length} ${itemLabel}${cat.links.length > 1 ? "s" : ""}</span>
+          </div>
+          <div class="links-grid">
+      `;
 
       cat.links.forEach((link) => {
-        const card = createLinkCard(link, cat.name);
-        grid.appendChild(card);
-
-        const cardMeta = {
-          el: card,
-          name: link.name.toLowerCase(),
-          desc: link.desc.toLowerCase(),
-          url: link.url.toLowerCase(),
-          catName: cat.name.toLowerCase(),
-          tags: link.tags || [],
-          difficulty: (link.difficulty || "").toLowerCase(),
-          sectionEl: section,
-        };
-        sectionCards.push(cardMeta);
-        allCards.push(cardMeta);
-        toolCount++;
+        const tagsJson = escAttr(JSON.stringify(link.tags || []));
+        const diffAttr = link.difficulty ? `data-difficulty="${escAttr(link.difficulty)}"` : '';
+        html += `
+          <a href="${escAttr(link.url)}" target="_blank" rel="noopener noreferrer" 
+             class="link-card tool-card-btn" title="${escAttr(link.desc)}"
+             data-name="${escAttr(link.name)}" data-desc="${escAttr(link.desc)}" 
+             data-url="${escAttr(link.url)}" data-tags="${tagsJson}" 
+             data-category="${escAttr(cat.name)}" ${diffAttr}>
+            <div class="link-favicon">
+              <img src="${escAttr(getFavicon(link.url))}" alt="" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="link-info">
+              <div class="link-name">${_esc(link.name)}</div>
+              <div class="link-domain">${_esc(link.desc)}</div>
+            </div>
+            <span class="card-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+              </svg>
+            </span>
+          </a>
+        `;
       });
 
-      section.appendChild(grid);
-      fragment.appendChild(section);
+      html += `</div></section>`;
 
-      const countEl = section.querySelector(".category-count");
-      allSections.push({ el: section, catName: cat.name, countEl, cards: sectionCards });
+      // Pre-collect metadata in parallel with html building
+      const cardsMeta = cat.links.map((link) => ({
+        name: (link.name || "").toLowerCase(),
+        desc: (link.desc || "").toLowerCase(),
+        url: (link.url || "").toLowerCase(),
+        catName: cat.name.toLowerCase(),
+        tags: link.tags || [],
+        difficulty: (link.difficulty || "").toLowerCase(),
+      }));
+
+      // Store for post-DOM wiring
+      _pendingSections.push({ catName: cat.name, cardsMeta });
+      toolCount += cat.links.length;
     });
 
-    container.appendChild(fragment);
+    container.innerHTML = html;
+
+    // Wire DOM elements to pre-built metadata (single traversal, no dataset reads)
+    const sections = container.querySelectorAll(".category");
+    sections.forEach((secEl, i) => {
+      const pending = _pendingSections[i];
+      const countEl = secEl.querySelector(".category-count");
+      const cardEls = secEl.querySelectorAll(".link-card");
+      const cards = [];
+      cardEls.forEach((cardEl, j) => {
+        const meta = { el: cardEl, sectionEl: secEl, ...pending.cardsMeta[j] };
+        cards.push(meta);
+        allCards.push(meta);
+      });
+      allSections.push({ el: secEl, catName: pending.catName, countEl, cards });
+    });
 
     totalTools = toolCount;
-    $("totalTools").textContent = totalTools;
-    $("totalCategories").textContent = categories.length;
+    const totalToolsEl = $("totalTools");
+    if (totalToolsEl) totalToolsEl.textContent = totalTools;
+    const totalCatEl = $("totalCategories");
+    if (totalCatEl) totalCatEl.textContent = allSections.length;
+    
+    // Re-apply filter if user typed something while loading
+    const searchInput = $("searchInput");
+    if (searchInput && searchInput.value) {
+      applyFilter(searchInput.value.trim());
+    }
   }
 
   // ===== FILTER (Visibility Toggle) =====
@@ -235,6 +224,10 @@
 
   // ===== INITIAL BUILD =====
   buildDOM();
+  setTimeout(() => {
+    animateNumber($("totalTools"), totalTools);
+    animateNumber($("totalCategories"), allSections.length, 800);
+  }, 100);
 
 
 
@@ -412,7 +405,8 @@
           tag.addEventListener("click", () => {
             selectedCategories.delete(catName);
             if (filterChipsContainer) {
-              const chip = filterChipsContainer.querySelector(`[data-category="${catName}"]`);
+              const chip = [...filterChipsContainer.querySelectorAll(".filter-chip")]
+                .find(c => c.dataset.category === catName);
               if (chip) chip.classList.remove("active");
             }
             updateAdvancedFilters();
@@ -461,9 +455,9 @@
   // ===== ANIMATE STATS ON LOAD =====
   function animateNumber(el, target, duration = 1200) {
     if (!el) return;
-    let start = 0;
+    let start = null;
     const step = (timestamp) => {
-      if (!start) start = timestamp;
+      if (start === null) start = timestamp;
       const progress = Math.min((timestamp - start) / duration, 1);
       el.textContent = Math.floor(progress * target);
       if (progress < 1) requestAnimationFrame(step);
@@ -471,14 +465,11 @@
     requestAnimationFrame(step);
   }
 
-  window.addEventListener("load", () => {
-    setTimeout(() => {
-      animateNumber($("totalTools"), totalTools);
-      animateNumber($("totalCategories"), categories.length, 800);
-    }, 300);
-  });
+  // Animation is now triggered after buildDOM completes.
 
   // ===== MODAL (Event Delegation) =====
+  let _lastFocusedCard = null;
+  let _modalFocusables = [];
   const toolModal = $("toolModal");
   const modalCloseBtn = $("modalClose");
   const modalTitle = $("modalTitle");
@@ -529,7 +520,10 @@
     document.body.style.overflow = "hidden";
 
     // Focus first element
-    setTimeout(() => modalCloseBtn?.focus(), 100);
+    setTimeout(() => {
+      _modalFocusables = getModalFocusables();
+      modalCloseBtn?.focus();
+    }, 100);
   }
 
   function closeModal() {
@@ -537,6 +531,11 @@
     toolModal.classList.remove("active");
     toolModal.setAttribute("aria-hidden", "true");
     document.body.style.overflow = "";
+    // Restore focus
+    if (_lastFocusedCard) {
+      _lastFocusedCard.focus();
+      _lastFocusedCard = null;
+    }
   }
 
   // Card clicks via event delegation
@@ -544,6 +543,7 @@
     const card = e.target.closest(".tool-card-btn");
     if (card && toolModal) {
       e.preventDefault();
+      _lastFocusedCard = card;
       let tags = [];
       try { tags = JSON.parse(card.dataset.tags || "[]"); } catch { /* ignore */ }
       openModal(card.dataset.name, card.dataset.desc, card.dataset.url, tags);
@@ -574,7 +574,7 @@
     }
 
     if (e.key === "Tab") {
-      const focusables = getModalFocusables();
+      const focusables = _modalFocusables;
       if (focusables.length === 0) return;
       const first = focusables[0];
       const last = focusables[focusables.length - 1];
@@ -612,8 +612,8 @@
         glowX = mouseX;
         glowY = mouseY;
         root.style.setProperty("--glow-opacity", "1");
-        startLoop();
       }
+      startLoop();
     });
 
     document.addEventListener("mouseleave", () => {
@@ -637,8 +637,15 @@
     });
 
     function tick() {
-      glowX += (mouseX - glowX) * LERP;
-      glowY += (mouseY - glowY) * LERP;
+      const dx = mouseX - glowX;
+      const dy = mouseY - glowY;
+      if (Math.abs(dx) < 0.05 && Math.abs(dy) < 0.05) {
+        // Converged — idle until next mousemove
+        rafId = null;
+        return;
+      }
+      glowX += dx * LERP;
+      glowY += dy * LERP;
       root.style.setProperty("--x", glowX + "px");
       root.style.setProperty("--y", glowY + "px");
       rafId = requestAnimationFrame(tick);
