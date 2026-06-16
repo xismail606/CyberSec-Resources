@@ -10,7 +10,7 @@
 <h1 align="center">🛡️ CyberSec Resources</h1>
 
 <p align="center">
-A curated collection of <strong>289 cybersecurity tools</strong>, <strong>648 free TryHackMe labs</strong>, and <strong>1,248 bug bounty writeups</strong> — organized, searchable, and ready to use.
+A curated collection of <strong>289 cybersecurity tools</strong>, <strong>648 free TryHackMe labs</strong>, <strong>1,248 bug bounty writeups</strong>, and <strong>36 AI & coding tools</strong> — organized, searchable, and ready to use.
 </p>
 
 <p align="center">
@@ -36,7 +36,8 @@ Live Demo →
 <img src="https://img.shields.io/badge/Tools-289-38bdf8?style=for-the-badge">
 <img src="https://img.shields.io/badge/Free_Labs-648-34d399?style=for-the-badge">
 <img src="https://img.shields.io/badge/Writeups-1248-c084fc?style=for-the-badge">
-<img src="https://img.shields.io/badge/Categories-87-a78bfa?style=for-the-badge">
+<img src="https://img.shields.io/badge/AI_Tools-36-ffb86c?style=for-the-badge">
+<img src="https://img.shields.io/badge/Categories-93-a78bfa?style=for-the-badge">
 <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
 </p>
 
@@ -50,9 +51,11 @@ Live Demo →
 
 | Page                         | Description                                                                       |
 | ---------------------------- | --------------------------------------------------------------------------------- |
+| **🏠 Home**                  | Landing page and overview of the project and its features                         |
 | **🛡️ CyberSec Resources**    | 289 tools across 19 categories (OSINT, hashing, networking, pentesting, etc.)     |
 | **💻 Free Labs**             | 648 free TryHackMe rooms across 26 categories (Intro → Insane difficulty)         |
 | **🐛 Bug Bounty Writeups**   | 1,248 real-world writeups across 42 categories (XSS, SSRF, IDOR, RCE, CSRF, etc.) |
+| **🤖 AI Tools**              | 36 AI & coding tools across 6 categories (AI Models, Coding Agents, Skills, etc.) |
 
 <hr>
 
@@ -96,6 +99,10 @@ Live Demo →
 > Writeup links belong to their respective authors and platforms.
 > This website only indexes publicly available links for educational purposes.
 
+## 🤖 AI Tools Categories
+
+> 6 categories covering AI Models & Chatbots, AI Coding Agents & IDEs, Agent Skills & Frameworks, General Coding Tools, AI Security & Pentesting Tools, and Videos & Tutorials.
+
 <hr>
 
 <!-- ================= FEATURES ================= -->
@@ -114,6 +121,7 @@ Live Demo →
 - 📱 **Fully Responsive** — Works smoothly on desktop, tablet, and mobile browsers.
 - 📦 **No Dependencies** — Pure HTML5, Vanilla CSS, and modular Vanilla JavaScript.
 - 🐛 **Bug Bounty Writeups** — 1,248 real-world writeups across 42 vulnerability categories with toast notifications for broken links.
+- 🤖 **AI Tools & Agents** — A dedicated section for AI models, coding agents, agent skills, and pentesting AI frameworks.
 
 <hr>
 
@@ -123,9 +131,11 @@ Live Demo →
 
 ```
 CyberSec-Resources/
-├── index.html                  # CyberSec Resources page
+├── index.html                  # Project Home page
+├── resources.html              # CyberSec Resources page
 ├── free-labs.html              # Free Labs page
 ├── bug-bounty-writeups.html    # Bug Bounty Writeups page
+├── ai-tools.html               # AI & Coding Tools page
 ├── assets/
 │   └── x606-logo1.webp        # Site logo
 ├── css/
@@ -140,7 +150,8 @@ CyberSec-Resources/
 │   ├── rooms.data.js           # TryHackMe rooms (Intro + Easy)
 │   ├── rooms.medium-hard.js    # TryHackMe rooms (Medium → Insane)
 │   ├── free-labs.data.js       # Category grouper for labs
-│   └── writeups.data.js        # Bug bounty writeups (1,248 writeups)
+│   ├── writeups.data.js        # Bug bounty writeups (1,248 writeups)
+│   └── ai.data.js              # AI tools & agents (36 tools)
 ├── LICENSE
 └── README.md
 ```
