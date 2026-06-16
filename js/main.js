@@ -16,8 +16,9 @@
   // ===== DATA =====
   const categories = window.__cyberData || [];
   const container = $("categoriesContainer");
-  const isLabsPage = document.title.toLowerCase().includes("labs") || window.location.pathname.includes("free-labs");
-  const isWriteupsPage = document.title.toLowerCase().includes("writeup") || window.location.pathname.includes("writeup");
+  const pageType = window.__cyberConfig?.pageType ?? 'default';
+  const isLabsPage = pageType === 'labs';
+  const isWriteupsPage = pageType === 'writeups';
   const itemLabel = isLabsPage ? "lab" : isWriteupsPage ? "writeup" : "tool";
 
   let totalTools = 0;
@@ -26,6 +27,11 @@
 
   // ===== FAVICON CACHE =====
   const _faviconCache = {};
+  /**
+   * Returns a URL to a Google Favicon service image for the given URL.
+   * @param {String} url - The URL to get a favicon for
+   * @returns {String} The favicon URL
+   */
   function getFavicon(url) {
     try {
       const domain = new URL(url).hostname;
@@ -43,6 +49,69 @@
   let allCards = [];    // {el, name, desc, url, catName, tags, difficulty, sectionEl}
   let allSections = []; // {el, catName, countEl, cards[]}
 
+  /**
+   * Builds and appends a category section element.
+   * @param {Object} cat - Category object from data
+   * @returns {HTMLElement} The constructed section element
+   */
+  function createCategorySection(cat) {
+    const section = document.createElement("section");
+    section.className = `category ${cat.theme}`;
+    section.id = `cat-${slugify(cat.name)}`;
+
+    const header = document.createElement("div");
+    header.className = "category-header";
+    header.innerHTML = `
+      <div class="category-icon">${_esc(cat.icon)}</div>
+      <h2 class="category-title">${_esc(cat.name)}</h2>
+      <span class="category-count">${cat.links.length} ${itemLabel}${cat.links.length > 1 ? "s" : ""}</span>
+    `;
+    section.appendChild(header);
+    return section;
+  }
+
+  /**
+   * Builds and returns an individual link card element.
+   * @param {Object} link - Link object from data
+   * @param {String} catName - The name of the category this link belongs to
+   * @returns {HTMLElement} The constructed link card element
+   */
+  function createLinkCard(link, catName) {
+    const card = document.createElement("a");
+    card.href = link.url;
+    card.target = "_blank";
+    card.rel = "noopener noreferrer";
+    card.className = "link-card tool-card-btn";
+    card.title = link.desc;
+
+    // Store data attributes for modal
+    card.dataset.name = link.name;
+    card.dataset.desc = link.desc;
+    card.dataset.url = link.url;
+    card.dataset.tags = JSON.stringify(link.tags || []);
+    card.dataset.category = catName;
+    if (link.difficulty) card.dataset.difficulty = link.difficulty;
+
+    card.innerHTML = `
+      <div class="link-favicon">
+        <img src="${getFavicon(link.url)}" alt="" loading="lazy" onerror="this.style.display='none'">
+      </div>
+      <div class="link-info">
+        <div class="link-name">${_esc(link.name)}</div>
+        <div class="link-domain">${_esc(link.desc)}</div>
+      </div>
+      <span class="card-arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+        </svg>
+      </span>
+    `;
+    return card;
+  }
+
+  /**
+   * Builds and appends all resource cards to the DOM.
+   */
   function buildDOM() {
     if (!container) return;
     container.innerHTML = "";
@@ -50,56 +119,19 @@
     allSections = [];
     let toolCount = 0;
 
+    const fragment = document.createDocumentFragment();
+
     categories.forEach((cat) => {
-      const section = document.createElement("section");
-      section.className = `category ${cat.theme}`;
-      section.id = `cat-${slugify(cat.name)}`;
+      if (!cat.links || !Array.isArray(cat.links)) return;
 
-      const header = document.createElement("div");
-      header.className = "category-header";
-      header.innerHTML = `
-        <div class="category-icon">${cat.icon}</div>
-        <h2 class="category-title">${_esc(cat.name)}</h2>
-        <span class="category-count">${cat.links.length} ${itemLabel}${cat.links.length > 1 ? "s" : ""}</span>
-      `;
-      section.appendChild(header);
-
+      const section = createCategorySection(cat);
       const grid = document.createElement("div");
       grid.className = "links-grid";
 
       const sectionCards = [];
 
       cat.links.forEach((link) => {
-        const card = document.createElement("a");
-        card.href = link.url;
-        card.target = "_blank";
-        card.rel = "noopener noreferrer";
-        card.className = "link-card tool-card-btn";
-        card.title = link.desc;
-
-        // Store data attributes for modal
-        card.dataset.name = link.name;
-        card.dataset.desc = link.desc;
-        card.dataset.url = link.url;
-        card.dataset.tags = JSON.stringify(link.tags || []);
-        card.dataset.category = cat.name;
-        if (link.difficulty) card.dataset.difficulty = link.difficulty;
-
-        card.innerHTML = `
-          <div class="link-favicon">
-            <img src="${getFavicon(link.url)}" alt="" loading="lazy" onerror="this.style.display='none'">
-          </div>
-          <div class="link-info">
-            <div class="link-name">${_esc(link.name)}</div>
-            <div class="link-domain">${_esc(link.desc)}</div>
-          </div>
-          <span class="card-arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
-            </svg>
-          </span>
-        `;
-
+        const card = createLinkCard(link, cat.name);
         grid.appendChild(card);
 
         const cardMeta = {
@@ -118,11 +150,13 @@
       });
 
       section.appendChild(grid);
-      container.appendChild(section);
+      fragment.appendChild(section);
 
-      const countEl = header.querySelector(".category-count");
+      const countEl = section.querySelector(".category-count");
       allSections.push({ el: section, catName: cat.name, countEl, cards: sectionCards });
     });
+
+    container.appendChild(fragment);
 
     totalTools = toolCount;
     $("totalTools").textContent = totalTools;
@@ -130,6 +164,10 @@
   }
 
   // ===== FILTER (Visibility Toggle) =====
+  /**
+   * Filters the visible tool cards based on search text and selected filters.
+   * @param {String} filter - The text search query
+   */
   function applyFilter(filter = "") {
     const filterLower = filter.toLowerCase();
     let visibleTools = 0;
@@ -279,7 +317,7 @@
       const chip = document.createElement("button");
       chip.className = "filter-chip";
       chip.dataset.category = cat.name;
-      chip.innerHTML = `<span class="chip-icon">${cat.icon}</span><span>${_esc(cat.name)}</span><span class="chip-count">${cat.links.length}</span>`;
+      chip.innerHTML = `<span class="chip-icon">${_esc(cat.icon)}</span><span>${_esc(cat.name)}</span><span class="chip-count">${cat.links.length}</span>`;
       chip.addEventListener("click", () => {
         chip.classList.toggle("active");
         if (chip.classList.contains("active")) {
@@ -370,7 +408,7 @@
           const cat = categories.find((c) => c.name === catName);
           const tag = document.createElement("span");
           tag.className = "active-filter-tag";
-          tag.innerHTML = `${cat ? cat.icon : ""} ${_esc(catName)} <span class="remove-tag">✕</span>`;
+          tag.innerHTML = `${cat ? _esc(cat.icon) : ""} ${_esc(catName)} <span class="remove-tag">✕</span>`;
           tag.addEventListener("click", () => {
             selectedCategories.delete(catName);
             if (filterChipsContainer) {
