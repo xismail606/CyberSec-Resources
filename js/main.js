@@ -564,6 +564,7 @@
     const LERP = 0.12;
 
     document.addEventListener("mousemove", (e) => {
+      if (body.classList.contains("no-glow")) return;
       mouseX = e.clientX;
       mouseY = e.clientY;
       if (!isOnPage) {
@@ -583,11 +584,13 @@
     });
 
     body.addEventListener("mouseover", (e) => {
+      if (body.classList.contains("no-glow")) return;
       if (e.target.closest(".link-card, .page-nav-btn, .modal-btn, button")) {
         body.classList.add("glow-hover");
       }
     });
     body.addEventListener("mouseout", (e) => {
+      if (body.classList.contains("no-glow")) return;
       if (e.target.closest(".link-card, .page-nav-btn, .modal-btn, button")) {
         body.classList.remove("glow-hover");
       }

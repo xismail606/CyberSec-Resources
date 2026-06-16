@@ -33,17 +33,17 @@
   }
 
   // ===== Apply theme =====
-  function applyTheme(theme) {
+  function applyTheme(theme, save = false) {
     if (theme === "light") ensureLightCSS();
     html.setAttribute("data-theme", theme);
-    localStorage.setItem(STORAGE_KEY, theme);
+    if (save) localStorage.setItem(STORAGE_KEY, theme);
     updateToggleUI(theme);
   }
 
   // ===== Smooth transition helper =====
-  function transitionTheme(theme) {
+  function transitionTheme(theme, save = true) {
     html.classList.add("theme-transitioning");
-    applyTheme(theme);
+    applyTheme(theme, save);
     // Remove class after transitions finish (sync with CSS duration)
     setTimeout(() => html.classList.remove("theme-transitioning"), 750);
   }
@@ -65,7 +65,7 @@
 
   // ===== Initialize on load =====
   const initial = getPreferred();
-  applyTheme(initial); // No transition on first load
+  applyTheme(initial, false); // No transition on first load
 
   // ===== Wire up click handlers (event delegation) =====
   document.addEventListener("click", (e) => {
@@ -74,14 +74,14 @@
 
     const current = html.getAttribute("data-theme") || "dark";
     const next    = current === "dark" ? "light" : "dark";
-    transitionTheme(next);
+    transitionTheme(next, true); // Save user preference
   });
 
   // ===== Respond to system preference changes =====
   window.matchMedia("(prefers-color-scheme: light)").addEventListener("change", (e) => {
     // Only auto-switch if user hasn't manually set a preference
     if (!localStorage.getItem(STORAGE_KEY)) {
-      transitionTheme(e.matches ? "light" : "dark");
+      transitionTheme(e.matches ? "light" : "dark", false);
     }
   });
 })();
