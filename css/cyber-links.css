@@ -552,7 +552,7 @@ body.no-glow::before {
 }
 
 .adv-search-panel.open {
-  max-height: 1000px;
+  max-height: 2500px;
   opacity: 1;
   margin-top: 16px;
 }
@@ -615,6 +615,28 @@ body.no-glow::before {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  max-height: 260px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.filter-chips::-webkit-scrollbar,
+.active-filters-list::-webkit-scrollbar {
+  width: 6px;
+}
+.filter-chips::-webkit-scrollbar-track,
+.active-filters-list::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.filter-chips::-webkit-scrollbar-thumb,
+.active-filters-list::-webkit-scrollbar-thumb {
+  background: rgba(168, 85, 247, 0.3);
+  border-radius: 10px;
+}
+.filter-chips::-webkit-scrollbar-thumb:hover,
+.active-filters-list::-webkit-scrollbar-thumb:hover {
+  background: rgba(168, 85, 247, 0.5);
 }
 
 .filter-chip {
@@ -699,6 +721,9 @@ body.no-glow::before {
   flex-wrap: wrap;
   gap: 6px;
   flex: 1;
+  max-height: 140px;
+  overflow-y: auto;
+  padding-right: 4px;
 }
 
 .active-filter-tag {
