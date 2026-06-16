@@ -123,6 +123,13 @@ Live Demo →
 - 🐛 **Bug Bounty Writeups** — 1,248 real-world writeups across 42 vulnerability categories with toast notifications for broken links.
 - 🤖 **AI Tools & Agents** — A dedicated section for AI models, coding agents, agent skills, and pentesting AI frameworks.
 
+## 🆕 Recent Updates
+
+- **🚀 Performance Overhaul:** Refactored the DOM rendering engine to use single-pass string injections, eliminating layout thrashing and drastically improving load times (especially for the Bug Bounty Writeups page).
+- **♿ Accessibility Enhancements:** Achieved full accessibility compliance with ARIA attributes, semantic HTML tags, keyboard-friendly modals (`role="dialog"`), and graceful fallbacks (`<noscript>`).
+- **✨ UI/UX Polishing:** Fixed edge cases in the mouse-follow glow effect to ensure it resumes after idling. Refactored toast notifications into isolated, modular CSS.
+- **🗃️ Data Integrity:** Cleaned up the resources database, fixed broken links, updated vague descriptions, and properly categorized misaligned tools.
+
 <hr>
 
 <!-- ================= STRUCTURE ================= -->
@@ -141,7 +148,8 @@ CyberSec-Resources/
 ├── css/
 │   ├── cyber-links.css         # Shared styles
 │   ├── sidebar.css             # Sidebar styles
-│   └── theme-light.css         # Light theme overrides
+│   ├── theme-light.css         # Light theme overrides
+│   └── writeup-toast.css       # Writeup broken link toast styles
 ├── js/
 │   ├── main.js                 # Shared render engine
 │   └── theme-toggle.js         # Dark / Light theme switcher
