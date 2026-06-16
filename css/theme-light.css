@@ -11,6 +11,8 @@ html.theme-transitioning .nav-links a,
 html.theme-transitioning .search-wrapper,
 html.theme-transitioning .search-input,
 html.theme-transitioning .card,
+html.theme-transitioning .home-card,
+html.theme-transitioning .about-section,
 html.theme-transitioning .diff-btn,
 html.theme-transitioning .page-nav-btn,
 html.theme-transitioning .category-item,
@@ -165,7 +167,9 @@ html[data-theme="light"] .page-nav-btn.active {
 html[data-theme="light"] .stat-number {
   background: linear-gradient(135deg, var(--accent-red), var(--accent-red-dark));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 html[data-theme="light"] .footer-author a:hover {
   text-shadow: none;

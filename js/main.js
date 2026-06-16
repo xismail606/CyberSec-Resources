@@ -44,6 +44,7 @@
   let allSections = []; // {el, catName, countEl, cards[]}
 
   function buildDOM() {
+    if (!container) return;
     container.innerHTML = "";
     allCards = [];
     allSections = [];
@@ -421,6 +422,7 @@
 
   // ===== ANIMATE STATS ON LOAD =====
   function animateNumber(el, target, duration = 1200) {
+    if (!el) return;
     let start = 0;
     const step = (timestamp) => {
       if (!start) start = timestamp;
