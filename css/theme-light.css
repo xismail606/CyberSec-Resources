@@ -20,7 +20,16 @@ html.theme-transitioning .sidebar,
 html.theme-transitioning .social a,
 html.theme-transitioning .footer,
 html.theme-transitioning .thm-modal,
-html.theme-transitioning .modal-content {
+html.theme-transitioning .modal-content,
+html.theme-transitioning .link-card,
+html.theme-transitioning .category,
+html.theme-transitioning .filter-chip,
+html.theme-transitioning .adv-search-panel,
+html.theme-transitioning .adv-search-inner,
+html.theme-transitioning .stat-item,
+html.theme-transitioning .hero-badge,
+html.theme-transitioning .active-filter-tag,
+html.theme-transitioning .active-filters-bar {
   transition: background-color 0.7s ease,
               border-color 0.7s ease,
               box-shadow 0.7s ease !important;
@@ -154,8 +163,10 @@ html[data-theme="light"] .theme-toggle:hover {
 
 /* Light mode content overrides */
 html[data-theme="light"] .hero h1 {
-  -webkit-text-fill-color: unset;
   background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  -webkit-text-fill-color: unset;
   color: var(--text-primary);
 }
 html[data-theme="light"] .search-input {

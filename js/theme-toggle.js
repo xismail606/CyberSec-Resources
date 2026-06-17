@@ -7,6 +7,7 @@
   const STORAGE_KEY = "theme";
   const LIGHT_CSS   = "./css/theme-light.css";
   const html        = document.documentElement;
+  const TRANSITION_MS = 700; // must match CSS transition duration (0.7s)
 
   // ===== Detect preferred theme =====
   function getPreferred() {
@@ -21,7 +22,7 @@
   let lightLink = null;
 
   function ensureLightCSS() {
-    if (lightLink) return;
+    if (lightLink && document.head.contains(lightLink)) return;
     // Check if already in DOM (e.g. from a previous load)
     lightLink = document.querySelector('link[href*="theme-light"]');
     if (lightLink) return;
@@ -44,8 +45,8 @@
   function transitionTheme(theme, save = true) {
     html.classList.add("theme-transitioning");
     applyTheme(theme, save);
-    // Remove class after transitions finish (sync with CSS duration)
-    setTimeout(() => html.classList.remove("theme-transitioning"), 750);
+    // Remove class after transitions finish (+50ms buffer)
+    setTimeout(() => html.classList.remove("theme-transitioning"), TRANSITION_MS + 50);
   }
 
   // ===== Toggle button UI =====
@@ -82,6 +83,13 @@
     // Only auto-switch if user hasn't manually set a preference
     if (!localStorage.getItem(STORAGE_KEY)) {
       transitionTheme(e.matches ? "light" : "dark", false);
+    }
+  });
+
+  // ===== Cross-tab sync =====
+  window.addEventListener("storage", (e) => {
+    if (e.key === "theme" && (e.newValue === "light" || e.newValue === "dark")) {
+      applyTheme(e.newValue, false);
     }
   });
 })();
