@@ -48,7 +48,7 @@
   z-index: 1;
 }
 .home-card-title {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "Playwrite DE Grund", cursive;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 12px;
@@ -74,7 +74,7 @@
   backdrop-filter: blur(10px);
 }
 .about-title {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "Playwrite DE Grund", cursive;
   font-size: 24px;
   color: #c084fc;
   margin-bottom: 24px;
