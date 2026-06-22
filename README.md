@@ -10,7 +10,7 @@
 <h1 align="center">🛡️ CyberSec Resources</h1>
 
 <p align="center">
-A curated collection of <strong>289 cybersecurity tools</strong>, <strong>648 free TryHackMe labs</strong>, <strong>1,248 bug bounty writeups</strong>, and <strong>36 AI & coding tools</strong> — organized, searchable, and ready to use.
+A curated collection of <strong>327 cybersecurity tools</strong>, <strong>648 free TryHackMe labs</strong>, <strong>1,254 bug bounty writeups</strong>, and <strong>42 AI & coding tools</strong> — organized, searchable, and ready to use.
 </p>
 
 <p align="center">
@@ -33,10 +33,10 @@ Live Demo →
 
 <p>
 <img src="https://img.shields.io/badge/Theme-Dark_Mode-0a0e1a?style=for-the-badge">
-<img src="https://img.shields.io/badge/Tools-289-38bdf8?style=for-the-badge">
+<img src="https://img.shields.io/badge/Tools-327-38bdf8?style=for-the-badge">
 <img src="https://img.shields.io/badge/Free_Labs-648-34d399?style=for-the-badge">
-<img src="https://img.shields.io/badge/Writeups-1248-c084fc?style=for-the-badge">
-<img src="https://img.shields.io/badge/AI_Tools-36-ffb86c?style=for-the-badge">
+<img src="https://img.shields.io/badge/Writeups-1254-c084fc?style=for-the-badge">
+<img src="https://img.shields.io/badge/AI_Tools-42-ffb86c?style=for-the-badge">
 <img src="https://img.shields.io/badge/Categories-93-a78bfa?style=for-the-badge">
 <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
 </p>
@@ -52,10 +52,10 @@ Live Demo →
 | Page                         | Description                                                                       |
 | ---------------------------- | --------------------------------------------------------------------------------- |
 | **🏠 Home**                  | Landing page and overview of the project and its features                         |
-| **🛡️ CyberSec Resources**    | 289 tools across 19 categories (OSINT, hashing, networking, pentesting, etc.)     |
+| **🛡️ CyberSec Resources**    | 327 tools across 19 categories (OSINT, hashing, networking, pentesting, etc.)     |
 | **💻 Free Labs**             | 648 free TryHackMe rooms across 26 categories (Intro → Insane difficulty)         |
-| **🐛 Bug Bounty Writeups**   | 1,248 real-world writeups across 42 categories (XSS, SSRF, IDOR, RCE, CSRF, etc.) |
-| **🤖 AI Tools**              | 36 AI & coding tools across 6 categories (AI Models, Coding Agents, Skills, etc.) |
+| **🐛 Bug Bounty Writeups**   | 1,254 real-world writeups across 42 categories (XSS, SSRF, IDOR, RCE, CSRF, etc.) |
+| **🤖 AI Tools**              | 42 AI & coding tools across 6 categories (AI Models, Coding Agents, Skills, etc.) |
 
 <hr>
 
@@ -120,7 +120,7 @@ Live Demo →
 - ♿ **Accessible** — Fully keyboard navigable with focus trapping, skip-nav, and ARIA live regions.
 - 📱 **Fully Responsive** — Works smoothly on desktop, tablet, and mobile browsers.
 - 📦 **No Dependencies** — Pure HTML5, Vanilla CSS, and modular Vanilla JavaScript.
-- 🐛 **Bug Bounty Writeups** — 1,248 real-world writeups across 42 vulnerability categories with toast notifications for broken links.
+- 🐛 **Bug Bounty Writeups** — 1,254 real-world writeups across 42 vulnerability categories with toast notifications for broken links.
 - 🤖 **AI Tools & Agents** — A dedicated section for AI models, coding agents, agent skills, and pentesting AI frameworks.
 
 ## 🆕 Recent Updates
