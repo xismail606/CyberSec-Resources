@@ -843,6 +843,8 @@ body.no-glow::before {
 .category {
   margin-bottom: 48px;
   animation: fadeInUp 0.6s ease-out both;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 500px;
 }
 
 .category:nth-child(2) {

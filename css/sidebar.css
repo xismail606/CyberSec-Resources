@@ -42,6 +42,7 @@
   font-weight: 500;
 }
 .social ul li i {
+  font-style: normal;
   color: var(--accent-red-light);
   background: var(--sidebar-icon-bg, rgba(168, 85, 247, 0.08));
   padding: 10px;

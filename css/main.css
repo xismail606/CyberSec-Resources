@@ -43,11 +43,7 @@
 .home-card-icon {
   font-size: 48px;
   margin-bottom: 20px;
-  background: linear-gradient(135deg, #c084fc, #ec4899);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  line-height: 1;
   position: relative;
   z-index: 1;
 }

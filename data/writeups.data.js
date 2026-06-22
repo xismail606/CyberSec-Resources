@@ -425,7 +425,7 @@ window.__cyberData = [
       },
       {
         name: "Make recruiting referrals on behalf of employees ($3000)",
-        url: "http://ysamm.com/?p=620",
+        url: "https://ysamm.com/?p=620",
         desc: "Security research and bug bounty writeup",
       },
       {
@@ -475,7 +475,7 @@ window.__cyberData = [
       },
       {
         name: "View orders and financial reports lists for any page shop ($500)",
-        url: "http://ysamm.com/?p=597",
+        url: "https://ysamm.com/?p=597",
         desc: "Security research and bug bounty writeup",
       },
       {
@@ -860,7 +860,7 @@ window.__cyberData = [
       },
       {
         name: "Google Trust Services ACME API available to all users at no cost",
-        url: "http://security.googleblog.com/2023/05/google-trust-services-acme-api_0503894189.html",
+        url: "https://security.googleblog.com/2023/05/google-trust-services-acme-api_0503894189.html",
         desc: "Security research and bug bounty writeup",
       },
       {
@@ -990,7 +990,7 @@ window.__cyberData = [
       },
       {
         name: "URLs in img tag aren’t safely embedded. ($500)",
-        url: "http://ysamm.com/?p=603",
+        url: "https://ysamm.com/?p=603",
         desc: "Security research and bug bounty writeup",
       },
       {
@@ -1037,7 +1037,7 @@ window.__cyberData = [
       },
       {
         name: "Access employees files in internal CDNs/ Access users modified/deleted content.($12500)",
-        url: "http://ysamm.com/?p=606",
+        url: "https://ysamm.com/?p=606",
         desc: "Security research and bug bounty writeup",
       },
       {
@@ -1152,7 +1152,7 @@ window.__cyberData = [
       },
       {
         name: "ATO in Canvas Games due to weak cross window message Origin validations ($62,500)",
-        url: "http://ysamm.com/?p=783",
+        url: "https://ysamm.com/?p=783",
         desc: "Account Takeover (ATO) vulnerability",
       },
       {
@@ -1958,7 +1958,7 @@ window.__cyberData = [
       },
       {
         name: "Leaking Facebook user information to external websites ($2000)",
-        url: "http://ysamm.com/?p=627",
+        url: "https://ysamm.com/?p=627",
         desc: "Information Disclosure / Data Leak",
       }
     ],
@@ -2145,7 +2145,7 @@ window.__cyberData = [
       },
       {
         name: "Supporting Rowhammer research to protect the DRAM ecosystem",
-        url: "http://security.googleblog.com/2025/09/supporting-rowhammer-research-to.html",
+        url: "https://security.googleblog.com/2025/09/supporting-rowhammer-research-to.html",
         desc: "Security research and bug bounty writeup",
       },
       {
@@ -3982,7 +3982,7 @@ window.__cyberData = [
       },
       {
         name: "XSS attacks google bot index manipulation",
-        url: "http://www.tomanthony.co.uk/blog/xss-attacks-googlebot-index-manipulation/",
+        url: "https://www.tomanthony.co.uk/blog/xss-attacks-googlebot-index-manipulation/",
         desc: "Cross-Site Scripting (XSS) vulnerability",
       },
       {
@@ -3992,7 +3992,7 @@ window.__cyberData = [
       },
       {
         name: "Stealing local storage data through XSS",
-        url: "http://blog.h4rsh4d.com/2019/04/stealing-local-storage-data-through-xss.html",
+        url: "https://blog.h4rsh4d.com/2019/04/stealing-local-storage-data-through-xss.html",
         desc: "Cross-Site Scripting (XSS) vulnerability",
       },
       {
@@ -4097,7 +4097,7 @@ window.__cyberData = [
       },
       {
         name: "Oracle XSS",
-        url: "http://blog.shashank.co/2013/11/oracle-xss.html",
+        url: "https://blog.shashank.co/2013/11/oracle-xss.html",
         desc: "Cross-Site Scripting (XSS) vulnerability",
       },
       {
@@ -4192,7 +4192,7 @@ window.__cyberData = [
       },
       {
         name: "Coinbase angularjs dom XSS via kiteworks",
-        url: "http://www.paulosyibelo.com/2017/07/coinbase-angularjs-dom-xss-via-kiteworks.html",
+        url: "https://www.paulosyibelo.com/2017/07/coinbase-angularjs-dom-xss-via-kiteworks.html",
         desc: "Cross-Site Scripting (XSS) vulnerability",
       },
       {
@@ -4732,7 +4732,7 @@ window.__cyberData = [
       },
       {
         name: "A blind XSS in messengers twins",
-        url: "http://omespino.com/write-up-telegram-bug-bounty-whatsapp-n-a-blind-xss-stored-ios-in-messengers-twins-who-really-care-about-your-security/",
+        url: "https://omespino.com/write-up-telegram-bug-bounty-whatsapp-n-a-blind-xss-stored-ios-in-messengers-twins-who-really-care-about-your-security/",
         desc: "Cross-Site Scripting (XSS) vulnerability",
       },
       {
@@ -4967,7 +4967,7 @@ window.__cyberData = [
       },
       {
         name: "Local file read via XSS",
-        url: "http://www.noob.ninja/2017/11/local-file-read-via-xss-in-dynamically.html",
+        url: "https://www.noob.ninja/2017/11/local-file-read-via-xss-in-dynamically.html",
         desc: "Cross-Site Scripting (XSS) vulnerability",
       },
       {
@@ -5002,7 +5002,7 @@ window.__cyberData = [
       },
       {
         name: "Story of parameter specific XSS",
-        url: "http://www.noob.ninja/2017/09/story-of-parameter-specific-xss.html",
+        url: "https://www.noob.ninja/2017/09/story-of-parameter-specific-xss.html",
         desc: "Cross-Site Scripting (XSS) vulnerability",
       },
       {
@@ -5363,7 +5363,7 @@ window.__cyberData = [
     links: [
       {
         name: "RFI LFI Writeup",
-        url: "http://hassankhanyusufzai.com/RFI_LFI_writeup/",
+        url: "https://hassankhanyusufzai.com/RFI_LFI_writeup/",
         desc: "Local File Inclusion (LFI)",
       },
       {
@@ -5418,7 +5418,7 @@ window.__cyberData = [
       },
       {
         name: "LFI in nokia maps",
-        url: "http://blog.shashank.co/2013/10/lfi-in-nokia-maps.html",
+        url: "https://blog.shashank.co/2013/10/lfi-in-nokia-maps.html",
         desc: "Local File Inclusion (LFI)",
       }
     ],
@@ -6099,7 +6099,7 @@ window.__cyberData = [
       },
       {
         name: "AWS takeover SSRF javascript",
-        url: "http://10degres.net/aws-takeover-ssrf-javascript/",
+        url: "https://10degres.net/aws-takeover-ssrf-javascript/",
         desc: "Server-Side Request Forgery (SSRF)",
       },
       {
@@ -6263,7 +6263,7 @@ window.__cyberData = [
       },
       {
         name: "How I chained 4 bugs features into RCE on amazon",
-        url: "http://blog.orange.tw/2018/08/how-i-chained-4-bugs-features-into-rce-on-amazon.html",
+        url: "https://blog.orange.tw/2018/08/how-i-chained-4-bugs-features-into-rce-on-amazon.html",
         desc: "Remote Code Execution (RCE) vulnerability",
       },
       {
@@ -6530,7 +6530,7 @@ window.__cyberData = [
     links: [
       {
         name: "Buffer Overflow Attack Book pdf",
-        url: "http://www.cis.syr.edu/~wedu/seed/Book/book_sample_buffer.pdf",
+        url: "https://www.cis.syr.edu/~wedu/seed/Book/book_sample_buffer.pdf",
         desc: "Security research and bug bounty writeup",
       },
       {

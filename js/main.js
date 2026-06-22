@@ -6,11 +6,7 @@
 
   // ===== UTILITIES =====
   const $ = (sel) => document.getElementById(sel);
-  const _escEl = document.createElement("span");
-  const _esc = (s) => {
-    _escEl.textContent = s;
-    return _escEl.innerHTML;
-  };
+  const _esc = (s) => String(s || "").replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   const slugify = (s) => s.toLowerCase().replace(/[^\w]+/g, "-").replace(/-+$/, "");
 
   // ===== DATA =====
@@ -211,7 +207,8 @@
     if (totalCatEl) totalCatEl.textContent = visibleCategories;
 
     // Toggle no results
-    $("noResults").classList.toggle("visible", visibleTools === 0);
+    const noResultsEl = $("noResults");
+    if (noResultsEl) noResultsEl.classList.toggle("visible", visibleTools === 0);
 
     // Update aria-live announcement
     const liveRegion = $("searchAnnounce");
