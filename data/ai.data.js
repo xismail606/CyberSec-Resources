@@ -159,6 +159,11 @@ window.__cyberData = [
         url: "https://github.com/Leonxlnx/taste-skill",
         desc: "Agent skill that gives your AI good taste, preventing boring and generic UI generation",
       },
+      {
+        name: "SkillSpector",
+        url: "https://github.com/nvidia/skillspector",
+        desc: "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks.",
+      },
     ],
   },
   {

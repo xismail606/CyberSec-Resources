@@ -10,7 +10,7 @@
 <h1 align="center">🛡️ CyberSec Resources</h1>
 
 <p align="center">
-A curated collection of <strong>327 cybersecurity tools</strong>, <strong>648 free TryHackMe labs</strong>, <strong>1,254 bug bounty writeups</strong>, and <strong>42 AI & coding tools</strong> — organized, searchable, and ready to use.
+A curated collection of <strong>327 cybersecurity tools</strong>, <strong>648 free TryHackMe labs</strong>, <strong>1,254 bug bounty writeups</strong>, and <strong>43 AI & coding tools</strong> — organized, searchable, and ready to use.
 </p>
 
 <p align="center">
@@ -36,7 +36,7 @@ Live Demo →
 <img src="https://img.shields.io/badge/Tools-327-38bdf8?style=for-the-badge">
 <img src="https://img.shields.io/badge/Free_Labs-648-34d399?style=for-the-badge">
 <img src="https://img.shields.io/badge/Writeups-1254-c084fc?style=for-the-badge">
-<img src="https://img.shields.io/badge/AI_Tools-42-ffb86c?style=for-the-badge">
+<img src="https://img.shields.io/badge/AI_Tools-43-ffb86c?style=for-the-badge">
 <img src="https://img.shields.io/badge/Categories-93-a78bfa?style=for-the-badge">
 <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
 </p>
@@ -55,7 +55,7 @@ Live Demo →
 | **🛡️ CyberSec Resources**    | 327 tools across 19 categories (OSINT, hashing, networking, pentesting, etc.)     |
 | **💻 Free Labs**             | 648 free TryHackMe rooms across 26 categories (Intro → Insane difficulty)         |
 | **🐛 Bug Bounty Writeups**   | 1,254 real-world writeups across 42 categories (XSS, SSRF, IDOR, RCE, CSRF, etc.) |
-| **🤖 AI Tools**              | 42 AI & coding tools across 6 categories (AI Models, Coding Agents, Skills, etc.) |
+| **🤖 AI Tools**              | 43 AI & coding tools across 6 categories (AI Models, Coding Agents, Skills, etc.) |
 
 <hr>
 
@@ -159,7 +159,7 @@ CyberSec-Resources/
 │   ├── rooms.medium-hard.js    # TryHackMe rooms (Medium → Insane)
 │   ├── free-labs.data.js       # Category grouper for labs
 │   ├── writeups.data.js        # Bug bounty writeups (1,248 writeups)
-│   └── ai.data.js              # AI tools & agents (36 tools)
+│   └── ai.data.js              # AI tools & agents (37 tools)
 ├── LICENSE
 └── README.md
 ```
