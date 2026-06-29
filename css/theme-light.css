@@ -41,24 +41,24 @@ html[data-theme="light"] {
   --bg-secondary: #ffffff;
   --bg-card: rgba(255, 255, 255, 0.85);
   --bg-card-hover: rgba(255, 255, 255, 0.95);
-  --border-color: rgba(124, 58, 237, 0.12);
-  --border-hover: rgba(124, 58, 237, 0.35);
+  --border-color: rgba(5, 150, 105, 0.12);
+  --border-hover: rgba(5, 150, 105, 0.35);
   --text-primary: #18181b;
   --text-secondary: #52525b;
   --text-muted: #a1a1aa;
 
   /* Accent overrides for light mode */
-  --accent-red: #7c3aed;
-  --accent-red-dark: #6d28d9;
-  --accent-red-light: #8b5cf6;
-  --accent-red-deep: #5b21b6;
+  --accent-red: #059669;
+  --accent-red-dark: #047857;
+  --accent-red-light: #10b981;
+  --accent-red-deep: #065f46;
   --accent-rose: #ec4899;
   --accent-amber: #f59e0b;
 
-  --glow-red: rgba(124, 58, 237, 0.06);
-  --glow-red-dark: rgba(109, 40, 217, 0.06);
-  --glow-color: rgba(124, 58, 237, 0.03);
-  --glow-color-inner: rgba(124, 58, 237, 0.06);
+  --glow-red: rgba(5, 150, 105, 0.06);
+  --glow-red-dark: rgba(4, 120, 87, 0.06);
+  --glow-color: rgba(5, 150, 105, 0.03);
+  --glow-color-inner: rgba(5, 150, 105, 0.06);
 
   /* Navbar — keep dark for premium contrast */
   --navbar-bg: rgba(9, 9, 11, 0.95);
@@ -73,72 +73,72 @@ html[data-theme="light"] {
   --nav-mobile-bg: rgba(9, 9, 11, 0.98);
 
   --search-bg: rgba(255, 255, 255, 0.8);
-  --search-focus-ring: rgba(124, 58, 237, 0.15);
-  --search-focus-shadow: 0 0 0 4px rgba(124, 58, 237, 0.06);
+  --search-focus-ring: rgba(5, 150, 105, 0.15);
+  --search-focus-shadow: 0 0 0 4px rgba(5, 150, 105, 0.06);
 
   --diff-btn-bg: rgba(255, 255, 255, 0.8);
-  --diff-btn-hover-border: rgba(124, 58, 237, 0.3);
-  --diff-btn-hover-bg: rgba(124, 58, 237, 0.04);
-  --diff-btn-active-bg: rgba(124, 58, 237, 0.08);
+  --diff-btn-hover-border: rgba(5, 150, 105, 0.3);
+  --diff-btn-hover-bg: rgba(5, 150, 105, 0.04);
+  --diff-btn-active-bg: rgba(5, 150, 105, 0.08);
   --diff-btn-active-shadow: none;
 
-  --card-gradient: rgba(124, 58, 237, 0.02);
-  --card-shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.06), 0 0 0 1px rgba(124, 58, 237, 0.1);
+  --card-gradient: rgba(5, 150, 105, 0.02);
+  --card-shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.06), 0 0 0 1px rgba(5, 150, 105, 0.1);
   --favicon-bg: rgba(0, 0, 0, 0.04);
 
   --page-btn-bg: #ffffff;
-  --page-btn-hover-border: rgba(124, 58, 237, 0.3);
-  --page-btn-hover-bg: rgba(124, 58, 237, 0.04);
+  --page-btn-hover-border: rgba(5, 150, 105, 0.3);
+  --page-btn-hover-bg: rgba(5, 150, 105, 0.04);
   --page-btn-hover-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
-  --page-btn-active-bg: linear-gradient(135deg, rgba(124, 58, 237, 0.12), rgba(109, 40, 217, 0.08));
-  --page-btn-active-border: rgba(124, 58, 237, 0.4);
-  --page-btn-active-shadow: 0 4px 15px rgba(124, 58, 237, 0.1);
+  --page-btn-active-bg: linear-gradient(135deg, rgba(5, 150, 105, 0.12), rgba(4, 120, 87, 0.08));
+  --page-btn-active-border: rgba(5, 150, 105, 0.4);
+  --page-btn-active-shadow: 0 4px 15px rgba(5, 150, 105, 0.1);
 
-  --category-count-bg: rgba(124, 58, 237, 0.06);
-  --category-count-border: rgba(124, 58, 237, 0.15);
+  --category-count-bg: rgba(5, 150, 105, 0.06);
+  --category-count-border: rgba(5, 150, 105, 0.15);
 
-  --hero-badge-bg: rgba(124, 58, 237, 0.06);
-  --hero-badge-border: rgba(124, 58, 237, 0.18);
+  --hero-badge-bg: rgba(5, 150, 105, 0.06);
+  --hero-badge-border: rgba(5, 150, 105, 0.18);
 
   --scroll-top-bg: #ffffff;
-  --scroll-top-border: rgba(124, 58, 237, 0.2);
-  --scroll-top-hover-bg: rgba(124, 58, 237, 0.08);
+  --scroll-top-border: rgba(5, 150, 105, 0.2);
+  --scroll-top-hover-bg: rgba(5, 150, 105, 0.08);
 
   --scroll-track: #f4f4f5;
-  --scroll-thumb: linear-gradient(#7c3aed, #a855f7);
+  --scroll-thumb: linear-gradient(#059669, #10b981);
 
-  --modal-overlay-bg: rgba(250, 250, 250, 0.8);
-  --modal-shadow: 0 25px 60px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(124, 58, 237, 0.1);
-  --modal-close-hover-bg: rgba(236, 72, 153, 0.08);
-  --modal-close-hover-border: rgba(236, 72, 153, 0.2);
-  --modal-tag-bg: rgba(124, 58, 237, 0.06);
-  --modal-tag-border: rgba(124, 58, 237, 0.15);
+  --modal-overlay-bg: rgba(15, 23, 42, 0.45);
+  --modal-shadow: 0 25px 60px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(5, 150, 105, 0.15);
+  --modal-close-hover-bg: rgba(5, 150, 105, 0.08);
+  --modal-close-hover-border: rgba(5, 150, 105, 0.2);
+  --modal-tag-bg: rgba(5, 150, 105, 0.06);
+  --modal-tag-border: rgba(5, 150, 105, 0.15);
 
-  --footer-link-bg: rgba(124, 58, 237, 0.04);
-  --footer-link-border: rgba(124, 58, 237, 0.12);
-  --footer-link-hover-bg: rgba(124, 58, 237, 0.08);
-  --footer-link-hover-border: rgba(124, 58, 237, 0.3);
-  --footer-link-hover-shadow: 0 4px 15px rgba(124, 58, 237, 0.06);
+  --footer-link-bg: rgba(5, 150, 105, 0.04);
+  --footer-link-border: rgba(5, 150, 105, 0.12);
+  --footer-link-hover-bg: rgba(5, 150, 105, 0.08);
+  --footer-link-hover-border: rgba(5, 150, 105, 0.3);
+  --footer-link-hover-shadow: 0 4px 15px rgba(5, 150, 105, 0.06);
 
-  --bg-grid-glow1: rgba(124, 58, 237, 0.03);
-  --bg-grid-glow2: rgba(109, 40, 217, 0.02);
-  --bg-grid-glow3: rgba(124, 58, 237, 0.01);
-  --bg-grid-line: rgba(124, 58, 237, 0.03);
+  --bg-grid-glow1: rgba(5, 150, 105, 0.03);
+  --bg-grid-glow2: rgba(4, 120, 87, 0.02);
+  --bg-grid-glow3: rgba(5, 150, 105, 0.01);
+  --bg-grid-line: rgba(5, 150, 105, 0.03);
   --orb3-bg: rgba(52, 211, 153, 0.04);
 
   /* Sidebar */
   --sidebar-bg: rgba(255, 255, 255, 0.92);
   --sidebar-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
-  --sidebar-hover-bg: rgba(124, 58, 237, 0.03);
-  --sidebar-hover-shadow: 0 8px 20px rgba(124, 58, 237, 0.08);
-  --sidebar-icon-bg: rgba(124, 58, 237, 0.06);
-  --sidebar-icon-border: rgba(124, 58, 237, 0.12);
-  --sidebar-icon-hover-bg: rgba(124, 58, 237, 0.25);
-  --sidebar-icon-hover-shadow: 0 0 15px rgba(124, 58, 237, 0.15);
-  --sidebar-icon-hover-border: rgba(124, 58, 237, 0.35);
+  --sidebar-hover-bg: rgba(5, 150, 105, 0.03);
+  --sidebar-hover-shadow: 0 8px 20px rgba(5, 150, 105, 0.08);
+  --sidebar-icon-bg: rgba(5, 150, 105, 0.06);
+  --sidebar-icon-border: rgba(5, 150, 105, 0.12);
+  --sidebar-icon-hover-bg: rgba(5, 150, 105, 0.25);
+  --sidebar-icon-hover-shadow: 0 0 15px rgba(5, 150, 105, 0.15);
+  --sidebar-icon-hover-border: rgba(5, 150, 105, 0.35);
   --sidebar-mobile-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   --sidebar-mobile-icon-bg: rgba(255, 255, 255, 0.95);
-  --sidebar-mobile-icon-active: rgba(124, 58, 237, 0.4);
+  --sidebar-mobile-icon-active: rgba(5, 150, 105, 0.4);
 }
 
 /* Dark navbar text overrides for light mode */
@@ -146,13 +146,13 @@ html[data-theme="light"] .nav-logo {
   color: #e4e4e7;
 }
 html[data-theme="light"] .nav-logo:hover {
-  color: #c084fc;
+  color: #34d399;
 }
 html[data-theme="light"] .nav-social a {
   color: #d4d4d8;
 }
 html[data-theme="light"] .nav-social a:hover {
-  color: #c084fc;
+  color: #34d399;
 }
 html[data-theme="light"] .theme-toggle {
   color: #d4d4d8;
@@ -168,6 +168,25 @@ html[data-theme="light"] .hero h1 {
   background-clip: unset;
   -webkit-text-fill-color: unset;
   color: var(--text-primary);
+}
+html[data-theme="light"] .hero-content h1 {
+  background: linear-gradient(
+    135deg,
+    #0f172a 0%,
+    var(--accent-red) 70%,
+    var(--accent-red-dark) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+html[data-theme="light"] .hero-glow-box {
+  background: #0f172a;
+  border-color: rgba(15, 23, 42, 0.08);
+  box-shadow: 
+    0 30px 60px -15px rgba(15, 23, 42, 0.3),
+    0 0 50px -10px rgba(5, 150, 105, 0.15);
 }
 html[data-theme="light"] .search-input {
   color: var(--text-primary);
@@ -197,10 +216,10 @@ html[data-theme="light"] .adv-search-toggle {
   background: rgba(255, 255, 255, 0.7);
 }
 html[data-theme="light"] .adv-search-toggle:hover {
-  background: rgba(124, 58, 237, 0.04);
+  background: rgba(5, 150, 105, 0.04);
 }
 html[data-theme="light"] .adv-search-toggle[aria-expanded="true"] {
-  background: rgba(124, 58, 237, 0.08);
+  background: rgba(5, 150, 105, 0.08);
 }
 html[data-theme="light"] .adv-search-inner {
   background: rgba(255, 255, 255, 0.92);
@@ -209,25 +228,25 @@ html[data-theme="light"] .filter-chip {
   background: rgba(255, 255, 255, 0.8);
 }
 html[data-theme="light"] .filter-chip:hover {
-  background: rgba(124, 58, 237, 0.04);
+  background: rgba(5, 150, 105, 0.04);
 }
 html[data-theme="light"] .filter-chip.active {
-  background: rgba(124, 58, 237, 0.08);
+  background: rgba(5, 150, 105, 0.08);
 }
 html[data-theme="light"] .active-filters-bar {
-  background: rgba(124, 58, 237, 0.03);
-  border-color: rgba(124, 58, 237, 0.08);
+  background: rgba(5, 150, 105, 0.03);
+  border-color: rgba(5, 150, 105, 0.08);
 }
 html[data-theme="light"] .active-filter-tag {
-  background: rgba(124, 58, 237, 0.06);
-  border-color: rgba(124, 58, 237, 0.12);
+  background: rgba(5, 150, 105, 0.06);
+  border-color: rgba(5, 150, 105, 0.12);
 }
 html[data-theme="light"] .active-filter-tag:hover {
-  background: rgba(124, 58, 237, 0.1);
+  background: rgba(5, 150, 105, 0.1);
 }
 html[data-theme="light"] .active-filters-clear {
-  border-color: rgba(124, 58, 237, 0.12);
+  border-color: rgba(5, 150, 105, 0.12);
 }
 html[data-theme="light"] .active-filters-clear:hover {
-  background: rgba(124, 58, 237, 0.06);
+  background: rgba(5, 150, 105, 0.06);
 }

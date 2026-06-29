@@ -10,7 +10,7 @@
 <h1 align="center">🛡️ CyberSec Resources</h1>
 
 <p align="center">
-A curated collection of <strong>327 cybersecurity tools</strong>, <strong>648 free TryHackMe labs</strong>, <strong>1,254 bug bounty writeups</strong>, and <strong>43 AI & coding tools</strong> — organized, searchable, and ready to use.
+A curated collection of <strong>311 cybersecurity tools</strong>, <strong>648 free TryHackMe labs</strong>, <strong>1,254 bug bounty writeups</strong>, and <strong>44 AI & coding tools</strong> — organized, searchable, and ready to use.
 </p>
 
 <p align="center">
@@ -32,12 +32,12 @@ Live Demo →
 </p>
 
 <p>
-<img src="https://img.shields.io/badge/Theme-Dark_Mode-0a0e1a?style=for-the-badge">
-<img src="https://img.shields.io/badge/Tools-327-38bdf8?style=for-the-badge">
+<img src="https://img.shields.io/badge/Theme-Emerald_%26_Slate-10b981?style=for-the-badge">
+<img src="https://img.shields.io/badge/Tools-311-38bdf8?style=for-the-badge">
 <img src="https://img.shields.io/badge/Free_Labs-648-34d399?style=for-the-badge">
 <img src="https://img.shields.io/badge/Writeups-1254-c084fc?style=for-the-badge">
-<img src="https://img.shields.io/badge/AI_Tools-43-ffb86c?style=for-the-badge">
-<img src="https://img.shields.io/badge/Categories-93-a78bfa?style=for-the-badge">
+<img src="https://img.shields.io/badge/AI_Tools-44-ffb86c?style=for-the-badge">
+<img src="https://img.shields.io/badge/Categories-91-a78bfa?style=for-the-badge">
 <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
 </p>
 
@@ -49,13 +49,13 @@ Live Demo →
 
 ## 📄 Pages
 
-| Page                         | Description                                                                       |
-| ---------------------------- | --------------------------------------------------------------------------------- |
-| **🏠 Home**                  | Landing page and overview of the project and its features                         |
-| **🛡️ CyberSec Resources**    | 327 tools across 19 categories (OSINT, hashing, networking, pentesting, etc.)     |
-| **💻 Free Labs**             | 648 free TryHackMe rooms across 26 categories (Intro → Insane difficulty)         |
-| **🐛 Bug Bounty Writeups**   | 1,254 real-world writeups across 42 categories (XSS, SSRF, IDOR, RCE, CSRF, etc.) |
-| **🤖 AI Tools**              | 43 AI & coding tools across 6 categories (AI Models, Coding Agents, Skills, etc.) |
+| Page                       | Description                                                                       |
+| -------------------------- | --------------------------------------------------------------------------------- |
+| **🏠 Home**                | Landing page and overview of the project and its features                         |
+| **🛡️ CyberSec Resources**  | 311 tools across 16 categories (OSINT, hashing, networking, pentesting, etc.)     |
+| **💻 Free Labs**           | 648 free TryHackMe rooms across 26 categories (Intro → Insane difficulty)         |
+| **🐛 Bug Bounty Writeups** | 1,254 real-world writeups across 43 categories (XSS, SSRF, IDOR, RCE, CSRF, etc.) |
+| **🤖 AI Tools**            | 44 AI & coding tools across 6 categories (AI Models, Coding Agents, Skills, etc.) |
 
 <hr>
 
@@ -109,8 +109,9 @@ Live Demo →
 
 ## ✨ Features & What's New
 
-- 🌗 **Light & Dark Modes** — Beautiful glassmorphism UI with seamless theme toggling and refined color schemes.
-- 🔍 **Integrated Advanced Search** — Powerful real-time search and filtering seamlessly integrated into the navigation bar.
+- 🎨 **Redesigned Bento Grid UI** — Fully responsive asymmetric bento grid with custom visual dark-tech backgrounds for all cards.
+- 🌗 **Light & Dark Modes** — Beautiful glassmorphism UI with seamless theme toggling and unified Emerald & Zinc color scheme.
+- 🔍 **Integrated Advanced Search** — Powerful real-time search and filtering seamlessly integrated into the page navigation headers.
 - 🧭 **Sticky Navigation Bar** — Quick-jump categories with scroll-spy highlighting.
 - 🏷️ **Difficulty Tags & Skills** — Interactive tags for OSINT, CVEs, and TryHackMe lab difficulties.
 - 🪟 **Tool Modal Popup** — Click any card for tool details, tags, and direct links.
@@ -120,15 +121,16 @@ Live Demo →
 - ♿ **Accessible** — Fully keyboard navigable with focus trapping, skip-nav, and ARIA live regions.
 - 📱 **Fully Responsive** — Works smoothly on desktop, tablet, and mobile browsers.
 - 📦 **No Dependencies** — Pure HTML5, Vanilla CSS, and modular Vanilla JavaScript.
-- 🐛 **Bug Bounty Writeups** — 1,254 real-world writeups across 42 vulnerability categories with toast notifications for broken links.
+- 🐛 **Bug Bounty Writeups** — 1,254 real-world writeups across 43 vulnerability categories with toast notifications for broken links.
 - 🤖 **AI Tools & Agents** — A dedicated section for AI models, coding agents, agent skills, and pentesting AI frameworks.
 
 ## 🆕 Recent Updates
 
-- **🚀 Performance Overhaul:** Refactored the DOM rendering engine to use single-pass string injections, eliminating layout thrashing and drastically improving load times (especially for the Bug Bounty Writeups page).
-- **♿ Accessibility Enhancements:** Achieved full accessibility compliance with ARIA attributes, semantic HTML tags, keyboard-friendly modals (`role="dialog"`), and graceful fallbacks (`<noscript>`).
-- **✨ UI/UX Polishing:** Fixed edge cases in the mouse-follow glow effect to ensure it resumes after idling. Refactored toast notifications into isolated, modular CSS.
-- **🗃️ Data Integrity:** Cleaned up the resources database, fixed broken links, updated vague descriptions, and properly categorized misaligned tools.
+- **🎨 Premium Visual Redesign:** Migrated from purple accenting to a unified, cybernetic Emerald Green (`#10b981`) and deep Slate scheme.
+- **🏗️ Bento Grid & Hero Split:** Overhauled homepage layout with an asymmetrical bento grid using custom dark-tech illustrations, alongside a split hero section showing a terminal simulator.
+- **🚀 Performance Overhaul:** Refactored DOM rendering to use single-pass string injections, eliminating layout thrashing and drastically improving load times.
+- **💅 Clean Typography & Nav:** Removed legacy cursive fonts and emoji navigation buttons, utilizing Outfit and JetBrains Mono fonts for coding tags, stats, and text-only link cards.
+- **♿ Accessibility & Contrast:** Enhanced light/dark contrast (especially hero text gradients) and unified modal popups with dark slate overlays.
 
 <hr>
 
@@ -184,7 +186,7 @@ CyberSec-Resources/
 <p align="center">
 <strong>x606</strong><br>
 Penetration Testing Enthusiast<br>
- • Offensive Security • Red Team Fundamentals •
+ • Offensive Security • Red Team •
 </p>
 <p align="center">
 🔗 <a href="https://www.linkedin.com/in/ismailabdelhameed">LinkedIn</a> · 🐙 <a href="https://github.com/xismail606">GitHub</a>

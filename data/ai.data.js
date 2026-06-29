@@ -164,6 +164,11 @@ window.__cyberData = [
         url: "https://github.com/nvidia/skillspector",
         desc: "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks.",
       },
+      {
+        name: "TasteSkill",
+        url: "https://www.tasteskill.dev/",
+        desc: "Design-taste system providing curated CSS styling and visual aesthetic recommendations to coding agents",
+      },
     ],
   },
   {

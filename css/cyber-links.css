@@ -8,33 +8,40 @@
 }
 
 :root {
-  /* === Obsidian Lux Palette === */
+  /* === Obsidian Lux Palette (Redesigned: Emerald Tech) === */
   --bg-primary: #09090b;
   --bg-secondary: #18181b;
   --bg-card: rgba(24, 24, 27, 0.7);
   --bg-card-hover: rgba(39, 39, 42, 0.8);
   --border-color: rgba(255, 255, 255, 0.06);
-  --border-hover: rgba(168, 85, 247, 0.35);
+  --border-hover: rgba(16, 185, 129, 0.35); /* Emerald 500 */
   --text-primary: #fafafa;
   --text-secondary: #a1a1aa;
   --text-muted: #52525b;
 
-  --accent-red: #a855f7;
-  --accent-red-dark: #7c3aed;
-  --accent-red-light: #c084fc;
-  --accent-red-deep: #6d28d9;
+  /* Accent Emerald Palette */
+  --accent-emerald: #10b981;      /* Emerald 500 */
+  --accent-emerald-dark: #059669; /* Emerald 600 */
+  --accent-emerald-light: #34d399;/* Emerald 400 */
+  --accent-emerald-deep: #047857; /* Emerald 700 */
+
+  /* Backward Compatibility Aliases */
+  --accent-red: var(--accent-emerald);
+  --accent-red-dark: var(--accent-emerald-dark);
+  --accent-red-light: var(--accent-emerald-light);
+  --accent-red-deep: var(--accent-emerald-deep);
   --accent-green: #34d399;
   --accent-rose: #f472b6;
   --accent-amber: #f59e0b;
 
-  --glow-red: rgba(168, 85, 247, 0.1);
-  --glow-red-dark: rgba(124, 58, 237, 0.1);
+  --glow-red: rgba(16, 185, 129, 0.1);
+  --glow-red-dark: rgba(5, 150, 105, 0.1);
   --radius: 16px;
   --radius-sm: 10px;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-  --glow-color: rgba(168, 85, 247, 0.04);
-  --glow-color-inner: rgba(168, 85, 247, 0.08);
+  --glow-color: rgba(16, 185, 129, 0.04);
+  --glow-color-inner: rgba(16, 185, 129, 0.08);
   --glow-size: 120px;
   --glow-opacity: 0;
   --x: 50%;
@@ -43,54 +50,54 @@
   --navbar-bg: rgba(9, 9, 11, 0.8);
   --navbar-bg-scrolled: rgba(9, 9, 11, 0.95);
   --navbar-shadow: 0 1px 0 rgba(255,255,255,0.04), 0 4px 30px rgba(0,0,0,0.5);
-  --nav-link-hover-bg: rgba(168, 85, 247, 0.06);
-  --nav-link-hover-border: rgba(168, 85, 247, 0.12);
-  --nav-link-active-bg: rgba(168, 85, 247, 0.1);
-  --nav-link-active-border: rgba(168, 85, 247, 0.25);
-  --nav-social-hover-bg: rgba(168, 85, 247, 0.08);
-  --nav-social-hover-border: rgba(168, 85, 247, 0.2);
+  --nav-link-hover-bg: rgba(16, 185, 129, 0.06);
+  --nav-link-hover-border: rgba(16, 185, 129, 0.12);
+  --nav-link-active-bg: rgba(16, 185, 129, 0.1);
+  --nav-link-active-border: rgba(16, 185, 129, 0.25);
+  --nav-social-hover-bg: rgba(16, 185, 129, 0.08);
+  --nav-social-hover-border: rgba(16, 185, 129, 0.2);
   --nav-mobile-bg: rgba(9, 9, 11, 0.98);
   --search-bg: rgba(24, 24, 27, 0.6);
-  --search-focus-ring: rgba(168, 85, 247, 0.12);
-  --search-focus-shadow: 0 0 0 4px rgba(168, 85, 247, 0.08);
+  --search-focus-ring: rgba(16, 185, 129, 0.12);
+  --search-focus-shadow: 0 0 0 4px rgba(16, 185, 129, 0.08);
   --diff-btn-bg: rgba(24, 24, 27, 0.6);
-  --diff-btn-hover-border: rgba(168, 85, 247, 0.3);
-  --diff-btn-hover-bg: rgba(168, 85, 247, 0.06);
-  --diff-btn-active-bg: rgba(168, 85, 247, 0.12);
-  --diff-btn-active-shadow: 0 0 20px rgba(168, 85, 247, 0.1);
-  --card-gradient: rgba(168, 85, 247, 0.03);
-  --card-shadow-hover: 0 12px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(168, 85, 247, 0.1);
+  --diff-btn-hover-border: rgba(16, 185, 129, 0.3);
+  --diff-btn-hover-bg: rgba(16, 185, 129, 0.06);
+  --diff-btn-active-bg: rgba(16, 185, 129, 0.12);
+  --diff-btn-active-shadow: 0 0 20px rgba(16, 185, 129, 0.1);
+  --card-gradient: rgba(16, 185, 129, 0.03);
+  --card-shadow-hover: 0 12px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(16, 185, 129, 0.1);
   --favicon-bg: rgba(255,255,255,0.04);
   --page-btn-bg: rgba(24, 24, 27, 0.6);
-  --page-btn-hover-border: rgba(168, 85, 247, 0.3);
-  --page-btn-hover-bg: rgba(168, 85, 247, 0.06);
+  --page-btn-hover-border: rgba(16, 185, 129, 0.3);
+  --page-btn-hover-bg: rgba(16, 185, 129, 0.06);
   --page-btn-hover-shadow: 0 4px 20px rgba(0,0,0,0.3);
-  --page-btn-active-bg: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(124, 58, 237, 0.15));
-  --page-btn-active-border: rgba(168, 85, 247, 0.4);
-  --page-btn-active-shadow: 0 0 20px rgba(168, 85, 247, 0.12);
-  --category-count-bg: rgba(168, 85, 247, 0.06);
-  --category-count-border: rgba(168, 85, 247, 0.15);
-  --hero-badge-bg: rgba(168, 85, 247, 0.06);
-  --hero-badge-border: rgba(168, 85, 247, 0.2);
+  --page-btn-active-bg: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(5, 150, 105, 0.15));
+  --page-btn-active-border: rgba(16, 185, 129, 0.4);
+  --page-btn-active-shadow: 0 0 20px rgba(16, 185, 129, 0.12);
+  --category-count-bg: rgba(16, 185, 129, 0.06);
+  --category-count-border: rgba(16, 185, 129, 0.15);
+  --hero-badge-bg: rgba(16, 185, 129, 0.06);
+  --hero-badge-border: rgba(16, 185, 129, 0.2);
   --scroll-top-bg: rgba(24, 24, 27, 0.8);
-  --scroll-top-border: rgba(168, 85, 247, 0.2);
-  --scroll-top-hover-bg: rgba(168, 85, 247, 0.12);
+  --scroll-top-border: rgba(16, 185, 129, 0.2);
+  --scroll-top-hover-bg: rgba(16, 185, 129, 0.12);
   --scroll-track: #09090b;
-  --scroll-thumb: linear-gradient(#6d28d9, #a855f7);
+  --scroll-thumb: linear-gradient(#059669, #10b981);
   --modal-overlay-bg: rgba(0, 0, 0, 0.7);
   --modal-shadow: 0 25px 60px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.06);
-  --modal-close-hover-bg: rgba(244, 114, 182, 0.1);
-  --modal-close-hover-border: rgba(244, 114, 182, 0.25);
-  --modal-tag-bg: rgba(168, 85, 247, 0.08);
-  --modal-tag-border: rgba(168, 85, 247, 0.18);
-  --footer-link-bg: rgba(168, 85, 247, 0.05);
-  --footer-link-border: rgba(168, 85, 247, 0.12);
-  --footer-link-hover-bg: rgba(168, 85, 247, 0.1);
-  --footer-link-hover-border: rgba(168, 85, 247, 0.3);
-  --footer-link-hover-shadow: 0 4px 20px rgba(168, 85, 247, 0.08);
-  --bg-grid-glow1: rgba(168, 85, 247, 0.04);
-  --bg-grid-glow2: rgba(124, 58, 237, 0.03);
-  --bg-grid-glow3: rgba(168, 85, 247, 0.02);
+  --modal-close-hover-bg: rgba(16, 185, 129, 0.1);
+  --modal-close-hover-border: rgba(16, 185, 129, 0.25);
+  --modal-tag-bg: rgba(16, 185, 129, 0.08);
+  --modal-tag-border: rgba(16, 185, 129, 0.18);
+  --footer-link-bg: rgba(16, 185, 129, 0.05);
+  --footer-link-border: rgba(16, 185, 129, 0.12);
+  --footer-link-hover-bg: rgba(16, 185, 129, 0.1);
+  --footer-link-hover-border: rgba(16, 185, 129, 0.3);
+  --footer-link-hover-shadow: 0 4px 20px rgba(16, 185, 129, 0.08);
+  --bg-grid-glow1: rgba(16, 185, 129, 0.04);
+  --bg-grid-glow2: rgba(5, 150, 105, 0.03);
+  --bg-grid-glow3: rgba(16, 185, 129, 0.02);
   --bg-grid-line: rgba(255, 255, 255, 0.02);
   --orb3-bg: rgba(52, 211, 153, 0.05);
 }
@@ -147,8 +154,8 @@ body::before {
 
 /* Hover-amplify: glow brightens near interactive elements */
 body.glow-hover::before {
-  --glow-color: rgba(168, 85, 247, 0.08);
-  --glow-color-inner: rgba(168, 85, 247, 0.16);
+  --glow-color: rgba(16, 185, 129, 0.08);
+  --glow-color-inner: rgba(16, 185, 129, 0.16);
 }
 
 /* Disable glow on specific pages */
@@ -506,14 +513,14 @@ body.no-glow::before {
 
 .adv-search-toggle:hover {
   color: var(--accent-red);
-  background: rgba(168, 85, 247, 0.06);
-  border-color: rgba(168, 85, 247, 0.12);
+  background: rgba(16, 185, 129, 0.06);
+  border-color: rgba(16, 185, 129, 0.12);
 }
 
 .adv-search-toggle[aria-expanded="true"] {
   color: var(--accent-red);
-  background: rgba(168, 85, 247, 0.1);
-  border-color: rgba(168, 85, 247, 0.3);
+  background: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.3);
 }
 
 .adv-search-badge {
@@ -631,12 +638,12 @@ body.no-glow::before {
 }
 .filter-chips::-webkit-scrollbar-thumb,
 .active-filters-list::-webkit-scrollbar-thumb {
-  background: rgba(168, 85, 247, 0.3);
+  background: rgba(16, 185, 129, 0.3);
   border-radius: 10px;
 }
 .filter-chips::-webkit-scrollbar-thumb:hover,
 .active-filters-list::-webkit-scrollbar-thumb:hover {
-  background: rgba(168, 85, 247, 0.5);
+  background: rgba(16, 185, 129, 0.5);
 }
 
 .filter-chip {
@@ -659,15 +666,15 @@ body.no-glow::before {
 .filter-chip:hover {
   border-color: var(--border-hover);
   color: var(--accent-red);
-  background: rgba(168, 85, 247, 0.06);
+  background: rgba(16, 185, 129, 0.06);
   transform: translateY(-1px);
 }
 
 .filter-chip.active {
-  background: rgba(168, 85, 247, 0.12);
+  background: rgba(16, 185, 129, 0.12);
   border-color: var(--accent-red);
   color: var(--text-primary);
-  box-shadow: 0 0 12px rgba(168, 85, 247, 0.1);
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.1);
 }
 
 .filter-chip .chip-icon {
@@ -676,7 +683,7 @@ body.no-glow::before {
 }
 
 .filter-chip .chip-count {
-  font-family: "Playwrite DE Grund", cursive;
+  font-family: 'JetBrains Mono', monospace;
   font-size: 0.65rem;
   color: var(--text-muted);
   background: rgba(255, 255, 255, 0.06);
@@ -686,7 +693,7 @@ body.no-glow::before {
 }
 
 .filter-chip.active .chip-count {
-  background: rgba(168, 85, 247, 0.15);
+  background: rgba(16, 185, 129, 0.15);
   color: var(--accent-red-light);
 }
 
@@ -698,8 +705,8 @@ body.no-glow::before {
   padding: 10px 20px;
   margin-top: 10px;
   border-radius: var(--radius-sm);
-  background: rgba(168, 85, 247, 0.04);
-  border: 1px solid rgba(168, 85, 247, 0.1);
+  background: rgba(16, 185, 129, 0.04);
+  border: 1px solid rgba(16, 185, 129, 0.1);
   flex-wrap: wrap;
 }
 
@@ -732,8 +739,8 @@ body.no-glow::before {
   gap: 4px;
   padding: 4px 12px;
   border-radius: 50px;
-  background: rgba(168, 85, 247, 0.08);
-  border: 1px solid rgba(168, 85, 247, 0.18);
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.18);
   color: var(--accent-red);
   font-family: "Outfit", sans-serif;
   font-size: 0.72rem;
@@ -743,8 +750,8 @@ body.no-glow::before {
 }
 
 .active-filter-tag:hover {
-  background: rgba(168, 85, 247, 0.15);
-  border-color: rgba(168, 85, 247, 0.35);
+  background: rgba(16, 185, 129, 0.15);
+  border-color: rgba(16, 185, 129, 0.35);
 }
 
 .active-filter-tag .remove-tag {
@@ -757,7 +764,7 @@ body.no-glow::before {
   padding: 5px 14px;
   border-radius: 50px;
   background: transparent;
-  border: 1px solid rgba(168, 85, 247, 0.18);
+  border: 1px solid rgba(16, 185, 129, 0.18);
   color: var(--accent-red);
   font-family: "Outfit", sans-serif;
   font-size: 0.72rem;
@@ -768,8 +775,8 @@ body.no-glow::before {
 }
 
 .active-filters-clear:hover {
-  background: rgba(168, 85, 247, 0.08);
-  border-color: rgba(168, 85, 247, 0.35);
+  background: rgba(16, 185, 129, 0.08);
+  border-color: rgba(16, 185, 129, 0.35);
 }
 
 /* ===== Difficulty Filters ===== */
@@ -824,7 +831,7 @@ body.no-glow::before {
 .stat-number {
   font-size: 1.8rem;
   font-weight: 800;
-  font-family: "Playwrite DE Grund", cursive;
+  font-family: 'JetBrains Mono', monospace;
   background: linear-gradient(135deg, var(--accent-red), var(--accent-red-dark));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -888,9 +895,9 @@ body.no-glow::before {
 
 .category-count {
   margin-left: auto;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: var(--text-muted);
-  font-family: "Playwrite DE Grund", cursive;
+  font-family: 'JetBrains Mono', monospace;
   background: var(--category-count-bg);
   padding: 4px 12px;
   border-radius: 20px;
@@ -899,19 +906,19 @@ body.no-glow::before {
 
 /* Category Color Themes */
 .cat-breach .category-icon {
-  background: rgba(168, 85, 247, 0.12);
+  background: rgba(16, 185, 129, 0.12);
   color: var(--accent-red);
 }
 .cat-encode .category-icon {
-  background: rgba(124, 58, 237, 0.12);
+  background: rgba(5, 150, 105, 0.12);
   color: var(--accent-red-dark);
 }
 .cat-osint .category-icon {
-  background: rgba(192, 132, 252, 0.12);
+  background: rgba(52, 211, 153, 0.12);
   color: var(--accent-red-light);
 }
 .cat-network .category-icon {
-  background: rgba(168, 85, 247, 0.1);
+  background: rgba(16, 185, 129, 0.1);
   color: var(--accent-red);
 }
 .cat-vuln .category-icon {
@@ -919,19 +926,19 @@ body.no-glow::before {
   color: var(--accent-amber);
 }
 .cat-hash .category-icon {
-  background: rgba(192, 132, 252, 0.12);
+  background: rgba(52, 211, 153, 0.12);
   color: var(--accent-red-light);
 }
 .cat-malware .category-icon {
-  background: rgba(124, 58, 237, 0.12);
+  background: rgba(5, 150, 105, 0.12);
   color: var(--accent-red-dark);
 }
 .cat-stego .category-icon {
-  background: rgba(168, 85, 247, 0.1);
+  background: rgba(16, 185, 129, 0.1);
   color: var(--accent-red);
 }
 .cat-email .category-icon {
-  background: rgba(109, 40, 217, 0.12);
+  background: rgba(4, 120, 87, 0.12);
   color: var(--accent-red-deep);
 }
 .cat-resources .category-icon {
@@ -939,11 +946,11 @@ body.no-glow::before {
   color: var(--accent-amber);
 }
 .cat-pentest .category-icon {
-  background: rgba(168, 85, 247, 0.15);
+  background: rgba(16, 185, 129, 0.15);
   color: var(--accent-red);
 }
 .cat-system .category-icon {
-  background: rgba(192, 132, 252, 0.12);
+  background: rgba(52, 211, 153, 0.12);
   color: var(--accent-red-light);
 }
 .cat-thm .category-icon {
@@ -1082,7 +1089,7 @@ body.no-glow::before {
 .link-domain {
   font-size: 0.78rem;
   color: var(--text-muted);
-  font-family: "Playwrite DE Grund", cursive;
+  font-family: "Outfit", sans-serif;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1208,7 +1215,7 @@ body.no-glow::before {
 
 .footer-author a:hover {
   color: var(--accent-red-dark);
-  text-shadow: 0 0 12px rgba(168, 85, 247, 0.4);
+  text-shadow: 0 0 12px rgba(16, 185, 129, 0.4);
 }
 
 .footer-role {
@@ -1543,7 +1550,7 @@ body.no-glow::before {
 }
 
 .modal-btn:hover {
-  box-shadow: 0 0 24px rgba(168, 85, 247, 0.25);
+  box-shadow: 0 0 24px rgba(16, 185, 129, 0.25);
   transform: translateY(-1px);
 }
 
@@ -1571,15 +1578,15 @@ body.no-glow::before {
 
 /* ===== New Category Themes ===== */
 .cat-ai .category-icon {
-  background: rgba(124, 58, 237, 0.12);
+  background: rgba(5, 150, 105, 0.12);
   color: var(--accent-red-dark);
 }
 .cat-coding .category-icon {
-  background: rgba(168, 85, 247, 0.12);
+  background: rgba(16, 185, 129, 0.12);
   color: var(--accent-red);
 }
 .cat-notes .category-icon {
-  background: rgba(168, 85, 247, 0.12);
+  background: rgba(16, 185, 129, 0.12);
   color: var(--accent-red);
 }
 .cat-extensions .category-icon {
@@ -1591,14 +1598,14 @@ body.no-glow::before {
   color: var(--accent-amber);
 }
 .cat-writeups .category-icon {
-  background: rgba(192, 132, 252, 0.12);
+  background: rgba(52, 211, 153, 0.12);
   color: var(--accent-red-light);
 }
 .cat-tools .category-icon {
-  background: rgba(168, 85, 247, 0.12);
+  background: rgba(16, 185, 129, 0.12);
   color: var(--accent-red);
 }
 .cat-general .category-icon {
-  background: rgba(124, 58, 237, 0.1);
+  background: rgba(5, 150, 105, 0.1);
   color: var(--accent-red-dark);
 }

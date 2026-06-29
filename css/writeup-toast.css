@@ -5,8 +5,8 @@
   transform: translateX(-50%) translateY(-200%);
   max-width: 520px;
   width: 90%;
-  background: linear-gradient(135deg, rgba(30, 30, 50, 0.95), rgba(40, 30, 60, 0.95));
-  border: 1px solid rgba(168, 85, 247, 0.4);
+  background: linear-gradient(135deg, rgba(9, 9, 11, 0.95), rgba(16, 185, 129, 0.08));
+  border: 1px solid rgba(16, 185, 129, 0.3);
   border-radius: 14px;
   padding: 16px 20px;
   display: flex;
@@ -14,7 +14,7 @@
   gap: 12px;
   z-index: 10000;
   backdrop-filter: blur(16px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 20px rgba(168, 85, 247, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 20px rgba(16, 185, 129, 0.1);
   opacity: 0;
   transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease;
 }
@@ -40,7 +40,7 @@
   display: block;
   font-size: 14px;
   font-weight: 700;
-  color: #c084fc;
+  color: #34d399;
   margin-bottom: 4px;
 }
 .writeup-toast-content p {

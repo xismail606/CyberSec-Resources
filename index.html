@@ -10,22 +10,21 @@
       })();
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CyberSec Resources — Home & About</title>
+    <title>CyberSec</title>
     <meta
       name="description"
-      content="A curated collection of essential cybersecurity tools and resources for penetration testing, OSINT, vulnerability analysis, and more."
+      content="A curated collection of essential cybersecurity tools, platforms, and resources for penetration testing, OSINT, and threat analysis."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Englebert&family=Outfit:wght@100..900&family=Playwrite+DE+Grund:wght@100..400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=JetBrains+Mono:wght@100..800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/cyber-links.css" />
     <link rel="stylesheet" href="./css/sidebar.css" />
-
     <link rel="stylesheet" href="./css/main.css" />
-     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏠</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
   </head>
   <body>
     <noscript>
@@ -33,8 +32,10 @@
         This page requires JavaScript to be enabled.
       </p>
     </noscript>
+    
     <!-- Skip Navigation -->
     <a href="#mainContent" class="skip-nav">Skip to content</a>
+    
     <!-- Background Effects -->
     <div class="bg-grid"></div>
     <div class="orb orb-1"></div>
@@ -44,12 +45,15 @@
     <!-- Navigation Bar -->
     <nav class="navbar" id="navbar" aria-label="Main navigation">
       <div class="nav-inner">
-        <a href="./index.html" class="nav-logo"><img src="./assets/x606-logo1.webp" alt="CyberSec Logo" style="height:70px;width:70px;vertical-align:middle;margin-right:6px;border-radius:50%;"> CyberSec</a>
+        <a href="./index.html" class="nav-logo">
+          <img src="./assets/x606-logo1.webp" alt="CyberSec Logo" style="height:36px;width:36px;vertical-align:middle;margin-right:8px;border-radius:50%;">
+          CyberSec
+        </a>
         <div class="nav-social">
-          <a href="https://github.com/xismail606/CyberSec-Resources" target="_blank" rel="noopener noreferrer" title="GitHub">
+          <a href="https://github.com/xismail606/CyberSec-Resources" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub Repository">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
           </a>
-          <a href="https://www.linkedin.com/in/ismailabdelhameed" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+          <a href="https://www.linkedin.com/in/ismailabdelhameed" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn Profile">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
           </a>
         </div>
@@ -58,57 +62,131 @@
     </nav>
 
     <div class="container" id="mainContent">
-      <!-- Hero -->
-      <header class="hero hero-home">
-        <div class="hero-badge">
-          <span class="pulse-dot"></span>
-          OFFENSIVE SECURITY ARSENAL
+      <!-- Split Hero Section -->
+      <header class="hero hero-home reveal-on-scroll">
+        <div class="hero-grid-split">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="pulse-dot"></span>
+              OFFENSIVE SECURITY ARSENAL
+            </div>
+            <h1>CyberSec</h1>
+            <p>
+              Your ultimate arsenal for Cybersecurity, Penetration Testing, OSINT, and Threat Analysis. Carefully curated for security professionals and enthusiasts.
+            </p>
+            <div class="hero-actions">
+              <a href="./resources.html" class="hero-cta-primary">
+                Explore Arsenal 
+                <span class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="display:inline-block;vertical-align:middle;margin-left:2px;stroke-width:2.5;"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                </span>
+              </a>
+              <a href="https://github.com/xismail606/CyberSec-Resources" target="_blank" rel="noopener noreferrer" class="hero-cta-secondary">Star on GitHub</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-glow-box">
+              <div class="terminal-header">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+                <span class="terminal-title">cybersec ~ bash</span>
+              </div>
+              <div class="terminal-body">
+                <div class="terminal-line"><span class="terminal-prompt">$</span> npx cybersec-resources init</div>
+                <div class="terminal-line success"><span class="terminal-prompt">></span> Loading security modules... [OK]</div>
+                <div class="terminal-line"><span class="terminal-prompt">></span> 1,200+ vulnerability reports active</div>
+                <div class="terminal-line"><span class="terminal-prompt">></span> OSINT & PenTest tools loaded</div>
+                <div class="terminal-line blink"><span class="terminal-prompt">$</span> <span class="cursor">_</span></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <h1><img src="./assets/x606-logo1.webp" alt="CyberSec Logo" style="height: 1.9em; width: auto; vertical-align: middle; margin-right: 15px; border-radius: 50%;"> <span class="typewriter" data-text="Welcome to CyberSec"></span></h1>
-        <p>
-          Your ultimate arsenal for Cybersecurity, Penetration Testing, OSINT, and Threat Analysis. Carefully curated for security professionals and enthusiasts.
-        </p>
-
       </header>
 
       <main>
-        <!-- Home Grid -->
-        <div class="home-grid">
-          <a href="./resources.html" class="home-card">
-            <div class="home-card-icon">🛡️</div>
-            <h3 class="home-card-title">CyberSec Resources</h3>
-            <p class="home-card-desc">An extensive list of tools, platforms, and methodologies for red teaming, blue teaming, and general security research.</p>
-          </a>
-          <a href="./free-labs.html" class="home-card">
-            <div class="home-card-icon">💻</div>
-            <h3 class="home-card-title">Free Labs</h3>
-            <p class="home-card-desc">Curated selection of TryHackMe rooms and interactive challenges to test your skills in real-world scenarios.</p>
-          </a>
-          <a href="./bug-bounty-writeups.html" class="home-card">
-            <div class="home-card-icon">🐛</div>
-            <h3 class="home-card-title">Bug Bounty Writeups</h3>
-            <p class="home-card-desc">Over 1,200 real-world vulnerability reports and writeups. Learn from the discovery of XSS, SSRF, RCE, and more.</p>
-          </a>
-          <a href="./ai-tools.html" class="home-card">
-            <div class="home-card-icon">🤖</div>
-            <h3 class="home-card-title">AI Tools</h3>
-            <p class="home-card-desc">Explore AI-powered assistants, automated scanners, and productivity boosters designed specifically for infosec.</p>
-          </a>
+        <!-- Home Grid (Bento Layout) -->
+        <div class="home-grid reveal-on-scroll">
+          <!-- Card 1: Resources (Large cell, Background Image Overlay) -->
+          <div class="home-grid-cell-large">
+            <div class="home-card-shell">
+              <a href="./resources.html" class="home-card has-bg" style="background-image: url('assets/cyber_resources.png');">
+                <div class="home-card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.746 3.746 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                  </svg>
+                </div>
+                <h3 class="home-card-title">CyberSec Resources <span class="arrow">→</span></h3>
+                <p class="home-card-desc">An extensive list of tools, platforms, and methodologies for red teaming, blue teaming, and general security research.</p>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Free Labs (Small cell) -->
+          <div class="home-grid-cell-small">
+            <div class="home-card-shell">
+              <a href="./free-labs.html" class="home-card has-bg" style="background-image: url('assets/cyber_labs.png');">
+                <div class="home-card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                  </svg>
+                </div>
+                <h3 class="home-card-title">Free Labs <span class="arrow">→</span></h3>
+                <p class="home-card-desc">Curated selection of TryHackMe rooms and interactive challenges to test your skills in real-world scenarios.</p>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Bug Bounty Writeups (Small cell) -->
+          <div class="home-grid-cell-small">
+            <div class="home-card-shell">
+              <a href="./bug-bounty-writeups.html" class="home-card has-bg" style="background-image: url('assets/cyber_writeups.png');">
+                <div class="home-card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 11.25V5.25M12 5.25a2.25 2.25 0 00-4.5 0M12 5.25a2.25 2.25 0 014.5 0M9 9l-3.75 3.75M15 9l3.75 3.75M9 13.5l-4.5 3M15 13.5l4.5 3M12 18v2.25M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 0A3.75 3.75 0 0011 18h1z" />
+                  </svg>
+                </div>
+                <h3 class="home-card-title">Bug Bounty Writeups <span class="arrow">→</span></h3>
+                <p class="home-card-desc">Over 1,200 real-world vulnerability reports and writeups. Learn from the discovery of XSS, SSRF, RCE, and more.</p>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4: AI Tools (Large cell, Background Image Overlay) -->
+          <div class="home-grid-cell-large">
+            <div class="home-card-shell">
+              <a href="./ai-tools.html" class="home-card has-bg" style="background-image: url('assets/cyber_ai.png');">
+                <div class="home-card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3M19.5 8.25H18M8.25 19.5V21m7.5-18v1.5m0 15V21m5.25-11.25H18m-10.5 0H3m16.5 4.5H18m-10.5 0H3m15-4.5V18a2.25 2.25 0 01-2.25 2.25h-7.5A2.25 2.25 0 015.25 18V7.5A2.25 2.25 0 017.5 5.25h7.5A2.25 2.25 0 0117.25 7.5v6.75zM9 9h6v6H9V9z" />
+                  </svg>
+                </div>
+                <h3 class="home-card-title">AI Tools <span class="arrow">→</span></h3>
+                <p class="home-card-desc">Explore AI-powered assistants, automated scanners, and productivity boosters designed specifically for infosec.</p>
+              </a>
+            </div>
+          </div>
         </div>
 
         <!-- About Section -->
-        <section class="about-section">
-          <h2 class="about-title">ℹ️ About This Project</h2>
+        <section class="about-section reveal-on-scroll">
+          <h2 class="about-title">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            About This Project
+          </h2>
           <div class="about-content">
-            <p>
-              <strong>CyberSec Resources</strong> is a free and open-source platform designed to bring together the most valuable cybersecurity resources in one place. From tools and learning labs to bug bounty writeups, courses, and reference materials, everything is organized to help learners, security researchers, and professionals find what they need quickly and efficiently.
-            </p>
-            <p>
-              The platform is continuously updated with new resources and community contributions to ensure access to relevant and high-quality content. Explore the available categories, discover new learning opportunities, and enhance your cybersecurity journey through a centralized and easy-to-use knowledge hub.
-            </p>
-            <p>
-              Built and curated by <strong>x606</strong>, this project is continually evolving. Feel free to explore the sections above, or contribute on GitHub to help expand the arsenal!
-            </p>
+            <div class="about-content-left">
+              <p>
+                <strong>CyberSec</strong> is a free and open-source platform designed to bring together the most valuable cybersecurity resources in one place. From tools and learning labs to bug bounty writeups, courses, and reference materials, everything is organized to help learners, security researchers, and professionals find what they need quickly and efficiently.
+              </p>
+            </div>
+            <div class="about-content-right">
+              <p>
+                The platform is continuously updated with new resources and community contributions to ensure access to relevant and high-quality content. Built and curated by <strong>x606</strong>, this project is continually evolving. Feel free to explore the sections above, or contribute on GitHub to help expand the arsenal!
+              </p>
+            </div>
           </div>
         </section>
       </main>
@@ -118,15 +196,20 @@
         <div class="footer-content">
           <p class="footer-author">Made by <a href="https://github.com/xismail606" target="_blank" rel="noopener noreferrer">x606</a></p>
           <p class="footer-role">Penetration Testing Enthusiast</p>
-          <p class="footer-role">• Offensive Security | Red Team Fundamentals •</p>
-          <p>🔒 Stay safe, stay curious · Built for security professionals</p>
+          <p class="footer-role">Offensive Security | Red Team </p>
+          <p style="margin-top:8px;font-size:0.8rem;opacity:0.85;">Stay safe, stay curious · Built for security professionals</p>
           <div class="footer-links"> 
-            <a href="https://github.com/xismail606/CyberSec-Resources" target="_blank" rel="noopener noreferrer">⭐ Star on GitHub</a>
-            <a href="https://www.linkedin.com/in/ismailabdelhameed" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
+            <a href="https://github.com/xismail606/CyberSec-Resources" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width:14px;height:14px;display:inline-block;vertical-align:middle;margin-right:6px;stroke-width:2;"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499c-.105-.347-.492-.576-.85-.576s-.745.229-.85.576L7.92 7.734l-4.57.447c-.378.037-.698.291-.795.656-.098.364.072.752.417.957l3.435 2.046-1.045 4.481c-.087.37.075.753.398.948.324.195.738.163 1.03-.078l3.87-3.195 3.87 3.195c.292.241.706.273 1.03.078.323-.195.485-.578.398-.948l-1.045-4.481 3.435-2.046c.345-.205.515-.593.417-.957-.097-.365-.417-.619-.795-.656l-4.57-.447-1.86-4.235z" /></svg>
+              Star on GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/ismailabdelhameed" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width:14px;height:14px;display:inline-block;vertical-align:middle;margin-right:6px;stroke-width:2;"><path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" /></svg>
+              LinkedIn
+            </a>
           </div>
         </div>
       </footer>
-
     </div>
 
     <!-- Scroll to Top Button -->
@@ -148,10 +231,17 @@
       </svg>
     </button>
     
-    <!-- Social Media Links -->
+    <!-- Support Sidebar link -->
     <div class="social">
       <ul>
-        <li><a href="https://forms.gle/xkkFSNq6WN5U3S3AA">Support <i>✉️</i></a></li>
+        <li>
+          <a href="https://forms.gle/xkkFSNq6WN5U3S3AA" target="_blank" rel="noopener noreferrer">
+            Support 
+            <i>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width:20px;height:20px;stroke-width:1.5;"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
+            </i>
+          </a>
+        </li>
       </ul>
     </div>
 
