@@ -6,7 +6,7 @@
 
   // ===== UTILITIES =====
   const $ = (sel) => document.getElementById(sel);
-  const _esc = (s) => String(s || "").replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  const escAttr = (s) => String(s || "").replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   const slugify = (s) => s.toLowerCase().replace(/[^\w]+/g, "-").replace(/-+$/, "");
 
   // ===== DATA =====
@@ -38,7 +38,8 @@
         _faviconCache[domain] = `https://www.google.com/s2/favicons?domain=${domain}&sz=64`;
       }
       return _faviconCache[domain];
-    } catch {
+    } catch (e) {
+      console.warn("getFavicon: invalid URL →", e);
       return "";
     }
   }
@@ -48,7 +49,7 @@
   let allCards = [];    // {el, name, desc, url, catName, tags, difficulty, sectionEl}
   let allSections = []; // {el, catName, countEl, cards[]}
 
-  const escAttr = (s) => String(s || "").replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
 
   /**
    * Builds and appends all resource cards to the DOM.
@@ -69,8 +70,8 @@
       html += `
         <section class="category ${escAttr(cat.theme)}" id="cat-${slugify(cat.name)}">
           <div class="category-header">
-            <div class="category-icon">${_esc(cat.icon)}</div>
-            <h2 class="category-title">${_esc(cat.name)}</h2>
+            <div class="category-icon">${escAttr(cat.icon)}</div>
+            <h2 class="category-title">${escAttr(cat.name)}</h2>
             <span class="category-count">${cat.links.length} ${itemLabel}${cat.links.length > 1 ? "s" : ""}</span>
           </div>
           <div class="links-grid">
@@ -89,8 +90,8 @@
               <img src="${escAttr(getFavicon(link.url))}" alt="" loading="lazy" onerror="this.style.display='none'">
             </div>
             <div class="link-info">
-              <div class="link-name">${_esc(link.name)}</div>
-              <div class="link-domain">${_esc(link.desc)}</div>
+              <div class="link-name">${escAttr(link.name)}</div>
+              <div class="link-domain">${escAttr(link.desc)}</div>
             </div>
             <span class="card-arrow">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
@@ -251,18 +252,7 @@
     { key: "ctf", label: "CTF", icon: "🏴" },
   ];
 
-  // Legacy: still support standalone diff-btn if they exist
-  const diffButtons = document.querySelectorAll(".diff-btn");
-  if (diffButtons.length > 0) {
-    diffButtons.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        diffButtons.forEach((b) => b.classList.remove("active"));
-        btn.classList.add("active");
-        currentDiffFilter = btn.dataset.diff;
-        applyFilter(searchInput?.value.trim() || "");
-      });
-    });
-  }
+
 
   // Build difficulty chips in advanced panel
   if (diffChipsContainer) {
@@ -274,7 +264,7 @@
       chip.addEventListener("click", () => {
         const wasActive = chip.classList.contains("active");
         // Single-select: remove active from all diff chips
-        diffChipsContainer.querySelectorAll(".diff-chip").forEach((c) => c.classList.remove("active"));
+        diffChipsContainer.querySelectorAll(".diff-chip").forEach((chip) => chip.classList.remove("active"));
         if (wasActive) {
           currentDiffFilter = "all";
         } else {
@@ -307,7 +297,7 @@
       const chip = document.createElement("button");
       chip.className = "filter-chip";
       chip.dataset.category = cat.name;
-      chip.innerHTML = `<span class="chip-icon">${_esc(cat.icon)}</span><span>${_esc(cat.name)}</span><span class="chip-count">${cat.links.length}</span>`;
+      chip.innerHTML = `<span class="chip-icon">${escAttr(cat.icon)}</span><span>${escAttr(cat.name)}</span><span class="chip-count">${cat.links.length}</span>`;
       chip.addEventListener("click", () => {
         chip.classList.toggle("active");
         if (chip.classList.contains("active")) {
@@ -333,7 +323,7 @@
       advSelectAll.addEventListener("click", () => {
         selectedCategories.clear();
         categories.forEach((cat) => selectedCategories.add(cat.name));
-        filterChipsContainer.querySelectorAll(".filter-chip").forEach((c) => c.classList.add("active"));
+        filterChipsContainer.querySelectorAll(".filter-chip").forEach((chip) => chip.classList.add("active"));
         updateAdvancedFilters();
         applyFilter(searchInput?.value.trim() || "");
       });
@@ -364,10 +354,10 @@
 
   function clearAllAdvanced() {
     selectedCategories.clear();
-    if (filterChipsContainer) filterChipsContainer.querySelectorAll(".filter-chip").forEach((c) => c.classList.remove("active"));
+    if (filterChipsContainer) filterChipsContainer.querySelectorAll(".filter-chip").forEach((chip) => chip.classList.remove("active"));
     // Reset difficulty
     currentDiffFilter = "all";
-    if (diffChipsContainer) diffChipsContainer.querySelectorAll(".diff-chip").forEach((c) => c.classList.remove("active"));
+    if (diffChipsContainer) diffChipsContainer.querySelectorAll(".diff-chip").forEach((chip) => chip.classList.remove("active"));
     updateAdvancedFilters();
     applyFilter(searchInput?.value.trim() || "");
   }
@@ -398,12 +388,12 @@
           const cat = categories.find((c) => c.name === catName);
           const tag = document.createElement("span");
           tag.className = "active-filter-tag";
-          tag.innerHTML = `${cat ? _esc(cat.icon) : ""} ${_esc(catName)} <span class="remove-tag">✕</span>`;
+          tag.innerHTML = `${cat ? escAttr(cat.icon) : ""} ${escAttr(catName)} <span class="remove-tag">✕</span>`;
           tag.addEventListener("click", () => {
             selectedCategories.delete(catName);
             if (filterChipsContainer) {
               const chip = [...filterChipsContainer.querySelectorAll(".filter-chip")]
-                .find(c => c.dataset.category === catName);
+                .find(chip => chip.dataset.category === catName);
               if (chip) chip.classList.remove("active");
             }
             updateAdvancedFilters();
@@ -420,7 +410,7 @@
           tag.innerHTML = `${diffInfo ? diffInfo.icon : ""} ${diffInfo ? diffInfo.label : currentDiffFilter} <span class="remove-tag">✕</span>`;
           tag.addEventListener("click", () => {
             currentDiffFilter = "all";
-            if (diffChipsContainer) diffChipsContainer.querySelectorAll(".diff-chip").forEach((c) => c.classList.remove("active"));
+            if (diffChipsContainer) diffChipsContainer.querySelectorAll(".diff-chip").forEach((chip) => chip.classList.remove("active"));
             updateAdvancedFilters();
             applyFilter(searchInput?.value.trim() || "");
           });
@@ -438,9 +428,9 @@
   const scrollBtn = $("scrollTop");
 
   window.addEventListener("scroll", () => {
-    const y = window.scrollY;
-    if (navbar) navbar.classList.toggle("scrolled", y > 50);
-    if (scrollBtn) scrollBtn.classList.toggle("visible", y > 400);
+    const scrollY = window.scrollY;
+    if (navbar) navbar.classList.toggle("scrolled", scrollY > 50);
+    if (scrollBtn) scrollBtn.classList.toggle("visible", scrollY > 400);
   }, { passive: true });
 
   if (scrollBtn) {
@@ -501,7 +491,7 @@
     // Render tags safely
     const skillsSection = document.querySelector(".modal-skills");
     if (tags.length > 0) {
-      modalTags.innerHTML = tags.map((t) => `<span class="modal-tag">${_esc(t)}</span>`).join("");
+      modalTags.innerHTML = tags.map((t) => `<span class="modal-tag">${escAttr(t)}</span>`).join("");
       if (skillsSection) skillsSection.style.display = "block";
     } else {
       modalTags.innerHTML = "";
@@ -542,7 +532,13 @@
       e.preventDefault();
       _lastFocusedCard = card;
       let tags = [];
-      try { tags = JSON.parse(card.dataset.tags || "[]"); } catch { /* ignore */ }
+      if (card.dataset.tags) {
+        try {
+          tags = JSON.parse(card.dataset.tags);
+        } catch (parseErr) {
+          console.error("Failed to parse card.dataset.tags:", card.dataset.tags, parseErr);
+        }
+      }
       openModal(card.dataset.name, card.dataset.desc, card.dataset.url, tags);
     }
   });
@@ -698,8 +694,8 @@
   // ===== NAVBAR PILL LOGIC =====
   (() => {
     // close mobile menu on link click
-    document.querySelectorAll('.nav-pill a').forEach(l =>
-      l.addEventListener('click', () => {
+    document.querySelectorAll('.nav-pill a').forEach(link =>
+      link.addEventListener('click', () => {
         document.querySelector('.nav-pill')?.classList.remove('open');
         document.querySelector('.nav-hamburger')?.classList.remove('open');
       })
@@ -707,8 +703,8 @@
 
     // active link highlight
     const page = location.pathname.split('/').pop() || 'index.html';
-    document.querySelectorAll('.pill-link').forEach(l => {
-      if (l.getAttribute('href') === page || l.getAttribute('href') === `./${page}`) l.classList.add('active');
+    document.querySelectorAll('.pill-link').forEach(link => {
+      if (link.getAttribute('href') === page || link.getAttribute('href') === `./${page}`) link.classList.add('active');
     });
   })();
 

@@ -13,7 +13,6 @@ html.theme-transitioning .search-input,
 html.theme-transitioning .card,
 html.theme-transitioning .home-card,
 html.theme-transitioning .about-section,
-html.theme-transitioning .diff-btn,
 html.theme-transitioning .page-nav-btn,
 html.theme-transitioning .category-item,
 html.theme-transitioning .sidebar,
@@ -76,11 +75,6 @@ html[data-theme="light"] {
   --search-focus-ring: rgba(5, 150, 105, 0.15);
   --search-focus-shadow: 0 0 0 4px rgba(5, 150, 105, 0.06);
 
-  --diff-btn-bg: rgba(255, 255, 255, 0.65);
-  --diff-btn-hover-border: rgba(5, 150, 105, 0.3);
-  --diff-btn-hover-bg: rgba(5, 150, 105, 0.04);
-  --diff-btn-active-bg: rgba(5, 150, 105, 0.08);
-  --diff-btn-active-shadow: none;
 
   --card-gradient: rgba(5, 150, 105, 0.02);
   --card-shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.06), 0 0 0 1px rgba(5, 150, 105, 0.1);

@@ -60,11 +60,6 @@
   --search-bg: rgba(24, 24, 27, 0.6);
   --search-focus-ring: rgba(16, 185, 129, 0.12);
   --search-focus-shadow: 0 0 0 4px rgba(16, 185, 129, 0.08);
-  --diff-btn-bg: rgba(24, 24, 27, 0.6);
-  --diff-btn-hover-border: rgba(16, 185, 129, 0.3);
-  --diff-btn-hover-bg: rgba(16, 185, 129, 0.06);
-  --diff-btn-active-bg: rgba(16, 185, 129, 0.12);
-  --diff-btn-active-shadow: 0 0 20px rgba(16, 185, 129, 0.1);
   --card-gradient: rgba(16, 185, 129, 0.03);
   --card-shadow-hover: 0 12px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(16, 185, 129, 0.1);
   --favicon-bg: rgba(255,255,255,0.04);
@@ -870,32 +865,6 @@ button.theme-toggle.pill-cta:focus-visible {
   gap: 10px;
   margin: 0 auto 30px;
   max-width: 800px;
-}
-
-.diff-btn {
-  background: var(--diff-btn-bg);
-  border: 1px solid var(--border-color);
-  color: var(--text-secondary);
-  padding: 8px 16px;
-  border-radius: 50px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  cursor: pointer;
-  backdrop-filter: blur(8px);
-  transition: var(--transition);
-}
-
-.diff-btn:hover {
-  border-color: var(--diff-btn-hover-border);
-  color: var(--accent-red);
-  background: var(--diff-btn-hover-bg);
-}
-
-.diff-btn.active {
-  background: var(--diff-btn-active-bg);
-  border-color: var(--accent-red);
-  color: var(--text-primary);
-  box-shadow: var(--diff-btn-active-shadow);
 }
 
 /* ===== Stats Bar ===== */

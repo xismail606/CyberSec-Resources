@@ -34,17 +34,28 @@
   }
 
   // ===== Apply theme =====
-  function applyTheme(theme, save = false) {
+  function applyTheme(theme) {
     if (theme === "light") ensureLightCSS();
     html.setAttribute("data-theme", theme);
-    if (save) localStorage.setItem(STORAGE_KEY, theme);
     updateToggleUI(theme);
   }
 
+  function applyThemeAndPersist(theme) {
+    applyTheme(theme);
+    localStorage.setItem(STORAGE_KEY, theme);
+  }
+
   // ===== Smooth transition helper =====
-  function transitionTheme(theme, save = true) {
+  function transitionTheme(theme) {
     html.classList.add("theme-transitioning");
-    applyTheme(theme, save);
+    applyTheme(theme);
+    // Remove class after transitions finish (+50ms buffer)
+    setTimeout(() => html.classList.remove("theme-transitioning"), TRANSITION_MS + 50);
+  }
+
+  function transitionThemeAndPersist(theme) {
+    html.classList.add("theme-transitioning");
+    applyThemeAndPersist(theme);
     // Remove class after transitions finish (+50ms buffer)
     setTimeout(() => html.classList.remove("theme-transitioning"), TRANSITION_MS + 50);
   }
@@ -66,7 +77,7 @@
 
   // ===== Initialize on load =====
   const initial = getPreferred();
-  applyTheme(initial, false); // No transition on first load
+  applyTheme(initial); // No transition on first load
 
   // ===== Wire up click handlers (event delegation) =====
   document.addEventListener("click", (e) => {
@@ -75,21 +86,21 @@
 
     const current = html.getAttribute("data-theme") || "dark";
     const next    = current === "dark" ? "light" : "dark";
-    transitionTheme(next, true); // Save user preference
+    transitionThemeAndPersist(next); // Save user preference
   });
 
   // ===== Respond to system preference changes =====
   window.matchMedia("(prefers-color-scheme: light)").addEventListener("change", (e) => {
     // Only auto-switch if user hasn't manually set a preference
     if (!localStorage.getItem(STORAGE_KEY)) {
-      transitionTheme(e.matches ? "light" : "dark", false);
+      transitionTheme(e.matches ? "light" : "dark");
     }
   });
 
   // ===== Cross-tab sync =====
   window.addEventListener("storage", (e) => {
     if (e.key === "theme" && (e.newValue === "light" || e.newValue === "dark")) {
-      applyTheme(e.newValue, false);
+      applyTheme(e.newValue);
     }
   });
 })();
