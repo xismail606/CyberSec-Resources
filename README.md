@@ -10,7 +10,7 @@
 <h1 align="center">🛡️ CyberSec Resources</h1>
 
 <p align="center">
-A curated collection of <strong>311 cybersecurity tools</strong>, <strong>648 free TryHackMe labs</strong>, <strong>1,254 bug bounty writeups</strong>, and <strong>44 AI & coding tools</strong> — organized, searchable, and ready to use.
+A curated collection of <strong>311 cybersecurity tools</strong>, <strong>648 free TryHackMe labs</strong>, <strong>1,254 bug bounty writeups</strong>, and <strong>38 AI & coding tools</strong> — organized, searchable, and ready to use.
 </p>
 
 <p align="center">
@@ -36,7 +36,7 @@ Live Demo →
 <img src="https://img.shields.io/badge/Tools-311-38bdf8?style=for-the-badge">
 <img src="https://img.shields.io/badge/Free_Labs-648-34d399?style=for-the-badge">
 <img src="https://img.shields.io/badge/Writeups-1254-c084fc?style=for-the-badge">
-<img src="https://img.shields.io/badge/AI_Tools-44-ffb86c?style=for-the-badge">
+<img src="https://img.shields.io/badge/AI_Tools-38-ffb86c?style=for-the-badge">
 <img src="https://img.shields.io/badge/Categories-91-a78bfa?style=for-the-badge">
 <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
 </p>
@@ -55,7 +55,7 @@ Live Demo →
 | **🛡️ CyberSec Resources**  | 311 tools across 16 categories (OSINT, hashing, networking, pentesting, etc.)     |
 | **💻 Free Labs**           | 648 free TryHackMe rooms across 26 categories (Intro → Insane difficulty)         |
 | **🐛 Bug Bounty Writeups** | 1,254 real-world writeups across 43 categories (XSS, SSRF, IDOR, RCE, CSRF, etc.) |
-| **🤖 AI Tools**            | 44 AI & coding tools across 6 categories (AI Models, Coding Agents, Skills, etc.) |
+| **🤖 AI Tools**            | 38 AI & coding tools across 6 categories (AI Models, Coding Agents, Skills, etc.) |
 
 <hr>
 
@@ -79,11 +79,8 @@ Live Demo →
 | 🖼️  | **Steganography & Image Analysis**     | Aperi'Solve, StegSeek, Steghide              |
 | 🔧  | **System & Process Analysis**          | Sysinternals, Autoruns, Process Explorer     |
 | 🧩  | **Browser Extensions**                 | FoxyProxy, Wappalyzer, uBlock Origin, DotGit |
-| 🤖  | **AI Assistants**                      | ChatGPT, DeepSeek, Claude, Gemini            |
-| 💻  | **Coding Tools**                       | VS Code, Antigravity, GitHub                 |
 | 📝  | **Reporting & Note Taking**            | Obsidian, Notion, XMind                      |
-| ✍️  | **Write-ups & Bug Bounty**             | Medium, HackerOne, Bugcrowd, Pentester Land  |
-| 🛠️  | **Useful Tools**                       | Regex101, JSON Formatter, Wayback Machine    |
+| 🛠️  | **Basic Security Tools**               | ProjectDiscovery, favirecon, ppfuzz, bbr     |
 
 ## 🧪 Free Labs Categories
 
@@ -94,7 +91,7 @@ Live Demo →
 
 ## 🐛 Bug Bounty Writeups Categories
 
-> 42 categories covering General Writeups, XSS, SSRF, IDOR, RCE, CSRF, SQL Injection, Account Takeover, Authentication Bypass, Prototype Pollution, Information Disclosure, HTTP Request Smuggling, Web Cache Poisoning, CORS Misconfiguration, Open Redirect, File Upload, Race Condition, Privilege Escalation, Denial of Service, Business Logic, and many more.
+> 43 categories covering General Writeups, XSS, SSRF, IDOR, RCE, CSRF, SQL Injection, Account Takeover, Authentication Bypass, Prototype Pollution, Information Disclosure, HTTP Request Smuggling, Web Cache Poisoning, CORS Misconfiguration, Open Redirect, File Upload, Race Condition, Privilege Escalation, Denial of Service, Business Logic, and many more.
 
 > Writeup links belong to their respective authors and platforms.
 > This website only indexes publicly available links for educational purposes.
@@ -156,12 +153,12 @@ CyberSec-Resources/
 │   ├── main.js                 # Shared render engine
 │   └── theme-toggle.js         # Dark / Light theme switcher
 ├── data/
-│   ├── resources.data.js       # Tools data (289 tools)
+│   ├── resources.data.js       # Tools data (311 tools)
 │   ├── rooms.data.js           # TryHackMe rooms (Intro + Easy)
 │   ├── rooms.medium-hard.js    # TryHackMe rooms (Medium → Insane)
 │   ├── free-labs.data.js       # Category grouper for labs
-│   ├── writeups.data.js        # Bug bounty writeups (1,248 writeups)
-│   └── ai.data.js              # AI tools & agents (37 tools)
+│   ├── writeups.data.js        # Bug bounty writeups (1,254 writeups)
+│   └── ai.data.js              # AI tools & agents (38 tools)
 ├── LICENSE
 └── README.md
 ```
