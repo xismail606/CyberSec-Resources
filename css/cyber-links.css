@@ -1609,3 +1609,116 @@ body.no-glow::before {
   background: rgba(5, 150, 105, 0.1);
   color: var(--accent-red-dark);
 }
+
+/* ===== Split Hero Styles for Sub-pages ===== */
+.hero-grid-split {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 48px;
+  align-items: center;
+  text-align: left;
+  padding: 40px 0;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+.hero-content .hero-badge {
+  margin-bottom: 20px;
+}
+.hero-content h1 {
+  font-size: clamp(2.3rem, 5vw, 3.8rem);
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  margin-bottom: 20px;
+  text-align: left;
+  background: linear-gradient(
+    135deg,
+    var(--text-primary) 0%,
+    var(--accent-emerald) 60%,
+    var(--accent-emerald-dark) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 0 28px 0;
+  text-align: left;
+}
+.hero-content .page-nav {
+  justify-content: flex-start;
+  margin-bottom: 0;
+}
+.hero-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+.hero-visual .search-wrapper {
+  margin: 0;
+  max-width: 100%;
+}
+.hero-visual .adv-search-panel {
+  margin: 0;
+  max-width: 100%;
+}
+.hero-visual .stats-bar {
+  margin: 0;
+  max-width: 100%;
+  justify-content: center;
+  gap: 40px;
+}
+.hero-visual .stat-item {
+  text-align: center;
+}
+
+@media (max-width: 960px) {
+  .hero-grid-split {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    text-align: center;
+    padding: 20px 0 40px;
+  }
+  .hero-content {
+    align-items: center;
+    text-align: center;
+  }
+  .hero-content h1 {
+    text-align: center;
+  }
+  .hero-content p {
+    text-align: center;
+    margin: 0 auto 28px auto;
+  }
+  .hero-content .page-nav {
+    justify-content: center;
+  }
+  .hero-visual {
+    align-items: center;
+    gap: 20px;
+  }
+  .hero-visual .search-wrapper {
+    margin: 0 auto;
+    max-width: 560px;
+  }
+  .hero-visual .adv-search-panel {
+    margin: 0 auto;
+    max-width: 560px;
+  }
+  .hero-visual .stats-bar {
+    margin: 0 auto;
+    max-width: 560px;
+    justify-content: center;
+  }
+  .hero-visual .stat-item {
+    text-align: center;
+  }
+}

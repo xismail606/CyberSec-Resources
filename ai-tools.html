@@ -59,98 +59,102 @@
     <div class="container">
       <!-- Hero -->
       <header class="hero">
-        <div class="hero-badge">
-          <span class="pulse-dot"></span>
-          AI TOOLS
-        </div>
-        <h1>AI Tools</h1>
-        <p>
-         A curated collection of AI assistants and tools to boost your productivity in cybersecurity research, coding, and analysis.
-        </p>
+        <div class="hero-grid-split">
+          <!-- Left Column: Content -->
+          <div class="hero-content">
+            <h1>AI Tools</h1>
+            <p>
+             A curated collection of AI assistants and tools to boost your productivity in cybersecurity research, coding, and analysis.
+            </p>
 
-        <!-- Under Development Banner -->
-        <div style="background: linear-gradient(135deg, rgba(251, 191, 36, 0.15), rgba(245, 158, 11, 0.08)); border: 1px solid rgba(251, 191, 36, 0.3); border-radius: 12px; padding: 16px 24px; margin: 20px auto; max-width: 600px; display: flex; align-items: center; justify-content: center; gap: 12px; backdrop-filter: blur(10px); text-align: center; font-family: 'Outfit', sans-serif;">
-          <span style="font-size: 24px;">🚧</span>
-          <div>
-            <strong style="color: #fbbf24; font-size: 16px; letter-spacing: 0.5px;">UNDER DEVELOPMENT</strong>
-            <p style="margin: 4px 0 0; font-size: 15px; opacity: 0.8;">This section is still being built. More AI tools & resources coming soon!</p>
-          </div>
-        </div>
-
-        <!-- Page Navigation Buttons -->
-        <div class="page-nav">
-          <a href="./index.html" class="page-nav-btn" id="btnHome">Home</a>
-          <a href="./resources.html" class="page-nav-btn" id="btnResources">CyberSec Resources</a>
-          <a href="./free-labs.html" class="page-nav-btn" id="btnFreeLabs">Free Labs</a>
-          <a href="./bug-bounty-writeups.html" class="page-nav-btn" id="btnWriteups">Bug Bounty Writeups</a>
-          <a href="./ai-tools.html" class="page-nav-btn active" id="btnAiTools">AI Tools</a>
-        </div>
-
-        <!-- Search -->
-        <div class="search-wrapper" role="search">
-          <svg
-            class="search-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-            />
-          </svg>
-          <input
-            type="text"
-            class="search-input"
-            id="searchInput"
-            placeholder="Search AI tools..."
-            autocomplete="off"
-          />
-          <button class="adv-search-toggle" id="advSearchToggle" type="button" aria-expanded="false" aria-controls="advSearchPanel" title="Advanced Search">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
-            </svg>
-            <span class="adv-search-badge" id="advSearchBadge"></span>
-          </button>
-        </div>
-
-        <!-- Advanced Search Panel -->
-        <div class="adv-search-panel" id="advSearchPanel" aria-hidden="true">
-          <div class="adv-search-inner">
-            <div class="adv-search-section">
-              <div class="adv-search-section-header">
-                <span class="adv-section-label">Filter by Category</span>
-                <div class="adv-search-actions">
-                  <button class="adv-action-btn" id="advSelectAll" type="button">Select All</button>
-                  <button class="adv-action-btn" id="advClearAll" type="button">Clear</button>
-                </div>
+            <!-- Under Development Banner -->
+            <div style="background: linear-gradient(135deg, rgba(251, 191, 36, 0.15), rgba(245, 158, 11, 0.08)); border: 1px solid rgba(251, 191, 36, 0.3); border-radius: 12px; padding: 16px 24px; margin: 0 0 28px 0; max-width: 600px; display: flex; align-items: center; justify-content: flex-start; gap: 12px; backdrop-filter: blur(10px); text-align: left; font-family: 'Outfit', sans-serif;">
+              <span style="font-size: 24px;">🚧</span>
+              <div>
+                <strong style="color: #fbbf24; font-size: 16px; letter-spacing: 0.5px;">UNDER DEVELOPMENT</strong>
+                <p style="margin: 4px 0 0; font-size: 15px; opacity: 0.8;">This section is still being built. More AI tools & resources coming soon!</p>
               </div>
-              <div class="filter-chips" id="filterChips"></div>
+            </div>
+
+            <!-- Page Navigation Buttons -->
+            <div class="page-nav">
+              <a href="./index.html" class="page-nav-btn" id="btnHome">Home</a>
+              <a href="./resources.html" class="page-nav-btn" id="btnResources">CyberSec Resources</a>
+              <a href="./free-labs.html" class="page-nav-btn" id="btnFreeLabs">Free Labs</a>
+              <a href="./bug-bounty-writeups.html" class="page-nav-btn" id="btnWriteups">Bug Bounty Writeups</a>
+              <a href="./ai-tools.html" class="page-nav-btn active" id="btnAiTools">AI Tools</a>
             </div>
           </div>
-          <div class="active-filters-bar" id="activeFiltersBar">
-            <span class="active-filters-label">Active filters:</span>
-            <div class="active-filters-list" id="activeFiltersList"></div>
-            <button class="active-filters-clear" id="activeFiltersClear" type="button">✕ Clear All</button>
-          </div>
-        </div>
 
-        <!-- Stats -->
-        <div class="stats-bar">
-          <div class="stat-item">
-            <div class="stat-number" id="totalTools">0</div>
-            <div class="stat-label">Tools</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number" id="totalCategories">0</div>
-            <div class="stat-label">Categories</div>
+          <!-- Right Column: Search & Stats -->
+          <div class="hero-visual">
+            <!-- Search -->
+            <div class="search-wrapper" role="search">
+              <svg
+                class="search-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+              <input
+                type="text"
+                class="search-input"
+                id="searchInput"
+                placeholder="Search AI tools..."
+                autocomplete="off"
+              />
+              <button class="adv-search-toggle" id="advSearchToggle" type="button" aria-expanded="false" aria-controls="advSearchPanel" title="Advanced Search">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+                </svg>
+                <span class="adv-search-badge" id="advSearchBadge"></span>
+              </button>
+            </div>
+
+            <!-- Advanced Search Panel -->
+            <div class="adv-search-panel" id="advSearchPanel" aria-hidden="true">
+              <div class="adv-search-inner">
+                <div class="adv-search-section">
+                  <div class="adv-search-section-header">
+                    <span class="adv-section-label">Filter by Category</span>
+                    <div class="adv-search-actions">
+                      <button class="adv-action-btn" id="advSelectAll" type="button">Select All</button>
+                      <button class="adv-action-btn" id="advClearAll" type="button">Clear</button>
+                    </div>
+                  </div>
+                  <div class="filter-chips" id="filterChips"></div>
+                </div>
+              </div>
+              <div class="active-filters-bar" id="activeFiltersBar">
+                <span class="active-filters-label">Active filters:</span>
+                <div class="active-filters-list" id="activeFiltersList"></div>
+                <button class="active-filters-clear" id="activeFiltersClear" type="button">✕ Clear All</button>
+              </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-bar">
+              <div class="stat-item">
+                <div class="stat-number" id="totalTools">0</div>
+                <div class="stat-label">Tools</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" id="totalCategories">0</div>
+                <div class="stat-label">Categories</div>
+              </div>
+            </div>
           </div>
         </div>
         <div id="searchAnnounce" class="sr-only" aria-live="polite"></div>
-      </header>
+      </header>    </header>
 
       <!-- Categories Container -->
       <main id="categoriesContainer"></main>
