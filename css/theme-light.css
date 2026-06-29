@@ -37,10 +37,10 @@ html.theme-transitioning .active-filters-bar {
 
 /* ===== Light Mode Variable Overrides ===== */
 html[data-theme="light"] {
-  --bg-primary: #fafafa;
-  --bg-secondary: #ffffff;
-  --bg-card: rgba(255, 255, 255, 0.85);
-  --bg-card-hover: rgba(255, 255, 255, 0.95);
+  --bg-primary: #dbdbe0;
+  --bg-secondary: #eeeef2;
+  --bg-card: rgba(255, 255, 255, 0.45);
+  --bg-card-hover: rgba(255, 255, 255, 0.65);
   --border-color: rgba(5, 150, 105, 0.12);
   --border-hover: rgba(5, 150, 105, 0.35);
   --text-primary: #18181b;
@@ -61,9 +61,9 @@ html[data-theme="light"] {
   --glow-color-inner: rgba(5, 150, 105, 0.06);
 
   /* Navbar — keep dark for premium contrast */
-  --navbar-bg: rgba(9, 9, 11, 0.95);
-  --navbar-bg-scrolled: rgba(9, 9, 11, 1);
-  --navbar-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  --navbar-bg: rgba(18, 18, 22, 0.45);
+  --navbar-bg-scrolled: rgba(14, 14, 18, 0.75);
+  --navbar-shadow: 0 10px 40px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(255, 255, 255, 0.05) inset;
   --nav-link-hover-bg: rgba(255, 255, 255, 0.08);
   --nav-link-hover-border: rgba(255, 255, 255, 0.15);
   --nav-link-active-bg: rgba(255, 255, 255, 0.12);
@@ -72,11 +72,11 @@ html[data-theme="light"] {
   --nav-social-hover-border: rgba(255, 255, 255, 0.2);
   --nav-mobile-bg: rgba(9, 9, 11, 0.98);
 
-  --search-bg: rgba(255, 255, 255, 0.8);
+  --search-bg: rgba(255, 255, 255, 0.65);
   --search-focus-ring: rgba(5, 150, 105, 0.15);
   --search-focus-shadow: 0 0 0 4px rgba(5, 150, 105, 0.06);
 
-  --diff-btn-bg: rgba(255, 255, 255, 0.8);
+  --diff-btn-bg: rgba(255, 255, 255, 0.65);
   --diff-btn-hover-border: rgba(5, 150, 105, 0.3);
   --diff-btn-hover-bg: rgba(5, 150, 105, 0.04);
   --diff-btn-active-bg: rgba(5, 150, 105, 0.08);
@@ -86,7 +86,7 @@ html[data-theme="light"] {
   --card-shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.06), 0 0 0 1px rgba(5, 150, 105, 0.1);
   --favicon-bg: rgba(0, 0, 0, 0.04);
 
-  --page-btn-bg: #ffffff;
+  --page-btn-bg: #eeeef2;
   --page-btn-hover-border: rgba(5, 150, 105, 0.3);
   --page-btn-hover-bg: rgba(5, 150, 105, 0.04);
   --page-btn-hover-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
@@ -100,7 +100,7 @@ html[data-theme="light"] {
   --hero-badge-bg: rgba(5, 150, 105, 0.06);
   --hero-badge-border: rgba(5, 150, 105, 0.18);
 
-  --scroll-top-bg: #ffffff;
+  --scroll-top-bg: #eeeef2;
   --scroll-top-border: rgba(5, 150, 105, 0.2);
   --scroll-top-hover-bg: rgba(5, 150, 105, 0.08);
 
@@ -127,7 +127,7 @@ html[data-theme="light"] {
   --orb3-bg: rgba(52, 211, 153, 0.04);
 
   /* Sidebar */
-  --sidebar-bg: rgba(255, 255, 255, 0.92);
+  --sidebar-bg: rgba(238, 238, 242, 0.92);
   --sidebar-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
   --sidebar-hover-bg: rgba(5, 150, 105, 0.03);
   --sidebar-hover-shadow: 0 8px 20px rgba(5, 150, 105, 0.08);
@@ -137,28 +137,36 @@ html[data-theme="light"] {
   --sidebar-icon-hover-shadow: 0 0 15px rgba(5, 150, 105, 0.15);
   --sidebar-icon-hover-border: rgba(5, 150, 105, 0.35);
   --sidebar-mobile-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  --sidebar-mobile-icon-bg: rgba(255, 255, 255, 0.95);
+  --sidebar-mobile-icon-bg: rgba(238, 238, 242, 0.95);
   --sidebar-mobile-icon-active: rgba(5, 150, 105, 0.4);
 }
 
 /* Dark navbar text overrides for light mode */
 html[data-theme="light"] .nav-logo {
-  color: #e4e4e7;
+  color: var(--text-primary);
 }
 html[data-theme="light"] .nav-logo:hover {
-  color: #34d399;
+  color: var(--accent-red);
 }
-html[data-theme="light"] .nav-social a {
-  color: #d4d4d8;
+html[data-theme="light"] .nav-pill {
+  background: rgba(255, 255, 255, 0.45);
+  border-color: rgba(0, 0, 0, 0.08);
 }
-html[data-theme="light"] .nav-social a:hover {
-  color: #34d399;
+html[data-theme="light"] .pill-link {
+  color: var(--text-secondary);
 }
-html[data-theme="light"] .theme-toggle {
-  color: #d4d4d8;
+html[data-theme="light"] .pill-link:hover,
+html[data-theme="light"] .pill-link.active {
+  color: var(--text-primary);
+  background: rgba(0, 0, 0, 0.06);
 }
-html[data-theme="light"] .theme-toggle:hover {
-  color: #fbbf24;
+html[data-theme="light"] button.theme-toggle.pill-cta {
+  color: var(--text-secondary);
+  background: transparent;
+}
+html[data-theme="light"] button.theme-toggle.pill-cta:hover {
+  color: var(--text-primary);
+  background: rgba(0, 0, 0, 0.06);
 }
 
 /* Light mode content overrides */
@@ -205,15 +213,15 @@ html[data-theme="light"] .footer-author a:hover {
   text-shadow: none;
 }
 html[data-theme="light"] .thm-modal {
-  background: #fff;
+  background: var(--bg-secondary);
 }
 html[data-theme="light"] .modal-btn {
-  color: #fff;
+  color: #ffffff;
 }
 
 /* Light mode — Advanced Search */
 html[data-theme="light"] .adv-search-toggle {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.45);
 }
 html[data-theme="light"] .adv-search-toggle:hover {
   background: rgba(5, 150, 105, 0.04);
@@ -222,10 +230,10 @@ html[data-theme="light"] .adv-search-toggle[aria-expanded="true"] {
   background: rgba(5, 150, 105, 0.08);
 }
 html[data-theme="light"] .adv-search-inner {
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(238, 238, 242, 0.92);
 }
 html[data-theme="light"] .filter-chip {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.55);
 }
 html[data-theme="light"] .filter-chip:hover {
   background: rgba(5, 150, 105, 0.04);

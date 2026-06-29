@@ -47,9 +47,9 @@
   --x: 50%;
   --y: 50%;
 
-  --navbar-bg: rgba(9, 9, 11, 0.8);
-  --navbar-bg-scrolled: rgba(9, 9, 11, 0.95);
-  --navbar-shadow: 0 1px 0 rgba(255,255,255,0.04), 0 4px 30px rgba(0,0,0,0.5);
+  --navbar-bg: rgba(18, 18, 22, 0.45);
+  --navbar-bg-scrolled: rgba(14, 14, 18, 0.75);
+  --navbar-shadow: 0 10px 40px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(255, 255, 255, 0.05) inset;
   --nav-link-hover-bg: rgba(16, 185, 129, 0.06);
   --nav-link-hover-border: rgba(16, 185, 129, 0.12);
   --nav-link-active-bg: rgba(16, 185, 129, 0.1);
@@ -170,32 +170,39 @@ body.no-glow::before {
   }
 }
 
-/* ===== Navbar ===== */
+/* ===== Navbar (Completely Transparent & Floating "شفاف كله وطاير") ===== */
 .navbar {
   position: fixed;
-  top: 0;
+  top: 16px;
   left: 0;
   right: 0;
+  max-width: 1300px;
+  margin: 0 auto;
   z-index: 1000;
-  background: var(--navbar-bg);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--border-color);
-  transition: var(--transition);
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navbar.scrolled {
-  background: var(--navbar-bg-scrolled);
-  box-shadow: var(--navbar-shadow);
+  top: 12px;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
 
-.nav-inner {
-  max-width: 1300px;
-  margin: 0 auto;
+.navbar-inner {
+  width: 100%;
   padding: 0 24px;
   height: 60px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 16px;
 }
 
@@ -207,68 +214,144 @@ body.no-glow::before {
   letter-spacing: -0.5px;
   flex-shrink: 0;
   transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-logo img {
+  height: 36px;
+  width: 36px;
+  vertical-align: middle;
+  margin-right: 8px;
+  border-radius: 50%;
 }
 
 .nav-logo:hover {
   color: var(--accent-red);
 }
 
-
-
-.nav-social {
+/* pill container */
+.nav-pill {
   display: flex;
   align-items: center;
-  gap: 8px;
-  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50px;
+  padding: 5px 5px 5px 8px;
+  gap: 4px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   margin-left: auto;
 }
 
-.nav-social a {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  display: flex;
+/* ghost links inside pill — use existing link color variable */
+.pill-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 7px 14px;
+  border-radius: 50px;
+  white-space: nowrap;
+  transition: color 0.2s, background 0.2s;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-muted);
-  transition: var(--transition);
-  border: 1px solid transparent;
 }
 
-.nav-social a:hover {
-  color: var(--accent-red);
-  background: var(--nav-social-hover-bg);
-  border-color: var(--nav-social-hover-border);
+.pill-link:hover,
+.pill-link.active {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
 }
 
-/* Theme Toggle Button */
-.theme-toggle {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* dark CTA button — last item in pill */
+.pill-cta {
   background: transparent;
-  border: 1px solid transparent;
-  color: var(--text-muted);
-  cursor: pointer;
+  color: var(--text-secondary);
+  text-decoration: none;
   font-size: 1.15rem;
-  transition: var(--transition);
-  flex-shrink: 0;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 7px 14px;
+  border-radius: 50px;
+  white-space: nowrap;
+  transition: color 0.2s, background 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
   line-height: 1;
-  padding: 0;
 }
 
-.theme-toggle:hover {
-  color: var(--accent-red);
-  background: var(--nav-social-hover-bg);
-  border-color: var(--nav-social-hover-border);
+.pill-cta:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
 }
 
-.theme-toggle:focus-visible {
+/* Theme Toggle Button specific overrides when used as CTA */
+button.theme-toggle.pill-cta {
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 1.15rem;
+  padding: 7px 14px;
+  height: auto;
+  width: auto;
+  border-radius: 50px;
+  border: none;
+  box-shadow: none;
+  transition: color 0.2s, background 0.2s;
+}
+
+button.theme-toggle.pill-cta:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+button.theme-toggle.pill-cta:focus-visible {
   outline: 2px solid var(--accent-red);
   outline-offset: 2px;
+}
+
+/* mobile: keep pill horizontal, transparent, and beautifully aligned */
+@media (max-width: 768px) {
+  .navbar {
+    top: 12px;
+    left: 0;
+    right: 0;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  .navbar-inner {
+    padding: 0 16px;
+    height: 56px;
+  }
+  .nav-pill {
+    display: flex;
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 4px 4px 4px 8px;
+    gap: 2px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin-left: auto;
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: none;
+  }
+  .pill-link { padding: 6px 10px; font-size: 12px; }
+  .pill-cta  { padding: 6px 14px; font-size: 1.1rem; margin-top: 0; }
+  button.theme-toggle.pill-cta { padding: 6px 14px; font-size: 1.1rem; }
 }
 
 

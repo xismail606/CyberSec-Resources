@@ -695,4 +695,21 @@
     setTimeout(type, 400);
   })();
 
+  // ===== NAVBAR PILL LOGIC =====
+  (() => {
+    // close mobile menu on link click
+    document.querySelectorAll('.nav-pill a').forEach(l =>
+      l.addEventListener('click', () => {
+        document.querySelector('.nav-pill')?.classList.remove('open');
+        document.querySelector('.nav-hamburger')?.classList.remove('open');
+      })
+    );
+
+    // active link highlight
+    const page = location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.pill-link').forEach(l => {
+      if (l.getAttribute('href') === page || l.getAttribute('href') === `./${page}`) l.classList.add('active');
+    });
+  })();
+
 })();
