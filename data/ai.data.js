@@ -240,7 +240,7 @@ window.__cyberData = [
     links: [
       {
         name: "PentesterFlow",
-        url: "https://github.com/PentesterFlow/agent",
+        url: "https://pentesterflow.com/",
         desc: "Human-in-the-loop Agentic AI CLI for recon, enumeration, validation & reporting",
       },
     ],
