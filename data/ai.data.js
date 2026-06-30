@@ -169,6 +169,46 @@ window.__cyberData = [
         url: "https://www.tasteskill.dev/",
         desc: "Design-taste system providing curated CSS styling and visual aesthetic recommendations to coding agents",
       },
+      {
+        name: "Agent Skills Spec",
+        url: "https://agentskills.io/home",
+        desc: "Specification and documentation for Agent Skills",
+      },
+      {
+        name: "Open Design",
+        url: "https://open-design.ai/",
+        desc: "Local-first, open-source Claude Design alternative with sandboxed preview and exporting capabilities",
+      },
+      {
+        name: "Production Agent Skills",
+        url: "https://github.com/addyosmani/agent-skills",
+        desc: "Production-grade engineering skills encoding workflows, quality gates, and best practices for AI coding agents",
+      },
+      {
+        name: "Ponytail",
+        url: "https://ponytail.dev/",
+        desc: "Turn-based benchmark evaluating editing capability, safety, and YAGNI discipline for coding agents",
+      },
+      {
+        name: "Awesome OpenClaw Skills",
+        url: "https://clawskills.sh/",
+        desc: "A curated collection of skills and automated workflows for OpenClaw sourced from ClawHub",
+      },
+      {
+        name: "Awesome Claude Code",
+        url: "https://github.com/hesreallyhim/awesome-claude-code",
+        desc: "A curated list of awesome skills, hooks, slash-commands, agent orchestrators, and plugins for Claude Code",
+      },
+      {
+        name: "Antigravity Awesome Skills",
+        url: "https://sickn33.github.io/antigravity-awesome-skills/",
+        desc: "Installable library of 1,600+ agentic skills, plugins, installer CLI, and workflows for Antigravity, Claude Code, and more",
+      },
+      {
+        name: "Official Skills",
+        url: "https://officialskills.sh/",
+        desc: "Curated collection of 1000+ official and community agent skills compatible with modern coding agents",
+      },
     ],
   },
   {
