@@ -486,10 +486,12 @@ button.theme-toggle.pill-cta:focus-visible {
 }
 
 .hero h1 {
+  font-family: "Playpen Sans", sans-serif;
   font-size: clamp(2.5rem, 6vw, 4.2rem);
   font-weight: 900;
   letter-spacing: -1.5px;
-  line-height: 1.1;
+  line-height: 1.25;
+  padding-bottom: 0.15em;
   margin-bottom: 16px;
   background: linear-gradient(
     135deg,
@@ -940,6 +942,7 @@ button.theme-toggle.pill-cta:focus-visible {
 }
 
 .category-title {
+  font-family: "Playwrite DE Grund", cursive;
   font-size: 1.35rem;
   font-weight: 700;
   letter-spacing: -0.3px;
@@ -1535,6 +1538,7 @@ button.theme-toggle.pill-cta:focus-visible {
 }
 
 .modal-title {
+  font-family: "Playpen Sans", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
   color: var(--text-primary);
@@ -1550,6 +1554,7 @@ button.theme-toggle.pill-cta:focus-visible {
 }
 
 .modal-desc {
+  font-family: "Englebert", sans-serif;
   font-size: 1.05rem;
   color: var(--text-secondary);
   margin-bottom: 24px;

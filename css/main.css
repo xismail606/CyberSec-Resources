@@ -17,6 +17,10 @@
   grid-column: span 5;
 }
 
+.home-grid-cell-full {
+  grid-column: span 12;
+}
+
 /* Double-Bezel Card Shell */
 .home-card-shell {
   background: rgba(255, 255, 255, 0.01);
@@ -177,7 +181,7 @@
 }
 
 .about-title {
-  font-family: "Outfit", sans-serif;
+  font-family: "Playpen Sans", sans-serif;
   font-size: 28px;
   font-weight: 800;
   letter-spacing: -0.5px;
@@ -487,7 +491,8 @@
   }
   
   .home-grid-cell-large,
-  .home-grid-cell-small {
+  .home-grid-cell-small,
+  .home-grid-cell-full {
     grid-column: span 1;
   }
   

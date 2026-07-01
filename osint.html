@@ -10,10 +10,10 @@
       })();
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Free Labs — TryHackMe Rooms</title>
+    <title>OSINT Arsenal — CyberSec Intelligence Resources</title>
     <meta
       name="description"
-      content="A curated collection of free TryHackMe labs and rooms for cybersecurity learning and practice."
+      content="A curated collection of essential OSINT (Open Source Intelligence) tools and resources for digital threat intelligence, threat hunting, and security research."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,9 +24,9 @@
     <link rel="stylesheet" href="./css/cyber-links.css" />
     <link rel="stylesheet" href="./css/sidebar.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕵️</text></svg>">
   </head>
-  <body class="no-glow">
+  <body>
     <noscript>
       <p style="text-align:center;padding:2rem;font-family:sans-serif">
         This page requires JavaScript to be enabled.
@@ -62,19 +62,18 @@
         <div class="hero-grid-split">
           <!-- Left Column: Content -->
           <div class="hero-content">
-            <h1>Free Labs</h1>
+            <h1>OSINT Arsenal</h1>
             <p>
-             A curated collection of TryHackMe rooms to help you practice cybersecurity skills.
-             All rooms link directly to TryHackMe. Some labs may require a premium subscription.
+              An intelligence-gathering directory containing Google Dorks, data breaches, username checkers, threat actor trackers, and privacy tools.
             </p>
 
             <!-- Page Navigation Buttons -->
             <div class="page-nav">
               <a href="./index.html" class="page-nav-btn" id="btnHome">Home</a>
               <a href="./resources.html" class="page-nav-btn" id="btnResources">CyberSec Resources</a>
-              <a href="./free-labs.html" class="page-nav-btn active" id="btnFreeLabs">Free Labs</a>
+              <a href="./free-labs.html" class="page-nav-btn" id="btnFreeLabs">Free Labs</a>
               <a href="./bug-bounty-writeups.html" class="page-nav-btn" id="btnWriteups">Bug Bounty Writeups</a>
-              <a href="./osint.html" class="page-nav-btn" id="btnOsint">OSINT Arsenal</a>
+              <a href="./osint.html" class="page-nav-btn active" id="btnOsint">OSINT Arsenal</a>
               <a href="./ai-tools.html" class="page-nav-btn" id="btnAiTools">AI Tools</a>
             </div>
           </div>
@@ -101,7 +100,7 @@
                 type="text"
                 class="search-input"
                 id="searchInput"
-                placeholder="Search TryHackMe labs..."
+                placeholder="Search OSINT tools..."
                 autocomplete="off"
               />
               <button class="adv-search-toggle" id="advSearchToggle" type="button" aria-expanded="false" aria-controls="advSearchPanel" title="Advanced Search">
@@ -125,13 +124,6 @@
                   </div>
                   <div class="filter-chips" id="filterChips"></div>
                 </div>
-                <div class="adv-search-divider"></div>
-                <div class="adv-search-section">
-                  <div class="adv-search-section-header">
-                    <span class="adv-section-label">Filter by Difficulty</span>
-                  </div>
-                  <div class="filter-chips" id="difficultyChips"></div>
-                </div>
               </div>
               <div class="active-filters-bar" id="activeFiltersBar">
                 <span class="active-filters-label">Active filters:</span>
@@ -144,7 +136,7 @@
             <div class="stats-bar">
               <div class="stat-item">
                 <div class="stat-number" id="totalTools">0</div>
-                <div class="stat-label">Labs</div>
+                <div class="stat-label">Tools</div>
               </div>
               <div class="stat-item">
                 <div class="stat-number" id="totalCategories">0</div>
@@ -175,7 +167,7 @@
           />
         </svg>
         <p class="no-results-title">
-          No labs found
+          No tools found
         </p>
         <p>Try a different search term</p>
       </div>
@@ -209,7 +201,7 @@
             </svg>
           </button>
           
-          <h2 class="modal-title" id="modalTitle">Room Name</h2>
+          <h2 class="modal-title" id="modalTitle">Tool Name</h2>
           <div class="modal-subtitle" id="modalSubtitle">Intro • Intro</div>
           
           <p class="modal-desc" id="modalDesc">Description goes here.</p>
@@ -220,7 +212,7 @@
           </div>
           
           <button class="modal-btn" id="modalOpenBtn" type="button">
-            Go to Room
+            Open Tool
           </button>
         </div>
       </div>
@@ -260,10 +252,8 @@
     </div>
 
     <script src="./js/theme-toggle.js" defer></script>
-    <script src="./data/rooms.data.js" defer></script>
-    <script src="./data/rooms.medium-hard.js" defer></script>
-    <script src="./data/free-labs.data.js" defer></script>
-    <script>window.__cyberConfig = { pageType: 'labs' };</script>
+    <script src="./data/osint.data.js" defer></script>
+    <script>window.__cyberConfig = { pageType: 'tools' };</script>
     <script src="./js/main.js" defer></script>
   </body>
 </html>

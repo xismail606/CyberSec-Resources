@@ -10,7 +10,7 @@
 <h1 align="center">🛡️ CyberSec Resources</h1>
 
 <p align="center">
-A curated collection of <strong>311 cybersecurity tools</strong>, <strong>648 free TryHackMe labs</strong>, <strong>1,254 bug bounty writeups</strong>, and <strong>46 AI & coding tools</strong> — organized, searchable, and ready to use.
+A curated collection of <strong>311 cybersecurity tools</strong>, <strong>648 free TryHackMe labs</strong>, <strong>1,254 bug bounty writeups</strong>, <strong>46 AI & coding tools</strong>, and <strong>1,406 OSINT resources</strong> — organized, searchable, and ready to use.
 </p>
 
 <p align="center">
@@ -37,7 +37,8 @@ Live Demo →
 <img src="https://img.shields.io/badge/Free_Labs-648-34d399?style=for-the-badge">
 <img src="https://img.shields.io/badge/Writeups-1254-c084fc?style=for-the-badge">
 <img src="https://img.shields.io/badge/AI_Tools-46-ffb86c?style=for-the-badge">
-<img src="https://img.shields.io/badge/Categories-91-a78bfa?style=for-the-badge">
+<img src="https://img.shields.io/badge/OSINT-1406-ff6b6b?style=for-the-badge">
+<img src="https://img.shields.io/badge/Categories-162-a78bfa?style=for-the-badge">
 <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
 </p>
 
@@ -52,10 +53,11 @@ Live Demo →
 | Page                       | Description                                                                       |
 | -------------------------- | --------------------------------------------------------------------------------- |
 | **🏠 Home**                | Landing page and overview of the project and its features                         |
-| **🛡️ CyberSec Resources**  | 311 tools across 16 categories (OSINT, hashing, networking, pentesting, etc.)     |
+| **🛡️ CyberSec Resources**  | 311 tools across 16 categories (hashing, networking, pentesting, etc.)            |
 | **💻 Free Labs**           | 648 free TryHackMe rooms across 26 categories (Intro → Insane difficulty)         |
 | **🐛 Bug Bounty Writeups** | 1,254 real-world writeups across 43 categories (XSS, SSRF, IDOR, RCE, CSRF, etc.) |
 | **🤖 AI Tools**            | 46 AI & coding tools across 6 categories (AI Models, Coding Agents, Skills, etc.) |
+| **🕵️ OSINT Arsenal**        | 1,406 OSINT tools across 71 categories (Breaches, Dorks, Domain Lookup, etc.)     |
 
 <hr>
 
@@ -139,6 +141,7 @@ Live Demo →
 CyberSec-Resources/
 ├── index.html                  # Project Home page
 ├── resources.html              # CyberSec Resources page
+├── osint.html                  # OSINT Arsenal page
 ├── free-labs.html              # Free Labs page
 ├── bug-bounty-writeups.html    # Bug Bounty Writeups page
 ├── ai-tools.html               # AI & Coding Tools page
@@ -154,6 +157,7 @@ CyberSec-Resources/
 │   └── theme-toggle.js         # Dark / Light theme switcher
 ├── data/
 │   ├── resources.data.js       # Tools data (311 tools)
+│   ├── osint.data.js           # OSINT links & categories (1,406 resources)
 │   ├── rooms.data.js           # TryHackMe rooms (Intro + Easy)
 │   ├── rooms.medium-hard.js    # TryHackMe rooms (Medium → Insane)
 │   ├── free-labs.data.js       # Category grouper for labs
@@ -176,6 +180,15 @@ CyberSec-Resources/
 | **Logic**     | Vanilla JavaScript (no frameworks)        |
 | **Hosting**   | GitHub Pages                              |
 | **Icons**     | Google Favicons API + Emoji               |
+
+## Acknowledgements
+
+The OSINT resources included in this project are based in part on the awesome-osint repository by jivoi:
+https://github.com/jivoi/awesome-osint
+
+Thanks to the original author and all contributors.
+
+<hr>
 
 <!-- ================= AUTHOR ================= -->
 <h2 align="center"> 👤 Author </h2>

@@ -44,6 +44,38 @@
     }
   }
 
+  // ===== LAZY LOAD FAVICONS (High Performance) =====
+  function initLazyFavicons() {
+    const images = document.querySelectorAll(".lazy-favicon");
+    if (!images.length) return;
+
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            const src = img.getAttribute("data-src");
+            if (src) {
+              img.src = src;
+              img.removeAttribute("data-src");
+            }
+            obs.unobserve(img);
+          }
+        });
+      }, {
+        rootMargin: "300px 0px", // pre-fetch 300px before appearing
+        threshold: 0.01
+      });
+
+      images.forEach((img) => observer.observe(img));
+    } else {
+      images.forEach((img) => {
+        const src = img.getAttribute("data-src");
+        if (src) img.src = src;
+      });
+    }
+  }
+
   // ===== RENDER CATEGORIES =====
   // Builds DOM once, then toggles visibility on search/filter.
   let allCards = [];    // {el, name, desc, url, catName, tags, difficulty, sectionEl}
@@ -87,7 +119,7 @@
              data-url="${escAttr(link.url)}" data-tags="${tagsJson}" 
              data-category="${escAttr(cat.name)}" ${diffAttr}>
             <div class="link-favicon">
-              <img src="${escAttr(getFavicon(link.url))}" alt="" loading="lazy" onerror="this.style.display='none'">
+              <img data-src="${escAttr(getFavicon(link.url))}" alt="" class="lazy-favicon" loading="lazy" onerror="this.style.display='none'">
             </div>
             <div class="link-info">
               <div class="link-name">${escAttr(link.name)}</div>
@@ -142,6 +174,9 @@
     const totalCatEl = $("totalCategories");
     if (totalCatEl) totalCatEl.textContent = allSections.length;
     
+    // Lazy-load favicons
+    initLazyFavicons();
+
     // Re-apply filter if user typed something while loading
     const searchInput = $("searchInput");
     if (searchInput && searchInput.value) {
