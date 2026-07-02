@@ -190,11 +190,6 @@ window.__cyberData = [
         "desc": "A national search engine optimized for localized threat intelligence."
       },
       {
-        "name": "Walla (Israel)",
-        "url": "http://www.walla.co.il",
-        "desc": "A national search engine optimized for localized threat intelligence."
-      },
-      {
         "name": "Yandex (Russia)",
         "url": "http://www.yandex.com",
         "desc": "A national search engine optimized for localized threat intelligence."
